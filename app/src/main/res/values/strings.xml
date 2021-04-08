@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PDM_2021_P3_PROYECTO3</string>
+    <string name="fridge">Fridge</string>
+    <string name="_20">$20</string>
+    <string name="txvNombre1">Nombre</string>
+    <string name="txtApellido1">Apellido</string>
+    <string name="txtTelefono">Telefono</string>
+    <string name="txtId">Id</string>
+    <string name="txtIdentidad">Identidad</string>
+    <string name="txtCorreo1">Correo</string>
+    <string name="txtEdad">Edad</string>
+    <string name="txtIdCaso">Id Caso</string>
+    <string name="txtIdCliente1">Id Cliente</string>
+    <string name="txtIdAbogado">Id Abogado</string>
+    <string name="txtFechaInicio">Fecha Inicial</string>
+    <string name="txtFechaFinalizacion">Fecha Final</string>
+    <string name="txtIdTipoCaso">Tipo Caso</string>
+    <string name="txtPassword">Password</string>
+
+
+
+
+
+
+    <string name="todo">Name</string>
+    <string name="name">Name</string>
+</resources>
