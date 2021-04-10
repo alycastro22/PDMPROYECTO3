@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
         android:hint="@string/txtIdCita"
@@ -19,14 +20,14 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtNombre3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
         android:hint="@string/txtNombre3"
@@ -35,14 +36,14 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdCita"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIdCita" />
 
     <EditText
         android:id="@+id/txtIdTC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
         android:hint="@string/txtIdTC"
@@ -51,14 +52,14 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombre3"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre3" />
 
     <EditText
         android:id="@+id/txtFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
         android:hint="@string/txtFecha"
@@ -67,8 +68,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdTC"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIdTC" />
 
     <EditText
         android:id="@+id/txtIdAbogado1"
@@ -85,4 +85,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/todo"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retroceder" />
 </androidx.constraintlayout.widget.ConstraintLayout>

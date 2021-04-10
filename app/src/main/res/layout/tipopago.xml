@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo3">
+    android:background="@drawable/fondo3"
+    android:contentDescription="@string/todo">
 
     <EditText
         android:id="@+id/txtIdTipoPago"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="190dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
         android:hint="@string/txtIdTipoPago"
@@ -19,14 +21,14 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtDescripcion1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
         android:hint="@string/txtDescripcion1"
@@ -35,6 +37,17 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdTipoPago"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIdTipoPago" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/todo"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retroceder" />
 </androidx.constraintlayout.widget.ConstraintLayout>
