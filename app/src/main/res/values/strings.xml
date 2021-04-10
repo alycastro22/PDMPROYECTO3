@@ -16,6 +16,9 @@
     <string name="txtFechaFinalizacion">Fecha Final</string>
     <string name="txtIdTipoCaso">Tipo Caso</string>
     <string name="txtPassword">Password</string>
+    <string name="txtNombre2">Usuario</string>
+
+
 
 
     <string name="todo">Name</string>
@@ -33,7 +36,8 @@
     <string name="pago">Pago</string>
 
     <string name="agencia">Agencia</string>
-
+    <string name="nuestros_servicios">Nuestros servicios:</string>
+    <string name="casos">Casos</string>
 
 
 </resources>

@@ -4,90 +4,96 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_degragado">
+    android:background="@drawable/fondo3">
 
     <EditText
         android:id="@+id/txtIdCaso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="137dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:hint="@string/txtIdCaso"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtIdCliente1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:hint="@string/txtIdCliente1"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdCaso"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIdCaso" />
 
     <EditText
         android:id="@+id/txtIdAbogado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="43dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:hint="@string/txtIdAbogado"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdCliente1"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIdCliente1" />
 
     <EditText
         android:id="@+id/txtFechaInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:hint="@string/txtFechaInicio"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdAbogado"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIdAbogado" />
 
     <EditText
         android:id="@+id/txtIdFechaFinalizacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:hint="@string/txtFechaFinalizacion"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFechaInicio"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaInicio" />
 
     <EditText
         android:id="@+id/txtIdTipoCaso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:hint="@string/txtIdTipoCaso"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdFechaFinalizacion"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIdFechaFinalizacion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

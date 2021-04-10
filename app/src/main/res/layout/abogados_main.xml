@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_degragado">
+    android:background="@drawable/fondo3">
 
     <EditText
         android:id="@+id/txtNombre1"
@@ -14,8 +14,10 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:hint="@string/txvNombre1"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtId" />
@@ -28,8 +30,10 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:hint="@string/txtApellido1"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre1" />
@@ -44,6 +48,8 @@
         android:gravity="center"
         android:hint="@string/txtTelefono"
         android:inputType="phone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,8 +63,10 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:hint="@string/txtId"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -71,8 +79,10 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:hint="@string/txtIdentidad"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtApellido1" />
@@ -84,9 +94,12 @@
         android:layout_marginTop="29dp"
         android:ems="10"
         android:gravity="center"
+        android:hint="@string/txtEdad"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:hint="@string/txtEdad"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtIdentidad" />
@@ -99,8 +112,10 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:hint="@string/txtCorreo1"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEdad1" />
