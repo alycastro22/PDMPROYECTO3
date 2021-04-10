@@ -18,10 +18,20 @@
     <string name="txtPassword">Password</string>
 
 
-
-
-
-
     <string name="todo">Name</string>
     <string name="name">Name</string>
+    <string name="buffet_abogados_honduras">Buffet Abogados Honduras</string>
+    <string name="empleados">Empleados</string>
+    <string name="consultanos">Consultanos</string>
+    <string name="cita">Cita</string>
+    <string name="facturacion">Facturacion</string>
+    <string name="tipos_de_casos">Tipos de casos</string>
+    <string name="abogados">Abogados</string>
+    <string name="clientes">Clientes</string>
+    <string name="casos">Casos</string>
+    <string name="tipo_de_pago">Tipo de pago</string>
+    <string name="pago">Pago</string>
+
+    <string name="agencia">Agencia</string>
+
 </resources>
