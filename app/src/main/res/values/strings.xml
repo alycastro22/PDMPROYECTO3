@@ -37,7 +37,46 @@
 
     <string name="agencia">Agencia</string>
     <string name="nuestros_servicios">Nuestros servicios:</string>
-    <string name="casos">Casos</string>
+
+    <string name="txtIdEmpleado">ID Empleado</string>
+    <string name="txtNombre">Nombre Empleado</string>
+    <string name="txtApellidoEmpleado">Apellido</string>
+    <string name="txtIdentidad1">Identidad</string>
+    <string name="txtCorreo">Correo</string>
+    <string name="txtTelefono3">Telefono</string>
+    <string name="txtCargo">Cargo</string>
+
+    <string name="txtIdCita">ID Cita</string>
+    <string name="txtNombre3">Nombre</string>
+    <string name="txtIdTC">Id Tipo de caso</string>
+    <string name="txtFecha">Fecha</string>
+    <string name="txtIdAbogado1">Id Abogado</string>
+
+    <string name="txtId1">Codigo</string>
+    <string name="txtFechaFactura">Fecha</string>
+    <string name="txtIdCliente">Id Cliente</string>
+    <string name="txtIdEmpleado1">Id Empleado</string>
+    <string name="txtIdAbogado2">Id Abogado</string>
+    <string name="txtIdCaso1">Id Caso</string>
+    <string name="txtIdPago">Id Pago</string>
+
+    <string name="txtIdTc">Id tipo de caso</string>
+    <string name="txtDescripcion">Asunto</string>
+
+    <string name="txtIdTipoPago">Id tipo de Pago</string>
+    <string name="txtDescripcion1">Asunto</string>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </resources>
