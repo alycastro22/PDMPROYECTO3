@@ -93,5 +93,15 @@
     <string name="factura">Factura</string>
     <string name="empleado">Empleado</string>
 
+    <string name="txtAgregar">Agregar</string>
+    <string name="txtActualizar">Actualizar</string>
+    <string name="txtGuardar">Guardar</string>
+    <string name="txtEliminar">Eliminar</string>
+
+    <string name="txtAgregar1">Agregar</string>
+    <string name="txtActualizar1">Actualizar</string>
+    <string name="txtGuardar1">Guardar</string>
+    <string name="txtEliminar1">Eliminar</string>
+
 
 </resources>
