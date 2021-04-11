@@ -7,32 +7,32 @@
     android:background="@drawable/fondo3">
 
     <EditText
-        android:id="@+id/txtId2"
+        android:id="@+id/txtIdAbogado3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="420dp"
+        android:layout_marginTop="270dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtId2"
+        android:hint="@string/txtIdAbogado3"
         android:inputType="textPersonName"
-        android:text="@string/txtId2"
+        android:text="@string/txtIdAbogado3"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtUbicacion"
+        android:id="@+id/txtTipoCaso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="350dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtCorreo2"
+        android:hint="@string/txtTipoCaso"
         android:inputType="textPersonName"
-        android:text="@string/txtCorreo2"
+        android:text="@string/txtTipoCaso"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,11 +46,39 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtDireccion"
+        android:hint="@string/txtDepartamento"
         android:inputType="textPersonName"
-        android:text="@string/txtDireccion"
+        android:text="@string/txtDepartamento"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTelefono1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/txtTelefono1"
+        android:inputType="textPersonName"
+        android:text="@string/txtTelefono1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDireccion" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/todo"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retroceder" />
 </androidx.constraintlayout.widget.ConstraintLayout>

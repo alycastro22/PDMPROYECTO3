@@ -78,9 +78,13 @@
     <string name="txtCorreo2">Correo</string>
     <string name="txtAsunto">Asunto</string>
 
-    <string name="txtId2">Id</string>
-    <string name="txtUbicacion">Ubicacion</string>
-    <string name="txtDireccion">Direccion</string>
+    <string name="txtIdAbogado3">Id Abogado</string>
+    <string name="txtTipoCaso">Tipo de caso</string>
+    <string name="txtDepartamento">Departamento </string>
+    <string name="txtTelefono1">Telefono </string>
+
+
+
     <string name="citas">Citas</string>
     <string name="consultas">Consultas</string>
     <string name="clientes1">Clientes</string>
