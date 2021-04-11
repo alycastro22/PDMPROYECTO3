@@ -81,23 +81,13 @@
     <string name="txtId2">Id</string>
     <string name="txtUbicacion">Ubicacion</string>
     <string name="txtDireccion">Direccion</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <string name="citas">Citas</string>
+    <string name="consultas">Consultas</string>
+    <string name="clientes1">Clientes</string>
+    <string name="add_users">Add Users</string>
+    <string name="TODO">TODO</string>
+    <string name="factura">Factura</string>
+    <string name="empleado">Empleado</string>
 
 
 </resources>
