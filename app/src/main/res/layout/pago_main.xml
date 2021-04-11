@@ -10,7 +10,9 @@
         android:id="@+id/txtIdPago1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="460dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="509dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
@@ -20,13 +22,19 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/txvAgregar5"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvPago"
+        app:layout_constraintVertical_bias="0.981" />
 
     <EditText
         android:id="@+id/txtIdTipoPago1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="390dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="436dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
@@ -37,13 +45,17 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txvActualizar5"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txtCantidadPago"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="320dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="360dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
@@ -54,13 +66,17 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txvGuardar5"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txtImpuestos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="250dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="284dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
@@ -71,13 +87,15 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txvEliminar5"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txtSubtotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="180dp"
+        android:layout_marginBottom="208dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
@@ -88,13 +106,14 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txtTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="115dp"
+        android:layout_marginBottom="132dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
@@ -105,6 +124,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -118,4 +138,66 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/retroceder" />
+
+    <TextView
+        android:id="@+id/txvPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/txvPago"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvAgregar5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/agregar"
+        app:layout_constraintBottom_toTopOf="@+id/txvActualizar5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtIdPago1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvActualizar5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/actualizar1"
+        app:layout_constraintBottom_toTopOf="@+id/txvGuardar5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtIdTipoPago1"
+        app:layout_constraintTop_toBottomOf="@+id/txvAgregar5" />
+
+    <TextView
+        android:id="@+id/txvGuardar5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/guardar"
+        app:layout_constraintBottom_toTopOf="@+id/txvEliminar5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCantidadPago"
+        app:layout_constraintTop_toBottomOf="@+id/txvActualizar5" />
+
+    <TextView
+        android:id="@+id/txvEliminar5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="292dp"
+        android:background="@drawable/eliminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtImpuestos"
+        app:layout_constraintTop_toBottomOf="@+id/txvGuardar5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

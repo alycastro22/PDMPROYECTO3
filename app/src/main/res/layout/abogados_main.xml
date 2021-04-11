@@ -10,7 +10,7 @@
         android:id="@+id/txtNombre1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="28dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
@@ -59,7 +59,7 @@
         android:id="@+id/txtId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="144dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
@@ -68,7 +68,6 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -137,64 +136,62 @@
     <TextView
         android:id="@+id/txtAgregar"
         android:layout_width="50dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="97dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toTopOf="@+id/txtActualizar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtId"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toEndOf="@+id/txtId" />
 
     <TextView
         android:id="@+id/txtActualizar"
         android:layout_width="50dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="509dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginBottom="28dp"
         android:background="@drawable/actualizar1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtGuardar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toEndOf="@+id/txtNombre1"
-        app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtGuardar"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginBottom="430dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="366dp"
         android:background="@drawable/guardar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toEndOf="@+id/txtIdentidad"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtActualizar" />
 
     <TextView
         android:id="@+id/txtEliminar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="336dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="30dp"
+        android:layout_width="46dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginBottom="290dp"
         android:background="@drawable/eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtGuardar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtAbogados"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginTop="52dp"
         android:text="@string/txtAbogados"
         android:textColor="@color/white"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

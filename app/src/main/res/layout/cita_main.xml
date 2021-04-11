@@ -106,7 +106,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="100dp"
-        android:layout_marginBottom="500dp"
+        android:layout_marginBottom="480dp"
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,7 +133,7 @@
 
     <TextView
         android:id="@+id/txtGuardar"
-        android:layout_width="0dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
@@ -143,7 +143,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtFecha"
         app:layout_constraintTop_toBottomOf="@+id/txtActualizar"
-        app:layout_constraintVertical_bias="0.891" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <TextView
         android:id="@+id/txtEliminar"
@@ -159,7 +159,7 @@
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtGuardar"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtCitas"

@@ -110,5 +110,24 @@
     <string name="txtAgencia">Agencias</string>
     <string name="txtCasos">Casos</string>
 
+    <string name="txtId2">Id Cliente</string>
+    <string name="txtTipoServicio">Tipo de Servicio</string>
+    <string name="txtIdAsunto">Asunto</string>
+    <string name="txvEmpleados">Empleados</string>
+    <string name="txvFactura">Factura</string>
+    <string name="txvConsulta">Consulta</string>
+    <string name="txvPago">Pago</string>
+    <string name="txvTipoCaso">Tipo de Caso</string>
+    <string name="txvTipoPago">Tipo de Pago</string>
+    <string name="txvCasos">Casos</string>
+    <string name="txvAgencia">Agencia</string>
+    <string name="txvAgregar2">TextView</string>
+    <string name="txvServicios">Servicios</string>
+    <string name="txvAgregar3">Agregar</string>
+    <string name="txvActualizar">Actualizar</string>
+    <string name="txvEliminar">Eliminar</string>
+    <string name="txvGuardar">Guardar</string>
+    <string name="txvEliminar8">TextView</string>
+
 
 </resources>
