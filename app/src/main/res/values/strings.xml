@@ -101,7 +101,14 @@
     <string name="txtAgregar1">Agregar</string>
     <string name="txtActualizar1">Actualizar</string>
     <string name="txtGuardar1">Guardar</string>
-    <string name="txtEliminar1">Eliminar</string>
+
+
+    <string name="txtCitas">Citas</string>
+    <string name="txtEmpleados">Empleados</string>
+    <string name="txtAbogados">Abogados</string>
+    <string name="txtConsultanos">Consultas</string>
+    <string name="txtAgencia">Agencias</string>
+    <string name="txtCasos">Casos</string>
 
 
 </resources>

@@ -10,7 +10,7 @@
         android:id="@+id/txtIdCita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="200dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
@@ -110,8 +110,10 @@
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toEndOf="@+id/txtIdCita"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txtActualizar"
@@ -124,8 +126,10 @@
         android:background="@drawable/actualizar1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAgregar"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txtGuardar"
@@ -138,7 +142,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtFecha"
-        app:layout_constraintTop_toBottomOf="@+id/txtActualizar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtActualizar"
+        app:layout_constraintVertical_bias="0.891" />
 
     <TextView
         android:id="@+id/txtEliminar"
@@ -151,6 +156,22 @@
         android:background="@drawable/eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtGuardar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtGuardar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtCitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/txtCitas"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
