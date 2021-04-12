@@ -4,16 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_degragado"
+    android:background="@drawable/fondo3"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txtAgregar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="165dp"
-        android:background="@drawable/adduser"
+        android:id="@+id/txvBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="450dp"
+        android:fontFamily="@font/copse"
+        android:text="@string/txvBienvenidos"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <TextView
+        android:id="@+id/txvCambiar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/cambiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txvBuffetAbogados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="368dp"
+        android:fontFamily="@font/copse"
+        android:text="@string/txvBuffetAbogados"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="152dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="147dp"
+        app:layout_constraintBottom_toTopOf="@+id/txvBuffetAbogados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/TODO" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

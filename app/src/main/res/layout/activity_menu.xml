@@ -18,9 +18,12 @@
             android:id="@+id/imageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="155dp"
             android:contentDescription="@string/TODO"
-            android:src="@drawable/bufeteabogados" />
+            android:src="@drawable/logo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,24 +31,60 @@
             android:layout_below="@id/imageView"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/copse"
             android:text="@string/buffet_abogados_honduras"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
     </RelativeLayout>
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="80dp"
         android:layout_weight="3"
         android:background="@drawable/background_bg"
         android:columnCount="4"
-        android:padding="10dp"
+        android:padding="5dp"
         android:rowCount="2">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_servicios"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/servicios" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/txvServicios"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_clientes"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -97,7 +136,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
-                    android:contentDescription="@string/todo"
+                    android:contentDescription="@string/TODO"
                     android:src="@drawable/abogados" />
 
                 <TextView
@@ -106,6 +145,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="5dp"
+                    android:gravity="center"
                     android:text="@string/abogados"
                     android:textColor="#000"
                     android:textSize="12sp" />
@@ -132,44 +172,8 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/empleados"
-                    android:contentDescription="@string/TODO" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="5dp"
-                    android:gravity="center"
-                    android:text="@string/empleado"
-                    android:textColor="#000"
-                    android:textSize="12sp" />
-            </RelativeLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_abogados1"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            app:cardElevation="4dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_centerHorizontal="true"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/abogados" />
+                    android:src="@drawable/empleados" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -177,7 +181,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="5dp"
-                    android:text="@string/abogados"
+                    android:text="@string/empleado"
                     android:textColor="#000"
                     android:textSize="12sp" />
             </RelativeLayout>
@@ -256,7 +260,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_factura"
+            android:id="@+id/card_agencia"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -274,7 +278,7 @@
                     android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/facturacion" />
+                    android:src="@drawable/agencia" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -282,7 +286,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="2dp"
-                    android:text="@string/factura"
+                    android:text="@string/agencia"
                     android:textColor="#000"
                     android:textSize="12sp" />
             </RelativeLayout>
@@ -308,8 +312,8 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/citas"
-                    android:contentDescription="@string/TODO" />
+                    android:contentDescription="@string/TODO"
+                    android:src="@drawable/citas" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -431,7 +435,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_adduser"
+            android:id="@+id/card_factura"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -449,7 +453,7 @@
                     android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/adduser" />
+                    android:src="@drawable/facturacion" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -457,7 +461,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="5dp"
-                    android:text="@string/add_users"
+                    android:text="@string/factura"
                     android:textColor="#000"
                     android:textSize="12sp" />
             </RelativeLayout>

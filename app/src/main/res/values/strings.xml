@@ -128,6 +128,25 @@
     <string name="txvEliminar">Eliminar</string>
     <string name="txvGuardar">Guardar</string>
     <string name="txvEliminar8">TextView</string>
+    <string name="txvBienvenidos">¡Bienvenido!</string>
+    <string name="txvCambiar">TextView</string>
+    <string name="txtUsuario">Usuario</string>
+    <string name="txtContraseña">Contraseña</string>
+    <string name="txvRegistrar">Iniciar Sesion</string>
+    <string name="Todo">TODO</string>
+    <string name="txvBuffetAbogados">Buffet Abogados Honduras</string>
+    <string name="txvCrearCuenta">Crear Cuenta</string>
+    <string name="txvRegistrarse">Registrarse</string>
+    <string name="txtUsuario1">Nombre</string>
+    <string name="txvCrear">Crear</string>
+    <string name="Todo1">TODO</string>
+
+    <string name="txtIdAgencia">Id Agencia</string>
+    <string name="txtNombre9">Nombre</string>
+    <string name="txtDireccion">Direccion</string>
+    <string name="txtContacto">Contacto</string>
+
+
 
 
 </resources>
