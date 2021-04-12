@@ -145,8 +145,7 @@
     <string name="txtNombre9">Nombre</string>
     <string name="txtDireccion">Direccion</string>
     <string name="txtContacto">Contacto</string>
-
-
+    <string name="todo2">TODO</string>
 
 
 </resources>
