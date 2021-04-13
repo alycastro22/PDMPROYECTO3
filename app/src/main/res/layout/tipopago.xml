@@ -8,7 +8,7 @@
     android:contentDescription="@string/todo">
 
     <EditText
-        android:id="@+id/txtIdTipoPago"
+        android:id="@+id/txtId4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
@@ -17,9 +17,9 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtIdTipoPago"
+        android:hint="@string/txtId4"
         android:inputType="textPersonName"
-        android:text="@string/txtIdTipoPago"
+        android:text="@string/txtId4"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txvAgregar8"
@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtDescripcion1"
+        android:id="@+id/txtDescripcion3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
@@ -36,14 +36,14 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtDescripcion1"
+        android:hint="@string/txtDescripcion3"
         android:inputType="textPersonName"
-        android:text="@string/txtDescripcion1"
+        android:text="@string/txtDescripcion3"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txvGuardar8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdTipoPago" />
+        app:layout_constraintTop_toBottomOf="@+id/txtId4" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -79,7 +79,7 @@
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toTopOf="@+id/txvActualizar8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtIdTipoPago"
+        app:layout_constraintStart_toEndOf="@+id/txtId4"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -102,7 +102,7 @@
         android:background="@drawable/guardar"
         app:layout_constraintBottom_toTopOf="@+id/txvEliminar8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtDescripcion1"
+        app:layout_constraintStart_toEndOf="@+id/txtDescripcion3"
         app:layout_constraintTop_toBottomOf="@+id/txvActualizar8" />
 
     <TextView

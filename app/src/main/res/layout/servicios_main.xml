@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/retroceder" />
 
     <EditText
-        android:id="@+id/txtId2"
+        android:id="@+id/txtId7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
@@ -27,9 +27,9 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtId2"
+        android:hint="@string/txtId7"
         android:inputType="textPersonName"
-        android:text="@string/txtId2"
+        android:text="@string/txtId7"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,7 +98,7 @@
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toTopOf="@+id/txvActualizar6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtId2"
+        app:layout_constraintStart_toEndOf="@+id/txtId7"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -135,4 +135,20 @@
         app:layout_constraintEnd_toEndOf="@+id/txvGuardar6"
         app:layout_constraintStart_toStartOf="@+id/txvGuardar6"
         app:layout_constraintTop_toBottomOf="@+id/txvGuardar6" />
+
+    <EditText
+        android:id="@+id/txtPrecio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="210dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/txtPrecio2"
+        android:inputType="textPersonName"
+        android:text="@string/txtPrecio2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="" />
 </androidx.constraintlayout.widget.ConstraintLayout>

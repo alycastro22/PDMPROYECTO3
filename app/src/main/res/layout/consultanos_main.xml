@@ -7,16 +7,16 @@
     android:background="@drawable/fondo3">
 
     <EditText
-        android:id="@+id/txtIdConsulta"
+        android:id="@+id/txtId5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="480dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtIdConsulta"
+        android:hint="@string/txtId5"
         android:inputType="textPersonName"
-        android:text="@string/txtIdConsulta"
+        android:text="@string/txtId5"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,16 +25,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtNombre4"
+        android:id="@+id/txtIdCliente2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="404dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtNombre4"
+        android:hint="@string/txtIdCliente2"
         android:inputType="textPersonName"
-        android:text="@string/txtNombre4"
+        android:text="@string/txtIdCliente2"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,16 +42,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtCorreo2"
+        android:id="@+id/txtIdAbogado4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="324dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtCorreo2"
+        android:hint="@string/txtIdAbogado4"
         android:inputType="textPersonName"
-        android:text="@string/txtCorreo2"
+        android:text="@string/txtIdAbogado4"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,16 +59,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtAsunto"
+        android:id="@+id/txtFecha2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="248dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtAsunto"
+        android:hint="@string/txtFecha2"
         android:inputType="textPersonName"
-        android:text="@string/txtAsunto"
+        android:text="@string/txtFecha2"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +107,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.777"
-        app:layout_constraintStart_toEndOf="@+id/txtNombre4" />
+        app:layout_constraintStart_toEndOf="@+id/txtIdCliente2" />
 
     <TextView
         android:id="@+id/txtGuardar"
@@ -120,7 +120,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.692"
-        app:layout_constraintStart_toEndOf="@+id/txtAsunto" />
+        app:layout_constraintStart_toEndOf="@+id/txtFecha2" />
 
     <TextView
         android:id="@+id/txtEliminar"
@@ -133,7 +133,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toEndOf="@+id/txtAsunto" />
+        app:layout_constraintStart_toEndOf="@+id/txtFecha2" />
 
     <TextView
         android:id="@+id/txtConsultanos"

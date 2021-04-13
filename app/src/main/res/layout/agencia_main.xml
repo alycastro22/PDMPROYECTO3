@@ -7,7 +7,7 @@
     android:background="@drawable/fondo3">
 
     <EditText
-        android:id="@+id/txtIdAbogado3"
+        android:id="@+id/txtId11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
@@ -16,9 +16,9 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtIdAbogado3"
+        android:hint="@string/txtId11"
         android:inputType="textPersonName"
-        android:text="@string/txtIdAbogado3"
+        android:text="@string/txtId11"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txtActualizar"
@@ -26,32 +26,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtTipoCaso"
+        android:id="@+id/txtNombre7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="450dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtTipoCaso"
+        android:hint="@string/txtNombre7"
         android:inputType="textPersonName"
-        android:text="@string/txtTipoCaso"
+        android:text="@string/txtNombre7"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtDireccion"
+        android:id="@+id/txtDireccion1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="370dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtDepartamento"
+        android:hint="@string/txtDireccion1"
         android:inputType="textPersonName"
-        android:text="@string/txtDepartamento"
+        android:text="@string/txtDireccion1"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDireccion" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDireccion1" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -110,7 +110,7 @@
         android:background="@drawable/actualizar1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtIdAbogado3"
+        app:layout_constraintStart_toEndOf="@+id/txtId11"
         app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
 
     <TextView
@@ -123,7 +123,7 @@
         app:layout_constraintBottom_toTopOf="@+id/txtEliminar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toEndOf="@+id/txtDireccion" />
+        app:layout_constraintStart_toEndOf="@+id/txtDireccion1" />
 
     <TextView
         android:id="@+id/txtEliminar"

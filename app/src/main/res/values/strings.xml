@@ -147,5 +147,53 @@
     <string name="txtContacto">Contacto</string>
     <string name="todo2">TODO</string>
 
+    <string name="txtDni">Dni</string>
+    <string name="txtFechaNacimiento1">Fecha de nacimiento</string>
+    <string name="txtId3">Id</string>
+    <string name="txtFecha1">Fecha</string>
+    <string name="txtDescripcion2">Descripcion</string>
+    <string name="txtPrecio">Precio</string>
+    <string name="txtIdCaso2">Id caso</string>
+
+
+    <string name="txtId4">Id</string>
+    <string name="txtDescripcion3">Descripcion</string>
+
+    <string name="txtId5">Id</string>
+    <string name="txtIdCliente2">Id Cliente</string>
+    <string name="txtIdAbogado4">Id Abogado</string>
+    <string name="txtFecha2">Fecha</string>
+
+    <string name="txtId6">Id</string>
+    <string name="txtId7">Id</string>
+    <string name="txtId8">Id</string>
+    <string name="txtIdServicio">Id Servicio</string>
+
+    <string name="txtId9">Id</string>
+    <string name="txtNombre5">Nombre</string>
+    <string name="txtDescripcion4">Descripcion</string>
+    <string name="txtPrecio1">Precio</string>
+
+    <string name="txtId10">Id</string>
+    <string name="txtNombre6">Nombre</string>
+    <string name="txtDni1">Dni</string>
+    <string name="txtIdAgencia1">Id Agencia</string>
+    <string name="txtClave">Clave</string>
+    <string name="txtFechaNacimiento">Fecha de nacimiento</string>
+
+    <string name="txtId11">Id</string>
+    <string name="txtNombre7">Nombre</string>
+    <string name="txtDireccion1">Direccion</string>
+    <string name="txtIdTipoCaso1">Id tipo caso</string>
+
+    <string name="txtPrecio2">Precio</string>
+
+
+
+
+
+
+
+
 
 </resources>

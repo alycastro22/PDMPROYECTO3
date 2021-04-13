@@ -7,7 +7,7 @@
     android:background="@drawable/fondo3">
 
     <EditText
-        android:id="@+id/txtId1"
+        android:id="@+id/txtId8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
@@ -15,9 +15,9 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtId1"
+        android:hint="@string/txtId8"
         android:inputType="textPersonName"
-        android:text="@string/txtId1"
+        android:text="@string/txtId8"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,33 +36,14 @@
         android:text="@string/txtFechaFactura"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtId1" />
-
-    <EditText
-        android:id="@+id/txtIdCliente"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="19dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/txtIdCliente1"
-        android:inputType="textPersonName"
-        android:text="@string/txtIdCliente1"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txvGuardar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFechaFactura" />
+        app:layout_constraintTop_toBottomOf="@+id/txtId8" />
 
     <EditText
         android:id="@+id/txtEmpleado1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="34dp"
         android:layout_marginEnd="19dp"
         android:autofillHints=""
         android:ems="10"
@@ -75,29 +56,13 @@
         app:layout_constraintEnd_toStartOf="@+id/txvEliminar"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdCliente" />
-
-    <EditText
-        android:id="@+id/txtIdAbogado2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/txtIdAbogado2"
-        android:inputType="textPersonName"
-        android:text="@string/txtIdAbogado2"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmpleado1" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaFactura" />
 
     <EditText
         android:id="@+id/txtIdCaso1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="37dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
@@ -107,7 +72,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdAbogado2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmpleado1" />
 
     <EditText
         android:id="@+id/txtIdPago"
@@ -144,7 +109,7 @@
         android:text="@string/txvFactura"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtId1"
+        app:layout_constraintBottom_toTopOf="@+id/txtId8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -189,4 +154,21 @@
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toTopOf="@+id/txvActualizar"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txtIdServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/txtIdServicio"
+        android:inputType="textPersonName"
+        android:text="@string/txtIdServicio"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

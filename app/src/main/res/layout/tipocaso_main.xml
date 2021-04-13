@@ -7,36 +7,37 @@
     android:background="@drawable/fondo3">
 
     <EditText
-        android:id="@+id/txtIdTc"
+        android:id="@+id/txtId9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtIdTc"
+        android:hint="@string/txtId9"
         android:inputType="textPersonName"
-        android:text="@string/txtIdTc"
+        android:text="@string/txtId9"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtDescripcion"
+        android:id="@+id/txtDescripcion4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="164dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtDescripcion"
+        android:hint="@string/txtDescripcion4"
         android:inputType="textPersonName"
-        android:text="@string/txtDescripcion"
+        android:text="@string/txtDescripcion4"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdTc" />
+        app:layout_constraintTop_toBottomOf="@+id/txtId9" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -106,4 +107,36 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvActualizar7" />
+
+    <EditText
+        android:id="@+id/txtNombre5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="370dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/txtNombre5"
+        android:inputType="textPersonName"
+        android:text="@string/txtNombre5"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txtPrecio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/txtPrecio1"
+        android:inputType="textPersonName"
+        android:text="@string/txtPrecio1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="" />
 </androidx.constraintlayout.widget.ConstraintLayout>
