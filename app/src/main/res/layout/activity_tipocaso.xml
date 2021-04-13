@@ -13,6 +13,7 @@
         android:layout_marginTop="220dp"
         android:autofillHints=""
         android:ems="10"
+        android:fontFamily="@font/copse"
         android:gravity="center"
         android:hint="@string/txtId9"
         android:inputType="textPersonName"
@@ -26,16 +27,17 @@
         android:id="@+id/txtDescripcion4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="136dp"
         android:autofillHints=""
         android:ems="10"
+        android:fontFamily="@font/copse"
         android:gravity="center"
         android:hint="@string/txtDescripcion4"
         android:inputType="textPersonName"
         android:text="@string/txtDescripcion4"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtId9" />
 
@@ -55,6 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
+        android:fontFamily="@font/copse"
         android:text="@string/txvTipoCaso"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
@@ -64,30 +67,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txvAgregar7"
+        android:id="@+id/txtAgregar"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginTop="220dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="17dp"
         android:background="@drawable/agregar"
-        app:layout_constraintBottom_toTopOf="@+id/txvActualizar7"
+        app:layout_constraintBottom_toTopOf="@+id/txtActualizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txvActualizar7"
+        android:id="@+id/txtActualizar"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="77dp"
         android:background="@drawable/actualizar1"
-        app:layout_constraintBottom_toTopOf="@+id/txvEliminar7"
+        app:layout_constraintBottom_toTopOf="@+id/txtEliminar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvAgregar7" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
 
     <TextView
-        android:id="@+id/txvGuardar7"
+        android:id="@+id/txtGuardar"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="16dp"
@@ -98,7 +101,7 @@
         app:layout_constraintVertical_bias="0.507" />
 
     <TextView
-        android:id="@+id/txvEliminar7"
+        android:id="@+id/txtEliminar"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginEnd="16dp"
@@ -106,13 +109,14 @@
         android:background="@drawable/eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvActualizar7" />
+        app:layout_constraintTop_toBottomOf="@+id/txtActualizar" />
 
     <EditText
         android:id="@+id/txtNombre5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="370dp"
+        android:layout_marginBottom="380dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
         android:hint="@string/txtNombre5"
@@ -121,14 +125,15 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txtPrecio1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="216dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
         android:hint="@string/txtPrecio1"
@@ -137,6 +142,5 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,8 +19,6 @@
     <string name="txtNombre2">Usuario</string>
 
 
-
-
     <string name="todo">Name</string>
     <string name="name">Name</string>
     <string name="buffet_abogados_honduras">Buffet Abogados Honduras</string>
@@ -83,8 +81,6 @@
     <string name="txtDepartamento">Departamento </string>
     <string name="txtTelefono1">Telefono </string>
 
-
-
     <string name="citas">Citas</string>
     <string name="consultas">Consultas</string>
     <string name="clientes1">Clientes</string>
@@ -98,9 +94,6 @@
     <string name="txtGuardar">Guardar</string>
     <string name="txtEliminar">Eliminar</string>
 
-    <string name="txtAgregar1">Agregar</string>
-    <string name="txtActualizar1">Actualizar</string>
-    <string name="txtGuardar1">Guardar</string>
 
 
     <string name="txtCitas">Citas</string>
@@ -121,13 +114,11 @@
     <string name="txvTipoPago">Tipo de Pago</string>
     <string name="txvCasos">Casos</string>
     <string name="txvAgencia">Agencia</string>
-    <string name="txvAgregar2">TextView</string>
     <string name="txvServicios">Servicios</string>
-    <string name="txvAgregar3">Agregar</string>
     <string name="txvActualizar">Actualizar</string>
     <string name="txvEliminar">Eliminar</string>
     <string name="txvGuardar">Guardar</string>
-    <string name="txvEliminar8">TextView</string>
+
     <string name="txvBienvenidos">¡Bienvenido!</string>
     <string name="txvCambiar">TextView</string>
     <string name="txtUsuario">Usuario</string>
@@ -187,6 +178,14 @@
     <string name="txtIdTipoCaso1">Id tipo caso</string>
 
     <string name="txtPrecio2">Precio</string>
+    <string name="txvCliente">Cliente</string>
+
+    <string name="txtId12">Id</string>
+    <string name="txtNombre10">Nombre</string>
+    <string name="txtCorreo3">Correo</string>
+    <string name="txtFechaNacimiento2">Fecha Nacimiento</string>
+    <string name="txtTelefono2">Telefono</string>
+    <string name="Todo2">TODO</string>
 
 
 

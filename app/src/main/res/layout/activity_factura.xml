@@ -14,6 +14,7 @@
         android:layout_marginTop="164dp"
         android:autofillHints=""
         android:ems="10"
+        android:fontFamily="@font/copse"
         android:gravity="center"
         android:hint="@string/txtId8"
         android:inputType="textPersonName"
@@ -30,6 +31,7 @@
         android:layout_marginTop="28dp"
         android:autofillHints=""
         android:ems="10"
+        android:fontFamily="@font/copse"
         android:gravity="center"
         android:hint="@string/txtFechaFactura"
         android:inputType="textPersonName"
@@ -47,13 +49,14 @@
         android:layout_marginEnd="19dp"
         android:autofillHints=""
         android:ems="10"
+        android:fontFamily="@font/copse"
         android:gravity="center"
         android:hint="@string/txtIdEmpleado1"
         android:inputType="textPersonName"
         android:text="@string/txtIdEmpleado1"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txvEliminar"
+        app:layout_constraintEnd_toStartOf="@+id/txtEliminar"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtFechaFactura" />
@@ -65,6 +68,7 @@
         android:layout_marginTop="37dp"
         android:autofillHints=""
         android:ems="10"
+        android:fontFamily="@font/copse"
         android:gravity="center"
         android:hint="@string/txtIdCaso1"
         android:inputType="textPersonName"
@@ -80,6 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:ems="10"
+        android:fontFamily="@font/copse"
         android:gravity="center"
         android:hint="@string/txtIdPago"
         android:importantForAutofill="no"
@@ -106,6 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="33dp"
+        android:fontFamily="@font/copse"
         android:text="@string/txvFactura"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
@@ -114,29 +120,27 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/txvActualizar"
+        android:id="@+id/txtActualizar"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/actualizar1"
-        app:layout_constraintBottom_toTopOf="@+id/txvGuardar"
+        app:layout_constraintBottom_toTopOf="@+id/txtGuardar"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txvGuardar"
+        android:id="@+id/txtGuardar"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/guardar"
-        app:layout_constraintBottom_toTopOf="@+id/txvEliminar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txvGuardar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toTopOf="@+id/txtEliminar"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txvEliminar"
+        android:id="@+id/txtEliminar"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
@@ -146,13 +150,13 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txvAgregar4"
+        android:id="@+id/txtAgregar"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/agregar"
-        app:layout_constraintBottom_toTopOf="@+id/txvActualizar"
+        app:layout_constraintBottom_toTopOf="@+id/txtActualizar"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
@@ -161,6 +165,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="140dp"
         android:ems="10"
+        android:fontFamily="@font/copse"
         android:gravity="center"
         android:hint="@string/txtIdServicio"
         android:inputType="textPersonName"

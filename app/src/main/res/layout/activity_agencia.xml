@@ -7,7 +7,7 @@
     android:background="@drawable/fondo3">
 
     <EditText
-        android:id="@+id/txtId11"
+        android:id="@+id/txtIdAbogado3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
@@ -16,9 +16,9 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtId11"
+        android:hint="@string/txtIdAbogado3"
         android:inputType="textPersonName"
-        android:text="@string/txtId11"
+        android:text="@string/txtIdAbogado3"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txtActualizar"
@@ -26,32 +26,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtNombre7"
+        android:id="@+id/txtTipoCaso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="450dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtNombre7"
+        android:hint="@string/txtTipoCaso"
         android:inputType="textPersonName"
-        android:text="@string/txtNombre7"
+        android:text="@string/txtTipoCaso"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtDireccion1"
+        android:id="@+id/txtDireccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="370dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/txtDireccion1"
+        android:hint="@string/txtDepartamento"
         android:inputType="textPersonName"
-        android:text="@string/txtDireccion1"
+        android:text="@string/txtDepartamento"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDireccion1" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDireccion" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -89,53 +89,41 @@
         android:id="@+id/txtAgregar"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="171dp"
-        android:layout_marginBottom="530dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="520dp"
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.573"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.677" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtActualizar"
-        android:layout_width="0dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="430dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="448dp"
         android:background="@drawable/actualizar1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtId11"
-        app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtGuardar"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="28dp"
         android:background="@drawable/guardar"
         app:layout_constraintBottom_toTopOf="@+id/txtEliminar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toEndOf="@+id/txtDireccion1" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtEliminar"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="290dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="300dp"
         android:background="@drawable/eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toEndOf="@+id/txtTelefono1" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txvAgencia"
