@@ -111,7 +111,6 @@
         android:layout_height="50dp"
         android:layout_marginBottom="309dp"
         android:background="@drawable/eliminar"
-        android:text="@string/txvEliminar8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/txtGuardar"
         app:layout_constraintStart_toStartOf="@+id/txtGuardar"
