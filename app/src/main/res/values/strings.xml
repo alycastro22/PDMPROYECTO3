@@ -95,7 +95,6 @@
     <string name="txtEliminar">Eliminar</string>
 
 
-
     <string name="txtCitas">Citas</string>
     <string name="txtEmpleados">Empleados</string>
     <string name="txtAbogados">Abogados</string>
@@ -186,13 +185,6 @@
     <string name="txtFechaNacimiento2">Fecha Nacimiento</string>
     <string name="txtTelefono2">Telefono</string>
     <string name="Todo2">TODO</string>
-
-
-
-
-
-
-
 
 
 </resources>
