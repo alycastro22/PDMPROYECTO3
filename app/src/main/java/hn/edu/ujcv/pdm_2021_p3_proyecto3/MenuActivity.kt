@@ -99,7 +99,7 @@ class MenuActivity: AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             R.id.card_tiposdepago -> {
-                val intent = Intent(this, TipoCasoActivity::class.java)
+                val intent = Intent(this, TipoPagoActivity::class.java)
                 startActivity(intent)
             }
             R.id.card_factura-> {
