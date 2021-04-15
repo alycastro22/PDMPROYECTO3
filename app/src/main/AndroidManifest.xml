@@ -9,8 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PDM_2021_P3_PROYECTO3">
-        <activity android:name=".MenuActivity"></activity>
-        <activity android:name=".MenuActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,10 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".ServiciosActivity"></activity>
+        <activity android:name=".ClientesActivity"></activity>
+        <activity android:name=".AbogadosActivity"></activity>
+        <activity android:name=".EmpleadosActivity"></activity>
+        <activity android:name=".CasosActivity"></activity>
+        <activity android:name=".TipoCasoActivity"></activity>
+        <activity android:name=".AgenciaActivity"></activity>
+        <activity android:name=".CitaActivity"></activity>
+        <activity android:name=".ConsultanosActivity"></activity>
+        <activity android:name=".PagoActivity"></activity>
+        <activity android:name=".TipoPagoActivity"></activity>
+        <activity android:name=".FacturaActivity"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
     </application>
 
 </manifest>

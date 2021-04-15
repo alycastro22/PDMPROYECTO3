@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo1">
+    android:background="@drawable/fondo1"
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView15"
@@ -17,28 +18,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
-    <TextView
+    <Button
         android:id="@+id/txvRegistrar"
         android:layout_width="240dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="250dp"
-        android:background="@drawable/botones"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="362dp"
+        android:layout_marginEnd="86dp"
         android:fontFamily="@font/copse"
         android:gravity="center"
         android:hint="@string/txvRegistrar"
         android:text="@string/txvRegistrar"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtUsuario"
         android:layout_width="310dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="420dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="218dp"
+        android:layout_marginEnd="50dp"
         android:autofillHints=""
         android:background="@drawable/botones"
         android:ems="10"
@@ -48,9 +51,9 @@
         android:text="@string/txtUsuario"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtContraseña"
@@ -74,16 +77,17 @@
         android:id="@+id/txvCrearCuenta"
         android:layout_width="240dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="172dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="86dp"
         android:background="@drawable/botones"
         android:fontFamily="@font/copse"
         android:gravity="center"
         android:text="@string/txvCrearCuenta"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

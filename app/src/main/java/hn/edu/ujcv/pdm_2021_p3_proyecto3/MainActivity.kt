@@ -11,13 +11,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        txvCambiar.setOnClickListener { ingresar() }
+        BtnCambiar.setOnClickListener{
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
-    fun ingresar(){
-        val intent = Intent(this,MainActivity::class.java)
-        startActivity(intent)
-
-    }
 }

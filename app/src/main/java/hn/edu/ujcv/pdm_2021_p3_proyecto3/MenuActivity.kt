@@ -16,7 +16,7 @@ class MenuActivity: AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when (v.id) {
             R.id.card_servicios -> {
-                val intent = Intent(this,ServiciosActivity::class.java)
+                val intent = Intent(this, ServiciosActivity::class.java)
                 startActivity(intent)
             }
         }
