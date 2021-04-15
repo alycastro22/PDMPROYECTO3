@@ -62,48 +62,48 @@ class MenuActivity: AppCompatActivity(), View.OnClickListener {
                 }
 
             R.id.card_abogados -> {
-                val intent = Intent(this,AbogadosActivity::class.java)
+                val intent = Intent(this, AbogadosActivity::class.java)
                 startActivity(intent)
             }
 
             R.id.card_empleados -> {
-                val intent = Intent(this,EmpleadosActivity::class.java)
+                val intent = Intent(this, EmpleadosActivity::class.java)
                 startActivity(intent)
             }
 
             R.id.card_casos -> {
-                val intent = Intent(this,CasosActivity::class.java)
+                val intent = Intent(this, CasosActivity::class.java)
                 startActivity(intent)
             }
 
             R.id.card_tiposdecasos -> {
-                val intent = Intent(this,TipoCasoActivity::class.java)
+                val intent = Intent(this, TipoCasoActivity::class.java)
                 startActivity(intent)
             }
 
             R.id.card_agencia -> {
-                val intent = Intent(this,AgenciaActivity::class.java)
+                val intent = Intent(this, AgenciaActivity::class.java)
                 startActivity(intent)
             }
 
             R.id.card_citas -> {
-                val intent = Intent(this,CitaActivity::class.java)
+                val intent = Intent(this, CitaActivity::class.java)
                 startActivity(intent)
             }
             R.id.card_consultas -> {
-                val intent = Intent(this,ConsultanosActivity::class.java)
+                val intent = Intent(this, ConsultanosActivity::class.java)
                 startActivity(intent)
             }
             R.id.card_pago -> {
-                val intent = Intent(this,PagoActivity::class.java)
+                val intent = Intent(this, PagoActivity::class.java)
                 startActivity(intent)
             }
             R.id.card_tiposdepago -> {
-                val intent = Intent(this,TipoCasoActivity::class.java)
+                val intent = Intent(this, TipoCasoActivity::class.java)
                 startActivity(intent)
             }
             R.id.card_factura-> {
-                val intent = Intent(this,FacturaActivity::class.java)
+                val intent = Intent(this, FacturaActivity::class.java)
                 startActivity(intent)
             }
 

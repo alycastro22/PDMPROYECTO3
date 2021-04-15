@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_consultanos.*
 class ConsultanosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_consultanos)
         imageView11.setOnClickListener { Regresar()
         }
 

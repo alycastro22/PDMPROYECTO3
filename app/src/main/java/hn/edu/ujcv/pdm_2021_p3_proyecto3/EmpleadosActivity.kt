@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_empleados.*
 class EmpleadosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_empleados)
         imageView6.setOnClickListener { Regresar()
         }
 
