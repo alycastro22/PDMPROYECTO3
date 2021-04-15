@@ -124,7 +124,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/actualizar1"
         app:layout_constraintBottom_toTopOf="@+id/txtGuardar"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -154,7 +154,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toTopOf="@+id/txtActualizar"
         app:layout_constraintEnd_toEndOf="parent" />

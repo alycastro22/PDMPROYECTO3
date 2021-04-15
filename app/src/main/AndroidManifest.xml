@@ -19,7 +19,7 @@
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".MenuActivity"></activity>
         <activity android:name=".ServiciosActivity"></activity>
-        <activity android:name=".ClientesActivity"></activity>
+        <activity android:name=".ClienteActivity"></activity>
         <activity android:name=".AbogadosActivity"></activity>
         <activity android:name=".EmpleadosActivity"></activity>
         <activity android:name=".CasosActivity"></activity>

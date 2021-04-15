@@ -4,13 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_abogados.*
-import kotlinx.android.synthetic.main.activity_tipocaso.*
+import kotlinx.android.synthetic.main.activity_cliente.*
 
-class TipoCasoActivity : AppCompatActivity() {
+class ClienteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tipocaso)
-        imageView7.setOnClickListener { Regresar()
+        setContentView(R.layout.activity_cliente)
+        imageView14.setOnClickListener { Regresar()
         }
 
 

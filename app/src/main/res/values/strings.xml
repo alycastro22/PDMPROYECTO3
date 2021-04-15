@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">PDM_2021_P3_PROYECTO3</string>
-    <string name="fridge">Fridge</string>
-    <string name="_20">$20</string>
     <string name="txtNombre1">Nombre</string>
     <string name="txtApellido1">Apellido</string>
     <string name="txtTelefono">Telefono</string>
@@ -36,7 +34,7 @@
     <string name="agencia">Agencia</string>
     <string name="nuestros_servicios">Nuestros servicios:</string>
 
-    <string name="txtIdEmpleado">ID Empleado</string>
+    <string name="txtIdEmpleado">Id Empleado</string>
     <string name="txtNombre">Nombre Empleado</string>
     <string name="txtApellidoEmpleado">Apellido</string>
     <string name="txtIdentidad1">Identidad</string>
@@ -44,7 +42,7 @@
     <string name="txtTelefono3">Telefono</string>
     <string name="txtCargo">Cargo</string>
 
-    <string name="txtIdCita">ID Cita</string>
+    <string name="txtIdCita">Id Cita</string>
     <string name="txtNombre3">Nombre</string>
     <string name="txtIdTC">Id Tipo de caso</string>
     <string name="txtFecha">Fecha</string>
