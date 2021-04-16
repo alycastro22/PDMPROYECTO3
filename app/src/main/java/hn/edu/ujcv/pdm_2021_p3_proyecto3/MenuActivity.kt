@@ -4,6 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_cita.*
+import kotlinx.android.synthetic.main.activity_cita.imageView5
+import kotlinx.android.synthetic.main.activity_menu.*
 
 class MenuActivity: AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -106,6 +109,7 @@ class MenuActivity: AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this, FacturaActivity::class.java)
                 startActivity(intent)
             }
+
 
             }
         }

@@ -37,6 +37,17 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="26dp"
+            android:contentDescription="@string/Todo"
+            app:srcCompat="@drawable/salir" />
+
     </RelativeLayout>
 
     <GridLayout

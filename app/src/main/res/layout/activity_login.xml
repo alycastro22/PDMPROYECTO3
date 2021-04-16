@@ -18,23 +18,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
-    <Button
-        android:id="@+id/txvRegistrar"
-        android:layout_width="240dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="362dp"
-        android:layout_marginEnd="86dp"
-        android:fontFamily="@font/copse"
-        android:gravity="center"
-        android:hint="@string/txvRegistrar"
-        android:text="@string/txvRegistrar"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/txtUsuario"
         android:layout_width="310dp"
@@ -78,7 +61,7 @@
         android:layout_width="240dp"
         android:layout_height="60dp"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="548dp"
         android:layout_marginEnd="86dp"
         android:background="@drawable/botones"
         android:fontFamily="@font/copse"
@@ -87,7 +70,23 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvRegistrar"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/botones"
+        android:gravity="center"
+        android:text="@string/txvRegistrar"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
