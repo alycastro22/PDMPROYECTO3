@@ -7,7 +7,7 @@ data class CitaDataCollectionItem(
         val fecha:String,
         val descripcion:String,
         val precio:Double,
-        val idcaso :String,
+        val idcaso :Long,
 
 
 )

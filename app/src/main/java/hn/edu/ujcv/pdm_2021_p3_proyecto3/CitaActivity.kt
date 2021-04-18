@@ -24,15 +24,13 @@ class CitaActivity : AppCompatActivity() {
         imageView5.setOnClickListener { Regresar()
             val botonGetId = findViewById<ImageView>(R.id.txtBuscar)
             botonGetId.setOnClickListener {v -> callServiceGetPerson()}
-//
             val botonPostear = findViewById<ImageView>(R.id.txtAgregarAbog)
             botonPostear.setOnClickListener { v-> callServicePostPerson()}
             val botonPut = findViewById<TextView>(R.id.txtGuardar)
             botonPut.setOnClickListener { v-> callServicePutPerson()}
             val botonDelete = findViewById<TextView>(R.id.txtEliminar)
             botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
-            imageView5.setOnClickListener { Regresar()
-            }
+
         }
 
 
@@ -49,8 +47,7 @@ private fun callServiceDeletePerson() {
     if (txtIdCita1.text.isNotEmpty()) {
 
         val citaService: CitaService =
-                RestEngine.buildService().create(CitaService::class.
-                java)
+                RestEngine.buildService().create(CitaService::class.java)
         var result: Call<ResponseBody> = citaService.deleteCita(idcita)
 
         result.enqueue(object : Callback<ResponseBody> {
@@ -96,7 +93,7 @@ private fun callServicePutPerson() {
             fecha=fecha,
             descripcion = descripcion,
             precio= precio,
-            idcaso = idcaso)
+            idcaso = idcaso.toLong())
 
 
 
@@ -142,7 +139,7 @@ private fun callServiceGetPerson() {
 
 
         ) {
-            txtNombre1.setText("")
+            txtDescripcion5.setText("")
             Toast.makeText(this@CitaActivity,"OK"+response.body()!!.descripcion, Toast.LENGTH_LONG).show()
         }
     })
@@ -169,7 +166,7 @@ private fun callServicePostPerson() {
             fecha=fecha,
             descripcion = descripcion,
             precio= precio,
-            idcaso = idcaso)
+            idcaso = idcaso.toLong())
 
     addPerson(personInfo) {
         if (it?.idcita != null) {

@@ -58,24 +58,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txvCrearCuenta"
-        android:layout_width="240dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="536dp"
-        android:layout_marginEnd="86dp"
-        android:background="@drawable/botones"
-        android:fontFamily="@font/copse"
-        android:gravity="center"
-        android:text="@string/txvCrearCuenta"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/txvRegistrar"
         android:layout_width="240dp"
         android:layout_height="60dp"
