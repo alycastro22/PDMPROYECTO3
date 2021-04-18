@@ -35,8 +35,8 @@ class AbogadosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_abogados)
 
-      //val botonGetId = findViewById<ImageView>(R.id.txtbuscar)
-          //botonGetId.setOnClickListener {v -> callServiceGetPerson()}
+      val botonGetId = findViewById<ImageView>(R.id.txtBuscar)
+        botonGetId.setOnClickListener {v -> callServiceGetPerson()}
 //        val botonConsumir = findViewById<Button>(R.id.btnConsumir)
 //        botonConsumir.setOnClickListener {v -> callServiceGetPersons()}
         val botonPostear = findViewById<ImageView>(R.id.txtAgregarAbog)
