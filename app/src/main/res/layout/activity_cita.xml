@@ -7,7 +7,7 @@
     android:background="@drawable/fondo3">
 
     <EditText
-        android:id="@+id/txtIdCita"
+        android:id="@+id/txtIdCita1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
@@ -17,9 +17,9 @@
         android:ems="10"
         android:fontFamily="@font/copse"
         android:gravity="center"
-        android:hint="@string/txtIdCita"
+        android:hint="@string/txtIdCita1"
         android:inputType="textPersonName"
-        android:text="@string/txtIdCita"
+        android:text="@string/txtIdCita1"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txtBuscar"
@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtNombre3"
+        android:id="@+id/txtFecha3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -35,50 +35,50 @@
         android:ems="10"
         android:fontFamily="@font/copse"
         android:gravity="center"
-        android:hint="@string/txtNombre3"
+        android:hint="@string/txtFecha3"
         android:inputType="textPersonName"
-        android:text="@string/txtNombre3"
+        android:text="@string/txtFecha3"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/txtIdTC"
+        app:layout_constraintBottom_toTopOf="@+id/txtDescripcion5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtIdTC"
+        android:id="@+id/txtDescripcion5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
         android:fontFamily="@font/copse"
         android:gravity="center"
-        android:hint="@string/txtIdTC"
+        android:hint="@string/txtDescripcion5"
         android:inputType="textPersonName"
-        android:text="@string/txtIdTC"
+        android:text="@string/txtDescripcion5"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtActualizar" />
 
     <EditText
-        android:id="@+id/txtFecha"
+        android:id="@+id/txtPrecio3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
         android:fontFamily="@font/copse"
         android:gravity="center"
-        android:hint="@string/txtFecha"
+        android:hint="@string/txtPrecio3"
         android:inputType="textPersonName"
-        android:text="@string/txtFecha"
+        android:text="@string/txtPrecio3"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdTC"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion5"
         app:layout_constraintVertical_bias="0.126" />
 
     <EditText
-        android:id="@+id/txtIdAbogado1"
+        android:id="@+id/txtIdCaso3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -86,13 +86,13 @@
         android:ems="10"
         android:fontFamily="@font/copse"
         android:gravity="center"
-        android:hint="@string/txtIdAbogado1"
+        android:hint="@string/txtIdCaso3"
         android:inputType="textPersonName"
-        android:text="@string/txtIdAbogado1"
+        android:text="@string/txtIdCaso3"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecio3" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -170,7 +170,7 @@
         android:contentDescription="@string/Todo"
         app:layout_constraintBottom_toTopOf="@+id/txtAgregar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtIdCita"
+        app:layout_constraintStart_toEndOf="@+id/txtIdCita1"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/lupa" />
 

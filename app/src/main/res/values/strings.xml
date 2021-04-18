@@ -183,6 +183,18 @@
     <string name="txtTelefono1">Telefono </string>
     <string name="txtBuscar">Buscar</string>
 
+
+
+    <string name="txtIdCita1">Id Cita</string>
+    <string name="txtFecha3">Fecha</string>
+    <string name="txtDescripcion5">Descripcion</string>
+    <string name="txtPrecio3">Precio </string>
+    <string name="txtIdCaso3">Id Caso</string>
+
+
+
+
+
     <string name="Todo2">TODO</string>
     <string name="Todo">TODO</string>
 
