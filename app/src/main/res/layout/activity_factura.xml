@@ -166,7 +166,7 @@
         android:id="@+id/txtIdServicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="156dp"
         android:autofillHints=""
         android:ems="10"
         android:fontFamily="@font/copse"
