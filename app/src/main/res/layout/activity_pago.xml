@@ -23,7 +23,7 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView27"
+        app:layout_constraintEnd_toStartOf="@+id/txtBuscar"
         app:layout_constraintHorizontal_bias="0.706"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvPago"
@@ -167,7 +167,7 @@
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toTopOf="@+id/txtEliminar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscar" />
 
     <TextView
         android:id="@+id/txtActualizar"
@@ -201,7 +201,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
 
     <ImageView
-        android:id="@+id/imageView27"
+        android:id="@+id/txtBuscar"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="197dp"

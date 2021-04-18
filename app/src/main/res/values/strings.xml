@@ -181,7 +181,7 @@
     <string name="txtNombre11">Nombre</string>
     <string name="txtDireccion2">Direccion</string>
     <string name="txtTelefono1">Telefono </string>
-
+    <string name="txtBuscar">Buscar</string>
 
     <string name="Todo2">TODO</string>
     <string name="Todo">TODO</string>
