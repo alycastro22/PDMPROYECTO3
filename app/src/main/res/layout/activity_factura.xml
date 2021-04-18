@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
         android:layout_marginTop="164dp"
+        android:layout_marginEnd="13dp"
         android:autofillHints=""
         android:ems="10"
         android:fontFamily="@font/copse"
@@ -20,6 +21,7 @@
         android:inputType="textPersonName"
         android:text="@string/txtId8"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/imageView26"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -144,7 +146,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="304dp"
+        android:layout_marginBottom="232dp"
         android:background="@drawable/eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -152,18 +154,20 @@
     <TextView
         android:id="@+id/txtAgregar"
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="442dp"
         android:background="@drawable/agregar"
-        app:layout_constraintBottom_toTopOf="@+id/txtActualizar"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView26" />
 
     <EditText
         android:id="@+id/txtIdServicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="140dp"
+        android:autofillHints=""
         android:ems="10"
         android:fontFamily="@font/copse"
         android:gravity="center"
@@ -173,7 +177,20 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="22dp"
+        android:contentDescription="@string/Todo"
+        app:layout_constraintBottom_toTopOf="@+id/txtAgregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtId8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lupa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

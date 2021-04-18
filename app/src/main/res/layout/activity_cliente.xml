@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="460dp"
         android:autofillHints=""
         android:ems="10"
@@ -36,7 +36,8 @@
         android:text="@string/txtId12"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtAgregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView23"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -118,21 +119,21 @@
     <TextView
         android:id="@+id/txtAgregar"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="220dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="376dp"
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView23"
+        app:layout_constraintVertical_bias="0.668" />
 
     <TextView
         android:id="@+id/txtActualizar"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="380dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="300dp"
         android:background="@drawable/actualizar1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -141,8 +142,8 @@
         android:id="@+id/textView3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="308dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="220dp"
         android:background="@drawable/guardar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -151,10 +152,24 @@
         android:id="@+id/txtEliminar"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="236dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="148dp"
         android:background="@drawable/eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAgregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtId12"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lupa"
+        android:contentDescription="@string/Todo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

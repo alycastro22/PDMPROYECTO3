@@ -22,7 +22,7 @@
         android:text="@string/txtId4"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtAgregar"
+        app:layout_constraintEnd_toStartOf="@+id/imageView30"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="19dp"
         android:autofillHints=""
         android:ems="10"
@@ -71,48 +71,56 @@
 
     <TextView
         android:id="@+id/txtAgregar"
-        android:layout_width="0dp"
+        android:layout_width="50dp"
         android:layout_height="0dp"
-        android:layout_marginTop="190dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="426dp"
         android:background="@drawable/agregar"
-        app:layout_constraintBottom_toTopOf="@+id/txtActualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtId4"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView30" />
 
     <TextView
         android:id="@+id/txtActualizar"
         android:layout_width="50dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="13dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/actualizar1"
         app:layout_constraintBottom_toTopOf="@+id/txtGuardar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtGuardar"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="14dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/guardar"
         app:layout_constraintBottom_toTopOf="@+id/txtEliminar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtDescripcion3"
-        app:layout_constraintTop_toBottomOf="@+id/txtActualizar" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtEliminar"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="309dp"
+        android:layout_marginBottom="220dp"
         android:background="@drawable/eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/txtGuardar"
-        app:layout_constraintStart_toStartOf="@+id/txtGuardar"
-        app:layout_constraintTop_toBottomOf="@+id/txtGuardar" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView30"
+        app:layout_constraintStart_toStartOf="@+id/imageView30" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/Todo"
+        app:layout_constraintBottom_toTopOf="@+id/txtAgregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtId4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lupa" />
 </androidx.constraintlayout.widget.ConstraintLayout>
