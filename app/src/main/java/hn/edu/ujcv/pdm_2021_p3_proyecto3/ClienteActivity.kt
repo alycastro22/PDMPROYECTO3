@@ -82,11 +82,11 @@ class ClienteActivity : AppCompatActivity() {
         println("Id:" + Id.toString() +  "fecha:" + fecha + "nombre:" + nombre + "correo"+ correo + "telefono:" + telefono.toString() )
         //val fecha = "1995-12-06"
 
-        val personInfo = ClienteDataCollectionItem(  id = 2,
-            nombre = "nombre",
-            correo= "correo",
-            fechaNacimiento = "fecha",
-            telefono = 1234
+        val personInfo = ClienteDataCollectionItem(  id = Id,
+            nombre = nombre,
+            correo= correo,
+            fechaNacimiento = fecha,
+            telefono = telefono
 
 
         )
