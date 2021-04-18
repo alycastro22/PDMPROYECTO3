@@ -58,7 +58,8 @@ class AbogadosActivity : AppCompatActivity() {
         if (txtId.text.isNotEmpty()) {
 
             val abogadoService: AbogadoService =
-                RestEngine.buildService().create(AbogadoService::class.java)
+                RestEngine.buildService().create(AbogadoService::class.
+                java)
             var result: Call<ResponseBody> = abogadoService.deleteAbogado(1)
 
             result.enqueue(object : Callback<ResponseBody> {
