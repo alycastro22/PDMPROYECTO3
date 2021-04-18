@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".AdminActivity"></activity>
         <activity android:name=".MenuActivity"></activity>
         <activity android:name=".ServiciosActivity"></activity>
         <activity android:name=".ClienteActivity"></activity>

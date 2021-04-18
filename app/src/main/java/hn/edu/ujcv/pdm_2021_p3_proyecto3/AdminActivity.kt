@@ -7,7 +7,7 @@ import android.view.Menu
 import android.view.View
 import kotlinx.android.synthetic.main.activity_login.*
 
-class LoginActivity : AppCompatActivity() {
+class AdminActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -16,8 +16,13 @@ class LoginActivity : AppCompatActivity() {
 
 
     fun ingresar() {
-        val intent = Intent(this, MenuActivity::class.java)
-        startActivity(intent)
+        if(txtUsuario.text.isNotEmpty() && txtContraseña.text.isNotEmpty()){
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
     }
+
+
+
 
 }

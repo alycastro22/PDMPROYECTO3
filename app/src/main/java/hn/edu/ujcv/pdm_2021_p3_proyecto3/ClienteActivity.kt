@@ -74,14 +74,12 @@ class ClienteActivity : AppCompatActivity() {
     }
 
     private fun callServicePutPerson() {
-      //  var Id = txtId12.text.toString().toLong()
-      //  var fecha = "1995-01-15"
-      /*  var nombre=txtNombre10.text.toString()
-        var dni = txtIdentidad.text.toString()
-        var correo=txtCorreo1.text.toString()
-        var telefono = txtTelefono.text.toString().toLong()
-        println("Id:" + Id.toString() +  "fecha:" + fecha.toString() + "nombre:" + nombre.toString() +"dni:" +
-                dni.toString()+ "correo"+ correo + "telefono:" + telefono.toString() )*/
+      var Id = txtId12.text.toString().toLong()
+      var fecha = txtFechaNacimiento2.text.toString()
+      var nombre = txtNombre10.text.toString()
+        var correo = txtCorreo3.text.toString()
+        var telefono = txtTelefono2.text.toString().toLong()
+        println("Id:" + Id.toString() +  "fecha:" + fecha + "nombre:" + nombre + "correo"+ correo + "telefono:" + telefono.toString() )
         //val fecha = "1995-12-06"
 
         val personInfo = ClienteDataCollectionItem(  id = 2,
