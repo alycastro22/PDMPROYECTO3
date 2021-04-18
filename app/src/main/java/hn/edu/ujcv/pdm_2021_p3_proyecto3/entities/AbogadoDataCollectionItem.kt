@@ -5,7 +5,7 @@ class AbogadoDataCollection: ArrayList<AbogadoDataCollectionItem>()
 data class AbogadoDataCollectionItem(
         val id:Long?,
         val nombre:String,
-        val dni:Long,
+        val dni:String,
         val correo:String,
         val telefono:Long,
         val fechaNacimiento:String

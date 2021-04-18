@@ -16,7 +16,7 @@ interface AbogadoService {
         @Headers("Content-Type:application/json")
         @PUT("abogados")
         fun updateAbogado(@Body personData: AbogadoDataCollectionItem): Call<AbogadoDataCollectionItem>
-        @DELETE ("abogados/delete/(id)")
+        @DELETE("abogados/delete/{id}")
         fun deleteAbogado(@Path("id") id:Long): Call<ResponseBody>
 
 }
