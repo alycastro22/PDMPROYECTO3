@@ -3,6 +3,7 @@ package hn.edu.ujcv.pdm_2021_p3_proyecto3
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.AgenciaService
@@ -24,7 +25,9 @@ class AgenciaActivity : AppCompatActivity() {
         val botonPut = findViewById<TextView>(R.id.txtGuardar)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
         val botonDelete = findViewById<TextView>(R.id.txtEliminar)
-        botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
+        botonDelete.setOnClickListener { v-> callServiceDeleteAgencia()}
+        val botonbuscar = findViewById<ImageView>(R.id.imageView20)
+        botonbuscar.setOnClickListener { v-> callServiceGetAgencia()}
 
 
     }
@@ -32,13 +35,13 @@ class AgenciaActivity : AppCompatActivity() {
         val cambio = Intent (this, MenuActivity::class.java)
         startActivity(cambio)
     }
-    private fun callServiceDeletePerson() {
+    private fun callServiceDeleteAgencia() {
         val Id = txtId13.text.toString().toLong()
         if (txtId13.text.isNotEmpty()) {
 
             val agenciaService: AgenciaService =
                 RestEngine.buildService().create(AgenciaService::class.java)
-            var result: Call<ResponseBody> = agenciaService.deleteAgencia(1)
+            var result: Call<ResponseBody> = agenciaService.deleteAgencia(Id)
 
             result.enqueue(object : Callback<ResponseBody> {
                 override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
@@ -68,18 +71,17 @@ class AgenciaActivity : AppCompatActivity() {
 
     }
     private fun callServicePutPerson() {
-        /*    Id = txtId.text.toString().toLong()
-            fecha = txtFechaNaciAbo.text.toString()
-            nombre=txtNombre.text.toString()
-            dni = txtIdentidad.text.toString().toLong()
-            correo=txtCorreo1.text.toString()
-            telefono = txtTelefono.text.toString().toLong()*/
+            //fecha = txtFechaNaciAbo.text.toString()
+            val nombre=txtNombreCaso.text.toString()
+            val direccion = txtDireccion.text.toString()
+            val id =txtId13.text.toString().toLong()
+            val telefono = txtTelefono1.text.toString().toLong()
 
 
-        val personInfo = AgenciaDataCollectionItem(  id = 2,
-            nombre =" nombre",
-            direccion = "direccion" ,
-            telefono = 98574858
+        val personInfo = AgenciaDataCollectionItem(  id = id,
+            nombre = nombre,
+            direccion = direccion ,
+            telefono = telefono
 
         )
 
@@ -109,7 +111,7 @@ class AgenciaActivity : AppCompatActivity() {
         })
     }
 
-    private fun callServiceGetPerson() {
+    private fun callServiceGetAgencia() {
         val Id = txtId13.text.toString().toLong()
         val personService: AgenciaService = RestEngine.buildService().create(AgenciaService::class.java)
         var result: Call<AgenciaDataCollectionItem> = personService.getAgenciasById(Id)
@@ -129,17 +131,15 @@ class AgenciaActivity : AppCompatActivity() {
     }
 
     private fun callServicePostPerson() {
-        //Id = txtId.text.toString().toLong()
-        /*fecha = txtFechaNaciAbo.text.toString()
-        nombre=txtNombre.text.toString()
-        dni = txtIdentidad.text.toString().toLong()
-        correo=txtCorreo1.text.toString()
-        telefono = txtTelefono.text.toString().toLong()*/
+        val nombre=txtNombreCaso.text.toString()
+        val direccion = txtDireccion.text.toString()
+        val id =txtId13.text.toString()
+        val telefono = txtTelefono1.text.toString().toLong()
 
         val personInfo = AgenciaDataCollectionItem(  id = null,
-            nombre =" nombre",
-            direccion = "",
-            telefono = 98574858
+                nombre = nombre,
+                direccion = direccion ,
+                telefono = telefono
         )
 
         addPerson(personInfo) {
@@ -151,7 +151,7 @@ class AgenciaActivity : AppCompatActivity() {
         }
     }
 
-    private fun callServiceGetPersons() {
+        private fun callServiceGetAgencias() {
         val personService: AgenciaService = RestEngine.buildService().create(AgenciaService::class.java)
         var result: Call<List<AgenciaDataCollectionItem>> = personService.listaAgencia()
 

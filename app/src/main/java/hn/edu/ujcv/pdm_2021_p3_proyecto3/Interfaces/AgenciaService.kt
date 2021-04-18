@@ -17,6 +17,6 @@ interface AgenciaService {
     @Headers("Content-Type:application/json")
     @PUT("agencia")
     fun updateAgencia(@Body personData: AgenciaDataCollectionItem): Call<AgenciaDataCollectionItem>
-    @DELETE("agencia/delete/(id)")
+    @DELETE("agencia/delete/{id}")
     fun deleteAgencia(@Path("id") id:Long): Call<ResponseBody>
 }

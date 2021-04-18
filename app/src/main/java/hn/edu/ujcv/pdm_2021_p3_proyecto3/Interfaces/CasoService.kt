@@ -17,6 +17,6 @@ interface CasoService {
     @Headers("Content-Type:application/json")
     @PUT("casos")
     fun updateCasos(@Body personData: CasosDataCollectionItem): Call<CasosDataCollectionItem>
-    @DELETE("casos/delete/(id)")
+    @DELETE("casos/delete/{id}")
     fun deleteCasos(@Path("id") id:Long): Call<ResponseBody>
 }
