@@ -7,6 +7,25 @@
     android:background="@drawable/fondo3">
 
     <EditText
+        android:id="@+id/txtFechaNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="607dp"
+        android:layout_marginEnd="94dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/copse"
+        android:gravity="center"
+        android:hint="@string/txtFechaNacimiento"
+        android:inputType="textPersonName"
+        android:text="@string/txtFechaNacimiento"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
         android:id="@+id/txtIdEmpleado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,27 +65,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtApellido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:fontFamily="@font/copse"
-        android:gravity="center"
-        android:hint="@string/txtApellidoEmpleado"
-        android:inputType="textPersonName"
-        android:text="@string/txtApellidoEmpleado"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/txtActualizar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
         android:id="@+id/txtIdentidad1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="94dp"
         android:autofillHints=""
         android:ems="10"
         android:fontFamily="@font/copse"
@@ -77,30 +81,15 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
-
-    <EditText
-        android:id="@+id/txtEdad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:fontFamily="@font/copse"
-        android:gravity="center"
-        android:hint="@string/txtEdad"
-        android:inputType="textPersonName"
-        android:text="@string/txtEdad"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdentidad1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="361dp"
+        android:layout_marginEnd="94dp"
         android:autofillHints=""
         android:ems="10"
         android:fontFamily="@font/copse"
@@ -111,7 +100,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEdad" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtTelefono3"
@@ -146,6 +135,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTelefono3" />
+
+
+    <EditText
+        android:id="@+id/txtClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="549dp"
+        android:layout_marginEnd="94dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/copse"
+        android:gravity="center"
+        android:hint="@string/txtClave"
+        android:inputType="textPersonName"
+        android:text="@string/txtClave"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView6"

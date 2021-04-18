@@ -45,8 +45,7 @@ class AbogadosActivity : AppCompatActivity() {
         botonPut.setOnClickListener { v-> callServicePutPerson()}
         val botonDelete = findViewById<TextView>(R.id.txtEliminar)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
-        imageView2.setOnClickListener { Regresar()
-        }
+        imageView2.setOnClickListener { Regresar() }
        }
 
 
