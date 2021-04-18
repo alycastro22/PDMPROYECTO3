@@ -70,13 +70,13 @@ class CasosActivity : AppCompatActivity() {
     }
 
     private fun callServicePutPerson() {
-        /*    Id = txtId.text.toString().toLong()
-            fecha = txtFechaNaciAbo.text.toString()
-            nombre=txtNombre.text.toString()
-            dni = txtIdentidad.text.toString().toLong()
-            correo=txtCorreo1.text.toString()
-            telefono = txtTelefono.text.toString().toLong()*/
-        val fecha = "1995-12-06"
+        val Id = txtId6.text.toString().toLong()
+        val fecha = txtFechaNaciAbo.text.toString()
+        val IdC1 = txtId6.text.toString().toLong()
+        val IdAb1 = txtIdentidad.text.toString().toLong()
+        val IdTipocaso = txtId6.text.toString().toLong()
+
+        val fechaf = "1995-12-06"
         val personInfo =  CasosDataCollectionItem(  id = 2,
                 idClientes = 1,
                 idAbogados = 1,
