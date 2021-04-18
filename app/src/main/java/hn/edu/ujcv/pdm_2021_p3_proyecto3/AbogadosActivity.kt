@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.AbogadoService
@@ -21,23 +22,24 @@ import java.time.LocalDate
 import java.util.*
 
 
-var Id:Long =0
+/*var Id:Long =0
 var fecha:String = ""
 var nombre:String = ""
 var dni:Long = 0
 var correo: String = ""
-var telefono: Long = 0
+var telefono: Long = 0*/
 
 class AbogadosActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_abogados)
 
-//        val botonGetId = findViewById<Button>(R.id.btnGetId)
-//        botonGetId.setOnClickListener {v -> callServiceGetPerson()}
+      val botonGetId = findViewById<ImageView>(R.id.txtbuscar)
+          botonGetId.setOnClickListener {v -> callServiceGetPerson()}
 //        val botonConsumir = findViewById<Button>(R.id.btnConsumir)
 //        botonConsumir.setOnClickListener {v -> callServiceGetPersons()}
-        val botonPostear = findViewById<TextView>(R.id.txtAgregar)
+        val botonPostear = findViewById<ImageView>(R.id.txtAgregarAbog)
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
         val botonPut = findViewById<TextView>(R.id.txtGuardar)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
@@ -54,13 +56,13 @@ class AbogadosActivity : AppCompatActivity() {
 
     }
     private fun callServiceDeletePerson() {
-        Id = txtId.text.toString().toLong()
+        val Id = txtId.text.toString().toLong()
         if (txtId.text.isNotEmpty()) {
 
             val abogadoService: AbogadoService =
                 RestEngine.buildService().create(AbogadoService::class.
                 java)
-            var result: Call<ResponseBody> = abogadoService.deleteAbogado(1)
+            var result: Call<ResponseBody> = abogadoService.deleteAbogado(Id)
 
             result.enqueue(object : Callback<ResponseBody> {
                 override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
@@ -91,19 +93,21 @@ class AbogadosActivity : AppCompatActivity() {
     }
 
     private fun callServicePutPerson() {
-    /*    Id = txtId.text.toString().toLong()
-        fecha = txtFechaNaciAbo.text.toString()
-        nombre=txtNombre.text.toString()
-        dni = txtIdentidad.text.toString().toLong()
-        correo=txtCorreo1.text.toString()
-        telefono = txtTelefono.text.toString().toLong()*/
-        val fecha = "1995-12-06"
-        val personInfo = AbogadoDataCollectionItem(  id = 2,
-            dni = 80210252,
-            nombre =" nombre",
+        var Id = txtId.text.toString().toLong()
+        var fecha = "1995-01-15"
+        var nombre=txtNombre1.text.toString()
+        var dni = txtIdentidad.text.toString()
+        var correo=txtCorreo1.text.toString()
+        var telefono = txtTelefono.text.toString().toLong()
+        println("Id:" + Id.toString() +  "fecha:" + fecha.toString() + "nombre:" + nombre.toString() +"dni:" +
+                dni.toString()+ "correo"+ correo + "telefono:" + telefono.toString() )
+        //val fecha = "1995-12-06"
+        val personInfo = AbogadoDataCollectionItem(  id = Id.toString().toLong(),
+            dni = dni.toString(),
+            nombre = nombre,
             fechaNacimiento = fecha,
-            correo= "andreaRamos@gmail.com",
-            telefono = 98574858
+            correo= correo,
+            telefono = telefono.toString().toLong()
 
 
         )
@@ -135,9 +139,9 @@ class AbogadosActivity : AppCompatActivity() {
     }
 
     private fun callServiceGetPerson() {
-        Id = txtId.text.toString().toLong()
-        val personService:AbogadoService = RestEngine.buildService().create(AbogadoService::class.java)
-        var result: Call<AbogadoDataCollectionItem> = personService.getAbogadoById(Id)
+       var  Id = txtId.text.toString().toLong()
+        val abogadoService:AbogadoService = RestEngine.buildService().create(AbogadoService::class.java)
+        var result: Call<AbogadoDataCollectionItem> = abogadoService.getAbogadoById(Id)
 
         result.enqueue(object : Callback<AbogadoDataCollectionItem> {
             override fun onFailure(call: Call<AbogadoDataCollectionItem>, t: Throwable) {
@@ -147,27 +151,43 @@ class AbogadosActivity : AppCompatActivity() {
             override fun onResponse(
                 call: Call<AbogadoDataCollectionItem>,
                 response: Response<AbogadoDataCollectionItem>
+
+
             ) {
+                txtNombre1.setText("")
                 Toast.makeText(this@AbogadosActivity,"OK"+response.body()!!.nombre, Toast.LENGTH_LONG).show()
             }
         })
     }
+    private fun obtenertexto(){
+        var Id = txtId.text.toString().toLong()
+        var fecha = txtFechaNaciAbo.text.toString()
+        var nombre= txtNombre1.text.toString()
+        var dni = txtIdentidad.text.toString().toDouble()
+        var correo=txtCorreo1.text.toString()
+        var telefono = txtTelefono.text.toString().toLong()
+        println("Id:" + Id.toString() +  "fecha:" + fecha.toString() + "nombre:" + nombre.toString() +"dni:" +
+                dni.toString()+ "correo"+ correo + "telefono:" + telefono.toString() )
+    }
 
     private fun callServicePostPerson() {
-        //Id = txtId.text.toString().toLong()
-        /*fecha = txtFechaNaciAbo.text.toString()
-        nombre=txtNombre.text.toString()
-        dni = txtIdentidad.text.toString().toLong()
-        correo=txtCorreo1.text.toString()
-        telefono = txtTelefono.text.toString().toLong()*/
-        val fecha = "1995-12-06"
+        var Id = txtId.text.toString()
+        var fecha = txtFechaNaciAbo.text.toString()
+        var nombre=txtNombre1.text.toString()
+        var dni = txtIdentidad.text.toString()
+        var correo=txtCorreo1.text.toString()
+        var telefono = txtTelefono.text.toString().toInt()
+
+
+        //val fecha = "1995-12-06"
         val personInfo =AbogadoDataCollectionItem(  id = null,
-            dni = 802102521,
-            nombre =" nombre",
+            dni = dni.toString(),
+            nombre = nombre.toString(),
             fechaNacimiento = fecha,
-            correo= "andreaRamos@gmail.com",
-            telefono = 98574858
+            correo= correo,
+            telefono = telefono.toString().toLong()
         )
+
 
         addPerson(personInfo) {
             if (it?.id != null) {
