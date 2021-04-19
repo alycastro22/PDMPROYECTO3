@@ -22,9 +22,9 @@ class TipoCasoActivity : AppCompatActivity() {
 
             val botonPostear = findViewById<ImageView>(R.id.txtAgregarAbog)
             botonPostear.setOnClickListener { v-> callServicePostPerson()}
-            val botonPut = findViewById<TextView>(R.id.txtGuardar)
+            val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
             botonPut.setOnClickListener { v-> callServicePutPerson()}
-            val botonDelete = findViewById<TextView>(R.id.txtEliminar)
+            val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
             botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
 
         }
@@ -152,7 +152,7 @@ class TipoCasoActivity : AppCompatActivity() {
 
 
         //val fecha = "1995-12-06"
-        val personInfo = TipoCasoDataCollectionItem(  id = id,
+        val personInfo = TipoCasoDataCollectionItem(  id = null,
                 nombre = nombre,
                 descripcion=descripcion,
                 precio= precio,

@@ -21,9 +21,9 @@ class CasosActivity : AppCompatActivity() {
         imageView4.setOnClickListener { Regresar() }
         val botonPostear = findViewById<TextView>(R.id.txtAgregar)
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
-        val botonPut = findViewById<TextView>(R.id.txtGuardar)
+        val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
-        val botonDelete = findViewById<TextView>(R.id.txtEliminar)
+        val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
 
 
@@ -139,7 +139,7 @@ class CasosActivity : AppCompatActivity() {
         val IdTipocaso = txtIdTipoCaso1.text.toString().toLong()
         val fechafinal = txtIdFechaFinalizacion.text.toString()
 
-        val personInfo =  CasosDataCollectionItem(  id = Id,
+        val personInfo =  CasosDataCollectionItem(  id = null,
                 idClientes = IdC1,
                 idAbogados = IdAb1,
                 inicio = fechainicio,

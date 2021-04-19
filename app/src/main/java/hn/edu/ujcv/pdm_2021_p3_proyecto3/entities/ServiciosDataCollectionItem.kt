@@ -6,5 +6,5 @@ data class ServiciosDataCollectionItem(
         val id : Long?,
         val tipoServicio : String,
         val asunto : String,
-        val precio : Double
+        val precio : String
 )

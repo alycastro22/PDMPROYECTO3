@@ -21,13 +21,13 @@ class EmpleadosActivity : AppCompatActivity() {
         setContentView(R.layout.activity_empleados)
         imageView6.setOnClickListener { Regresar()
         }
-        val botonGetId = findViewById<ImageView>(R.id.txtBuscar)
+        val botonGetId = findViewById<ImageView>(R.id.txtBuscarAbog)
         botonGetId.setOnClickListener {v -> callServiceGetPerson()}
         val botonPostear = findViewById<TextView>(R.id.txtAgregar)
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
-        val botonPut = findViewById<TextView>(R.id.txtGuardar)
+        val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
-        val botonDelete = findViewById<TextView>(R.id.txtEliminar)
+        val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
 
     }

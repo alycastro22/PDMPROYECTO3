@@ -22,9 +22,9 @@ class AgenciaActivity : AppCompatActivity() {
 
         val botonPostear = findViewById<TextView>(R.id.txtAgregar)
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
-        val botonPut = findViewById<TextView>(R.id.txtGuardar)
+        val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
-        val botonDelete = findViewById<TextView>(R.id.txtEliminar)
+        val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
         botonDelete.setOnClickListener { v-> callServiceDeleteAgencia()}
         val botonbuscar = findViewById<ImageView>(R.id.imageView20)
         botonbuscar.setOnClickListener { v-> callServiceGetAgencia()}

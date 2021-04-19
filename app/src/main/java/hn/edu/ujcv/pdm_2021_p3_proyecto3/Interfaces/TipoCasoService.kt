@@ -18,6 +18,6 @@ interface TipoCasoService {
     @Headers("Content-Type:application/json")
     @PUT("tipocaso")
     fun updateTipoCaso(@Body personData: TipoCasoDataCollectionItem): Call<TipoCasoDataCollectionItem>
-    @DELETE("tipocaso/delete/(id)")
+    @DELETE("tipocaso/delete/{id}")
     fun deleteTipoCaso(@Path("id") id:Long): Call<ResponseBody>
 }

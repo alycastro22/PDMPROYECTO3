@@ -20,13 +20,13 @@ class ServiciosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_servicios)
         imageView12.setOnClickListener { Regresar()}
-        val botonGetId = findViewById<ImageView>(R.id.txtBuscar)
+        val botonGetId = findViewById<ImageView>(R.id.txtBuscarAbog)
         botonGetId.setOnClickListener {v -> callServiceGetPerson()}
         val botonPostear = findViewById<TextView>(R.id.txtAgregar)
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
-        val botonPut = findViewById<TextView>(R.id.txtGuardar)
+        val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
-        val botonDelete = findViewById<TextView>(R.id.txtEliminar)
+        val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
 
     }
@@ -72,8 +72,7 @@ class ServiciosActivity : AppCompatActivity() {
         val Id = txtId7.text.toString().toLong()
         val tiposervicio = txtTipoServicio.text.toString()
         val asunto = txtIdAsunto.text.toString()
-        val precio = txtPrecio2.text.toString().toDouble()
-
+        val precio = txtPrecio2.text.toString()
         val personInfo = ServiciosDataCollectionItem(
                 id = Id,
                 tipoServicio = tiposervicio,
@@ -136,15 +135,15 @@ class ServiciosActivity : AppCompatActivity() {
     }*/
 
     private fun callServicePostPerson() {
-        val Id = txtId7.text.toString().toLong()
+        //val Id = txtId7.text.toString().toLong()
         val tiposervicio = txtTipoServicio.text.toString()
         val asunto = txtIdAsunto.text.toString()
-        val precio = txtPrecio2.text.toString().toDouble()
+        val precio = txtPrecio2.text.toString()
 
 
         //val fecha = "1995-12-06"
         val personInfo = ServiciosDataCollectionItem(
-                id = Id,
+                id = null,
                 tipoServicio = tiposervicio,
                 asunto = asunto,
                 precio = precio

@@ -37,7 +37,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtBuscar"
+        app:layout_constraintEnd_toStartOf="@+id/txtBuscarAbog"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -117,19 +117,19 @@
         app:srcCompat="@drawable/retroceder" />
 
     <TextView
-        android:id="@+id/txtAgregar"
+        android:id="@+id/txtAgregarC"
         android:layout_width="50dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="376dp"
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBuscar"
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscarAbog"
         app:layout_constraintVertical_bias="0.668" />
 
     <TextView
-        android:id="@+id/txtActualizar"
+        android:id="@+id/txtActualizarC"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="28dp"
@@ -139,7 +139,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtGuardarC"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="28dp"
@@ -149,7 +149,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txtEliminar"
+        android:id="@+id/txtEliminarC"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="28dp"
@@ -160,16 +160,16 @@
 
     <ImageView
         android:id="@+id/txtLupa"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="237dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="27dp"
+        android:contentDescription="@string/Todo"
         app:layout_constraintBottom_toTopOf="@+id/txtAgregar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtId12"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lupa"
-        android:contentDescription="@string/Todo" />
+        app:srcCompat="@drawable/lupa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

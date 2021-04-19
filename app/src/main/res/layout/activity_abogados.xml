@@ -20,7 +20,7 @@
         android:inputType="textPersonName"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/txtActualizar"
+        app:layout_constraintEnd_toStartOf="@+id/txtActualizarAbog"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtAgregarAbog" />
@@ -57,7 +57,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/txtNombre1"
-        app:layout_constraintEnd_toStartOf="@+id/txtBuscar"
+        app:layout_constraintEnd_toStartOf="@+id/txtBuscarAbog"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -74,7 +74,7 @@
         android:inputType="textPersonName"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/txtActualizar"
+        app:layout_constraintEnd_toStartOf="@+id/txtActualizarAbog"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre1" />
 
@@ -93,7 +93,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textColorLink="@color/teal_700"
-        app:layout_constraintEnd_toStartOf="@+id/txtGuardar"
+        app:layout_constraintEnd_toStartOf="@+id/txtGuardarAbog"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtIdentidad" />
 
@@ -111,7 +111,7 @@
         android:inputType="textPersonName"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/txtEliminar"
+        app:layout_constraintEnd_toStartOf="@+id/txtEliminarAbog"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtFechaNaciAbo" />
@@ -130,22 +130,22 @@
         app:srcCompat="@drawable/retroceder" />
 
     <TextView
-        android:id="@+id/txtActualizar"
+        android:id="@+id/txtActualizarAbog"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="324dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/actualizar1"
-        app:layout_constraintBottom_toTopOf="@+id/txtGuardar"
+        app:layout_constraintBottom_toTopOf="@+id/txtGuardarAbog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/txtIdentidad"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBuscar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscarAbog" />
 
     <TextView
-        android:id="@+id/txtEliminar"
+        android:id="@+id/txtEliminarAbog"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="330dp"
@@ -182,7 +182,7 @@
         app:srcCompat="@drawable/agregar" />
 
     <ImageView
-        android:id="@+id/txtGuardar"
+        android:id="@+id/txtGuardarAbog"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="15dp"
@@ -191,18 +191,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtFechaNaciAbo"
-        app:layout_constraintTop_toBottomOf="@+id/txtActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/txtActualizarAbog"
         app:srcCompat="@drawable/guardar" />
 
     <ImageView
-        android:id="@+id/txtBuscar"
+        android:id="@+id/txtBuscarAbog"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="174dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="94dp"
         android:contentDescription="@string/Todo"
-        app:layout_constraintBottom_toTopOf="@+id/txtActualizar"
+        app:layout_constraintBottom_toTopOf="@+id/txtActualizarAbog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtId"
         app:layout_constraintTop_toTopOf="parent"

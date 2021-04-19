@@ -24,10 +24,10 @@ class AdminActivity : AppCompatActivity() {
 
 
     /*fun ingresar() {
-        if(txtUsuario.text.isNotEmpty() && txtContraseña.text.isNotEmpty()){
+        //if(txtUsuario.text.isNotEmpty() && txtContraseña.text.isNotEmpty()){
             val intent = Intent(this, MenuActivity::class.java)
             startActivity(intent)
-        }
+       // }
     }*/
 
     private fun callServiceGetPerson() {

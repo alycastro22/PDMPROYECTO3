@@ -23,7 +23,7 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtBuscar"
+        app:layout_constraintEnd_toStartOf="@+id/txtBuscarAbog"
         app:layout_constraintHorizontal_bias="0.706"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvPago"
@@ -46,7 +46,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtActualizar"
+        app:layout_constraintEnd_toStartOf="@+id/txtActualizarAbog"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -68,7 +68,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtGuardar"
+        app:layout_constraintEnd_toStartOf="@+id/txtGuardarAbog"
         app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -90,7 +90,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtEliminar"
+        app:layout_constraintEnd_toStartOf="@+id/txtEliminarAbog"
         app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -165,12 +165,12 @@
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="162dp"
         android:background="@drawable/agregar"
-        app:layout_constraintBottom_toTopOf="@+id/txtEliminar"
+        app:layout_constraintBottom_toTopOf="@+id/txtEliminarAbog"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBuscar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscarAbog" />
 
     <TextView
-        android:id="@+id/txtActualizar"
+        android:id="@+id/txtActualizarAbog"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="28dp"
@@ -180,17 +180,17 @@
         app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
 
     <TextView
-        android:id="@+id/txtGuardar"
+        android:id="@+id/txtGuardarAbog"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="28dp"
         android:background="@drawable/guardar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtActualizar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtActualizarAbog" />
 
     <TextView
-        android:id="@+id/txtEliminar"
+        android:id="@+id/txtEliminarAbog"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginEnd="28dp"
@@ -201,7 +201,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
 
     <ImageView
-        android:id="@+id/txtBuscar"
+        android:id="@+id/txtBuscarAbog"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="197dp"

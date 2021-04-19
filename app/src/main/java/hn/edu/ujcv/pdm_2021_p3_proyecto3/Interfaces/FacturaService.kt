@@ -16,6 +16,6 @@ interface FacturaService {
     @Headers("Content-Type:application/json")
     @PUT("factura")
     fun updateFactura(@Body personData: FacturaDataCollectionItem): Call<FacturaDataCollectionItem>
-    @DELETE("factura/delete/(id)")
+    @DELETE("factura/delete/{id}")
     fun deleteFactura(@Path("id") id:Long): Call<ResponseBody>
 }

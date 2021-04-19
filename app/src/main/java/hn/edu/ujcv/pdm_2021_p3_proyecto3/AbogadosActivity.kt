@@ -9,6 +9,8 @@ import android.widget.Toast
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.AbogadoService
 import kotlinx.android.synthetic.main.activity_abogados.*
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.entities.AbogadoDataCollectionItem
+import kotlinx.android.synthetic.main.activity_cita.*
+import kotlinx.android.synthetic.main.activity_empleados.*
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
@@ -30,15 +32,15 @@ class AbogadosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_abogados)
 
-      //val botonGetId = findViewById<ImageView>(R.id.txtbuscar)
-          //botonGetId.setOnClickListener {v -> callServiceGetPerson()}
+      val botonGetId = findViewById<ImageView>(R.id.txtBuscarAbog)
+        botonGetId.setOnClickListener {v -> callServiceGetPerson()}
 //        val botonConsumir = findViewById<Button>(R.id.btnConsumir)
 //        botonConsumir.setOnClickListener {v -> callServiceGetPersons()}
         val botonPostear = findViewById<ImageView>(R.id.txtAgregarAbog)
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
-        val botonPut = findViewById<TextView>(R.id.txtGuardar)
+        val botonPut = findViewById<ImageView>(R.id.txtGuardarAbog)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
-        val botonDelete = findViewById<TextView>(R.id.txtEliminar)
+        val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
         imageView2.setOnClickListener { Regresar() }
        }
@@ -82,14 +84,13 @@ class AbogadosActivity : AppCompatActivity() {
                 }
             })
         } else {
-            Toast.makeText(this@AbogadosActivity,"Ingrese el Id", Toast.LENGTH_SHORT).show()
         }
 
     }
 
     private fun callServicePutPerson() {
         var Id = txtId.text.toString().toLong()
-        var fecha = "1995-01-15"
+        var fecha = txtFechaNaciAbo.text.toString()
         var nombre=txtNombre1.text.toString()
         var dni = txtIdentidad.text.toString()
         var correo=txtCorreo1.text.toString()
@@ -103,6 +104,7 @@ class AbogadosActivity : AppCompatActivity() {
             fechaNacimiento = fecha,
             correo= correo,
             telefono = telefono
+
 
         )
 
@@ -145,10 +147,8 @@ class AbogadosActivity : AppCompatActivity() {
             override fun onResponse(
                 call: Call<AbogadoDataCollectionItem>,
                 response: Response<AbogadoDataCollectionItem>
-
-
             ) {
-                txtNombre1.setText("")
+                //txtNombre1.setText("")
                 Toast.makeText(this@AbogadosActivity,"OK"+response.body()!!.nombre, Toast.LENGTH_LONG).show()
             }
         })
@@ -156,37 +156,31 @@ class AbogadosActivity : AppCompatActivity() {
 
 
     private fun callServicePostPerson() {
-        if (txtFechaNaciAbo.text.isNotEmpty() && txtNombre1.text.isNotEmpty() && txtIdentidad.text.isNotEmpty() && txtCorreo1.text.isNotEmpty()
-                && txtTelefono.text.isNotEmpty()){
-            var Id = txtId.text.toString().toLong()
-            var fecha = txtFechaNaciAbo.text.toString()
-            var nombre=txtNombre1.text.toString()
-            var dni = txtIdentidad.text.toString()
-            var correo=txtCorreo1.text.toString()
-            var telefono = txtTelefono.text.toString().toInt()
+       // var Id = txtId.text.toString().toLong()
+        var fecha = txtFechaNaciAbo.text.toString()
+        var nombre=txtNombre1.text.toString()
+        var dni = txtIdentidad.text.toString()
+        var correo=txtCorreo1.text.toString()
+        var telefono = txtTelefono.text.toString().toLong()
 
 
-            //val fecha = "1995-12-06"
-            val personInfo =AbogadoDataCollectionItem(  id = null,
-                    dni = dni,
-                    nombre = nombre,
-                    fechaNacimiento = fecha,
-                    correo= correo,
-                    telefono = telefono.toString().toLong()
-            )
+        //val fecha = "1995-12-06"
+        val personInfo =AbogadoDataCollectionItem(  id = null,
+            dni = dni,
+            nombre = nombre,
+            fechaNacimiento = fecha,
+            correo= correo,
+            telefono = telefono.toLong()
+        )
 
 
-            addPerson(personInfo) {
-                if (it?.id != null) {
-                    Toast.makeText(this@AbogadosActivity,"OK"+it?.id, Toast.LENGTH_LONG).show()
-                } else {
-                    Toast.makeText(this@AbogadosActivity,"Error", Toast.LENGTH_LONG).show()
-                }
+        addAbogado(personInfo) {
+            if (it?.id != null) {
+                Toast.makeText(this@AbogadosActivity,"OK"+it?.id, Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(this@AbogadosActivity,"Error", Toast.LENGTH_LONG).show()
             }
-        }else{
-
         }
-
     }
 
     private fun callServiceGetPersons() {
@@ -207,7 +201,7 @@ class AbogadosActivity : AppCompatActivity() {
         })
     }
 
-    fun addPerson(AbogadoData: AbogadoDataCollectionItem, onResult: (AbogadoDataCollectionItem?) -> Unit){
+    fun addAbogado(AbogadoData: AbogadoDataCollectionItem, onResult: (AbogadoDataCollectionItem?) -> Unit){
         val retrofit = RestEngine.buildService().create(AbogadoService::class.java)
         var result: Call<AbogadoDataCollectionItem> = retrofit.addAbogado(AbogadoData)
 

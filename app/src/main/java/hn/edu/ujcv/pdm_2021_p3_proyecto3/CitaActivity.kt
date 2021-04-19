@@ -22,13 +22,13 @@ class CitaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_cita)
 
         imageView5.setOnClickListener { Regresar()
-            val botonGetId = findViewById<ImageView>(R.id.txtBuscar)
+            val botonGetId = findViewById<ImageView>(R.id.txtBuscarAbog)
             botonGetId.setOnClickListener {v -> callServiceGetPerson()}
             val botonPostear = findViewById<ImageView>(R.id.txtAgregarAbog)
             botonPostear.setOnClickListener { v-> callServicePostPerson()}
-            val botonPut = findViewById<TextView>(R.id.txtGuardar)
+            val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
             botonPut.setOnClickListener { v-> callServicePutPerson()}
-            val botonDelete = findViewById<TextView>(R.id.txtEliminar)
+            val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
             botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
 
         }
