@@ -76,20 +76,20 @@ class ClienteActivity : AppCompatActivity() {
     }
 
     private fun callServicePutPerson() {
-      var Id = txtId12.text.toString().toLong()
-      var fecha = txtFechaNacimiento2.text.toString()
-      var nombre = txtNombre10.text.toString()
+        var Id = txtId12.text.toString().toLong()
+        var fecha = txtFechaNacimiento2.text.toString()
+        var nombre = txtNombre10.text.toString()
         var correo = txtCorreo3.text.toString()
         var telefono = txtTelefono2.text.toString().toLong()
+
         println("Id:" + Id.toString() +  "fecha:" + fecha + "nombre:" + nombre + "correo"+ correo + "telefono:" + telefono.toString() )
-        //val fecha = "1995-12-06"
+
 
         val personInfo = ClienteDataCollectionItem(  id = Id,
             nombre = nombre,
             correo= correo,
-            fechaNacimiento = fecha,
-            telefono = telefono
-
+            telefono = telefono,
+            fechaNacimiento = fecha
 
         )
 
@@ -120,9 +120,9 @@ class ClienteActivity : AppCompatActivity() {
     }
 
     private fun callServiceGetPerson() {
-        var  Id = txtId12.text.toString().toLong()
+        val id = txtId12.text.toString().toLong()
         val clienteService: ClienteService = RestEngine.buildService().create(ClienteService::class.java)
-        var result: Call<ClienteDataCollectionItem> = clienteService.getClienteById(Id)
+        var result: Call<ClienteDataCollectionItem> = clienteService.getClienteById(id)
 
         result.enqueue(object : Callback<ClienteDataCollectionItem> {
             override fun onFailure(call: Call<ClienteDataCollectionItem>, t: Throwable) {
@@ -143,19 +143,19 @@ class ClienteActivity : AppCompatActivity() {
 
 
     private fun callServicePostPerson() {
-        var Id = txtId12.text.toString().toLong()
+        var id = txtId12.text.toString().toLong()
         var fecha = txtFechaNacimiento2.text.toString()
         var nombre = txtNombre10.text.toString()
         var correo = txtCorreo3.text.toString()
         var telefono = txtTelefono2.text.toString().toLong()
-        println("Id:" + Id.toString() +  "fecha:" + fecha + "nombre:" + nombre + "correo"+ correo + "telefono:" + telefono.toString() )
+        println("Id:" + id.toString() +  "fecha:" + fecha + "nombre:" + nombre + "correo"+ correo + "telefono:" + telefono.toString() )
         //val fecha = "1995-12-06"
 
         val personInfo = ClienteDataCollectionItem(  id = null,
                 nombre = nombre,
                 correo= correo,
-                fechaNacimiento = fecha,
-                telefono = telefono
+                telefono = telefono,
+                fechaNacimiento = fecha
 
         )
 

@@ -6,7 +6,8 @@ data class ClienteDataCollectionItem(
         val id:Long?,
         val nombre:String,
         val correo:String,
-        val fechaNacimiento:String,
-        val telefono:Long
+        val telefono:Long,
+        val fechaNacimiento:String
+
 
 )

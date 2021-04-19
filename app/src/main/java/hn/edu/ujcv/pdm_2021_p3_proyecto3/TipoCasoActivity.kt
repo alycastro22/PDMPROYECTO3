@@ -26,6 +26,8 @@ class TipoCasoActivity : AppCompatActivity() {
             botonPut.setOnClickListener { v-> callServicePutPerson()}
             val botonDelete = findViewById<TextView>(R.id.txtEliminarTC)
             botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
+            val botonBuscar = findViewById<ImageView>(R.id.txtBuscarTC)
+            botonBuscar.setOnClickListener{v -> callServiceGetPerson()}
 
         }
 
@@ -36,7 +38,6 @@ class TipoCasoActivity : AppCompatActivity() {
         startActivity(cambio)
 
     }
-
 
     private fun callServiceDeletePerson() {
         val id = txtId9.text.toString().toLong()
@@ -84,7 +85,7 @@ class TipoCasoActivity : AppCompatActivity() {
         val personInfo = TipoCasoDataCollectionItem(  id = id,
                 nombre = nombre,
                 descripcion=descripcion,
-                precio= precio,
+                precio= precio
         )
 
         val retrofit = RestEngine.buildService().create(TipoCasoService::class.java)
@@ -155,7 +156,7 @@ class TipoCasoActivity : AppCompatActivity() {
         val personInfo = TipoCasoDataCollectionItem(  id = id,
                 nombre = nombre,
                 descripcion=descripcion,
-                precio= precio,
+                precio= precio
         )
 
         addPerson(personInfo) {

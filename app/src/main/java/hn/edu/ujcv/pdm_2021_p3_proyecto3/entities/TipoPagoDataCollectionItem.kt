@@ -3,6 +3,6 @@ class TipoPagoDataCollection: ArrayList<TipoPagoDataCollectionItem>()
 
 data class TipoPagoDataCollectionItem(
     val id:Long?,
-    val descripcion:String,
+    val descripcion:String
 
     )

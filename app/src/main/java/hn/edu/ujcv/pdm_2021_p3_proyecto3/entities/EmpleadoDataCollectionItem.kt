@@ -10,7 +10,6 @@ data class EmpleadoDataCollectionItem(
         val telefono : Long,
         val cargo : String,
         val idAgencia : Long,
-        val clave : String,
         val fechaNacimiento : String
 )
 

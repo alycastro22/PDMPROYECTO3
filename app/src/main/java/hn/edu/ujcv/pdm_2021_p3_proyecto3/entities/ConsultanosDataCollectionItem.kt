@@ -7,5 +7,6 @@ class ConsultanosDataCollection: ArrayList<ConsultanosDataCollectionItem>()
      val idcliente : Long,
      val idabogado : Long,
      val fecha : String,
+     val desscripcion : String
 
 )

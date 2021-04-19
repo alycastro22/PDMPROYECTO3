@@ -160,7 +160,6 @@
     <string name="txtNombre6">Nombre</string>
     <string name="txtDni1">Dni</string>
     <string name="txtIdAgencia1">Id Agencia</string>
-    <string name="txtClave">Clave</string>
     <string name="txtFechaNacimiento">Fecha de nacimiento</string>
 
     <string name="txtId11">Id</string>
@@ -197,6 +196,7 @@
 
     <string name="Todo2">TODO</string>
     <string name="Todo">TODO</string>
+    <string name="txtDescripcionConsulta">Descripción</string>
 
 
 </resources>

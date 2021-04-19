@@ -7,6 +7,6 @@ data class TipoCasoDataCollectionItem(
         val id : Long?,
         val nombre : String,
         val descripcion: String,
-        val precio : Double,
+        val precio : Double
 
 )

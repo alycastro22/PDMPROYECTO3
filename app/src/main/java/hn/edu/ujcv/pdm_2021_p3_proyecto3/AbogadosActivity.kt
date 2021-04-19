@@ -96,7 +96,6 @@ class AbogadosActivity : AppCompatActivity() {
         var telefono = txtTelefono.text.toString().toLong()
         println("Id:" + Id.toString() +  "fecha:" + fecha.toString() + "nombre:" + nombre.toString() +"dni:" +
                 dni.toString()+ "correo"+ correo + "telefono:" + telefono.toString() )
-        //val fecha = "1995-12-06"
         val personInfo = AbogadoDataCollectionItem(  id = Id,
             dni = dni.toString(),
             nombre = nombre,

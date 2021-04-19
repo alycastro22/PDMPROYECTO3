@@ -74,24 +74,23 @@ class EmpleadosActivity : AppCompatActivity() {
 
     private fun callServicePutPerson() {
         val Id = txtIdEmpleado.text.toString().toLong()
-        val fecha = "1995-01-15"
+        val fecha = txtFechaNacimiento.text.toString()
         val nombre=txtNombre.text.toString()
         val dni = txtIdentidad1.text.toString()
         val correo = txtCorreo.text.toString()
         val telefono = txtTelefono3.text.toString().toLong()
         val cargo = txtCargo.text.toString()
-        val clave = txtClave.text.toString()
+        val idAgencia = txtIdAgencia.text.toString().toLong()
 
         val personInfo = EmpleadoDataCollectionItem(
-                id = Id.toString().toLong(),
-                dni = dni,
+                id = Id,
                 nombre = nombre,
-                fechaNacimiento = fecha,
+                dni = dni,
                 correo= correo,
                 telefono = telefono,
                 cargo = cargo,
-                idAgencia = 1,
-                clave = clave,
+                idAgencia = idAgencia,
+                fechaNacimiento = fecha
         )
 
         val retrofit = RestEngine.buildService().create(EmpleadoService::class.java)
@@ -140,7 +139,7 @@ class EmpleadosActivity : AppCompatActivity() {
             }
         })
     }
-    private fun obtenertexto(){
+    /*private fun obtenertexto(){
         val Id = txtIdEmpleado.text.toString().toLong()
         val fecha = "1995-01-15"
         val nombre=txtNombre.text.toString()
@@ -148,10 +147,10 @@ class EmpleadosActivity : AppCompatActivity() {
         val correo = txtCorreo.text.toString()
         val telefono = txtTelefono3.text.toString()
         val cargo = txtCargo.text.toString()
-        val clave = txtClave.text.toString()
+        val clave = txtIdAgencia.text.toString()
         println("Id:" + Id.toString() +  "fecha:" + fecha + "nombre:" + nombre +"dni:" +
                 dni+ "correo"+ correo + "telefono:" + telefono + "cargo" + cargo + "clave:" + clave)
-    }
+    }*/
 
     private fun callServicePostPerson() {
         val Id = txtIdEmpleado.text.toString().toLong()
@@ -161,20 +160,20 @@ class EmpleadosActivity : AppCompatActivity() {
         val correo = txtCorreo.text.toString()
         val telefono = txtTelefono3.text.toString().toLong()
         val cargo = txtCargo.text.toString()
-        val clave = txtClave.text.toString()
+        val idAgencia = txtIdAgencia.text.toString().toLong()
 
 
         //val fecha = "1995-12-06"
         val personInfo = EmpleadoDataCollectionItem(
                 id = null,
-                dni = dni,
                 nombre = nombre,
-                fechaNacimiento = fecha,
+                dni = dni,
                 correo= correo,
                 telefono = telefono,
                 cargo = cargo,
-                idAgencia = 1,
-                clave = clave,
+                idAgencia = idAgencia,
+                fechaNacimiento = fecha
+
         )
 
 

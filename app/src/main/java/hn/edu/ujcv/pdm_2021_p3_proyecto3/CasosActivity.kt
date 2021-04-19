@@ -3,6 +3,7 @@ package hn.edu.ujcv.pdm_2021_p3_proyecto3
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.CasoService
@@ -25,6 +26,8 @@ class CasosActivity : AppCompatActivity() {
         botonPut.setOnClickListener { v-> callServicePutPerson()}
         val botonDelete = findViewById<TextView>(R.id.txtEliminarCaso)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
+        val botonBuscar = findViewById<ImageView>(R.id.txtBuscarCaso)
+        botonBuscar.setOnClickListener { v -> callServiceGetPerson() }
 
 
     }
@@ -82,8 +85,7 @@ class CasosActivity : AppCompatActivity() {
                 idAbogados = IdAb1,
                 inicio = fechainicio,
                 finalizacion = fechafinal,
-                idTipoCaso = IdTipocaso ,
-
+                idTipoCaso = IdTipocaso
         )
 
         val retrofit = RestEngine.buildService().create(CasoService::class.java)

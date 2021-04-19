@@ -33,8 +33,6 @@ class CitaActivity : AppCompatActivity() {
 
         }
 
-
-
     }
     fun Regresar(){
         val cambio = Intent (this,MenuActivity::class.java)
@@ -42,109 +40,109 @@ class CitaActivity : AppCompatActivity() {
 
 
     }
-private fun callServiceDeletePerson() {
-    val idcita = txtIdCita1.text.toString().toLong()
-    if (txtIdCita1.text.isNotEmpty()) {
+    private fun callServiceDeletePerson() {
+        val idcita = txtIdCita1.text.toString().toLong()
+        if (txtIdCita1.text.isNotEmpty()) {
 
-        val citaService: CitaService =
-                RestEngine.buildService().create(CitaService::class.java)
-        var result: Call<ResponseBody> = citaService.deleteCita(idcita)
+            val citaService: CitaService =
+                    RestEngine.buildService().create(CitaService::class.java)
+            var result: Call<ResponseBody> = citaService.deleteCita(idcita)
 
-        result.enqueue(object : Callback<ResponseBody> {
-            override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
-                Toast.makeText(this@CitaActivity, "Error", Toast.LENGTH_LONG).show()
+            result.enqueue(object : Callback<ResponseBody> {
+                override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
+                    Toast.makeText(this@CitaActivity, "Error", Toast.LENGTH_LONG).show()
+                }
+
+                override fun onResponse(
+                        call: Call<ResponseBody>,
+                        response: Response<ResponseBody>
+                ) {
+                    if (response.isSuccessful) {
+                        Toast.makeText(this@CitaActivity, "DELETE", Toast.LENGTH_LONG).show()
+                    } else if (response.code() == 401) {
+                        Toast.makeText(this@CitaActivity, "Sesion expirada", Toast.LENGTH_LONG)
+                                .show()
+                    } else {
+                        Toast.makeText(
+                                this@CitaActivity,
+                                "Fallo al traer el item",
+                                Toast.LENGTH_LONG
+                        ).show()
+                    }
+                }
+            })
+        } else {
+        }
+
+    }
+
+    private fun callServicePutPerson() {
+        var id = txtIdCita1.text.toString().toLong()
+        var fecha = txtFecha3.toString()
+        var descripcion= txtDescripcion5.text.toString()
+        var precio = txtPrecio3.text.toString().toDouble()
+        var idcaso=txtIdCaso3.text.toString().toLong()
+
+        println("Id:" + id.toString() +  "fecha:" + fecha.toString() + "descripcion:" + descripcion.toString() +"precio:" +precio.toDouble()+"caso:" +  idcaso.toString()
+             )
+
+        val personInfo = CitaDataCollectionItem(  id = id,
+                fecha=fecha,
+                descripcion = descripcion,
+                precio= precio,
+                idcaso = idcaso
+        )
+
+
+
+        val retrofit = RestEngine.buildService().create(CitaService::class.java)
+        var result: Call<CitaDataCollectionItem> = retrofit.updateCita(personInfo)
+
+        result.enqueue(object : Callback<CitaDataCollectionItem> {
+            override fun onFailure(call: Call<CitaDataCollectionItem>, t: Throwable) {
+                Toast.makeText(this@CitaActivity,"Error", Toast.LENGTH_LONG).show()
+            }
+
+            override fun onResponse(call: Call<CitaDataCollectionItem>,
+                                    response: Response<CitaDataCollectionItem>
+            ) {
+                if (response.isSuccessful) {
+                    val updatedPerson = response.body()!!
+                    Toast.makeText(this@CitaActivity,"OK"+response.body()!!.descripcion,Toast.LENGTH_LONG).show()
+                }
+                else if (response.code() == 401){
+                    Toast.makeText(this@CitaActivity,"Sesion expirada", Toast.LENGTH_LONG).show()
+                }
+                else{
+                    Toast.makeText(this@CitaActivity,"Fallo al traer el item", Toast.LENGTH_LONG).show()
+                }
+            }
+
+        })
+    }
+
+    private fun callServiceGetPerson() {
+        var  id = txtIdCita1.text.toString().toLong()
+        val citaService: CitaService = RestEngine.buildService().create(CitaService::class.java)
+        var result: Call<CitaDataCollectionItem> = citaService.getCitaById(id)
+
+        result.enqueue(object : Callback<CitaDataCollectionItem> {
+            override fun onFailure(call: Call<CitaDataCollectionItem>, t: Throwable) {
+                Toast.makeText(this@CitaActivity,"Error", Toast.LENGTH_LONG).show()
             }
 
             override fun onResponse(
-                    call: Call<ResponseBody>,
-                    response: Response<ResponseBody>
+                    call: Call<CitaDataCollectionItem>,
+                    response: Response<CitaDataCollectionItem>
+
+
             ) {
-                if (response.isSuccessful) {
-                    Toast.makeText(this@CitaActivity, "DELETE", Toast.LENGTH_LONG).show()
-                } else if (response.code() == 401) {
-                    Toast.makeText(this@CitaActivity, "Sesion expirada", Toast.LENGTH_LONG)
-                            .show()
-                } else {
-                    Toast.makeText(
-                            this@CitaActivity,
-                            "Fallo al traer el item",
-                            Toast.LENGTH_LONG
-                    ).show()
-                }
+                txtDescripcion5.setText("")
+                Toast.makeText(this@CitaActivity,"OK"+response.body()!!.descripcion, Toast.LENGTH_LONG).show()
             }
         })
-    } else {
     }
-
-}
-
-private fun callServicePutPerson() {
-    var idcita = txtIdCita1.text.toString().toLong()
-    var fecha = txtFecha3.toString()
-    var descripcion= txtDescripcion5.text.toString()
-    var precio = txtPrecio3.text.toString().toDouble()
-    var idcaso=txtIdCaso3.text.toString()
-
-    println("Id:" + idcita.toString() +  "fecha:" + fecha.toString() + "descripcion:" + descripcion.toString() +"precio:" +precio.toDouble()+"caso:" +  idcaso.toString()
-         )
-    //val fecha = "1995-12-06"
-    val personInfo = CitaDataCollectionItem(  id = idcita.toString().toLong(),
-
-            fecha=fecha,
-            descripcion = descripcion,
-            precio= precio,
-            idcaso = idcaso.toLong())
-
-
-
-    val retrofit = RestEngine.buildService().create(CitaService::class.java)
-    var result: Call<CitaDataCollectionItem> = retrofit.updateCita(personInfo)
-
-    result.enqueue(object : Callback<CitaDataCollectionItem> {
-        override fun onFailure(call: Call<CitaDataCollectionItem>, t: Throwable) {
-            Toast.makeText(this@CitaActivity,"Error", Toast.LENGTH_LONG).show()
-        }
-
-        override fun onResponse(call: Call<CitaDataCollectionItem>,
-                                response: Response<CitaDataCollectionItem>
-        ) {
-            if (response.isSuccessful) {
-                val updatedPerson = response.body()!!
-                Toast.makeText(this@CitaActivity,"OK"+response.body()!!.descripcion,Toast.LENGTH_LONG).show()
-            }
-            else if (response.code() == 401){
-                Toast.makeText(this@CitaActivity,"Sesion expirada", Toast.LENGTH_LONG).show()
-            }
-            else{
-                Toast.makeText(this@CitaActivity,"Fallo al traer el item", Toast.LENGTH_LONG).show()
-            }
-        }
-
-    })
-}
-
-private fun callServiceGetPerson() {
-    var  IdCita = txtIdCita1.text.toString().toLong()
-    val citaService: CitaService = RestEngine.buildService().create(CitaService::class.java)
-    var result: Call<CitaDataCollectionItem> = citaService.getCitaById(IdCita)
-
-    result.enqueue(object : Callback<CitaDataCollectionItem> {
-        override fun onFailure(call: Call<CitaDataCollectionItem>, t: Throwable) {
-            Toast.makeText(this@CitaActivity,"Error", Toast.LENGTH_LONG).show()
-        }
-
-        override fun onResponse(
-                call: Call<CitaDataCollectionItem>,
-                response: Response<CitaDataCollectionItem>
-
-
-        ) {
-            txtDescripcion5.setText("")
-            Toast.makeText(this@CitaActivity,"OK"+response.body()!!.descripcion, Toast.LENGTH_LONG).show()
-        }
-    })
-}
-private fun obtenertexto(){
+/*private fun obtenertexto(){
     var idcita = txtIdCita1.text.toString().toLong()
     var fecha = txtFecha3.toString()
     var descripcion= txtDescripcion5.text.toString()
@@ -152,75 +150,76 @@ private fun obtenertexto(){
     var idcaso=txtIdCaso3.text.toString()
     println("idcita:" + idcita.toString() +  "fecha:" + fecha.toString() + "descripcion:" + descripcion.toString() +"precio:" +
             precio.toDouble()+ "caso"+ idcaso.toString() )
-}
+}*/
 
-private fun callServicePostPerson() {
-    var idcita = txtIdCita1.text.toString().toLong()
-    var fecha = txtFecha3.toString()
-    var descripcion= txtDescripcion5.text.toString()
-    var precio = txtPrecio3.text.toString().toDouble()
-    var idcaso=txtIdCaso3.text.toString()
+    private fun callServicePostPerson() {
+        var id = txtIdCita1.text.toString().toLong()
+        var fecha = txtFecha3.toString()
+        var descripcion = txtDescripcion5.text.toString()
+        var precio = txtPrecio3.text.toString().toDouble()
+        var idcaso = txtIdCaso3.text.toString().toLong()
 
-    //val fecha = "1995-12-06"
-    val personInfo = CitaDataCollectionItem(  id = null,
-            fecha=fecha,
-            descripcion = descripcion,
-            precio= precio,
-            idcaso = idcaso.toLong())
+        //val fecha = "1995-12-06"
+        val personInfo = CitaDataCollectionItem(  id = null,
+                fecha=fecha,
+                descripcion = descripcion,
+                precio= precio,
+                idcaso = idcaso
+        )
 
-    addPerson(personInfo) {
-        if (it?.id != null) {
-            Toast.makeText(this@CitaActivity,"OK"+it?.id, Toast.LENGTH_LONG).show()
-        } else {
-            Toast.makeText(this@CitaActivity,"Error", Toast.LENGTH_LONG).show()
+        addPerson(personInfo) {
+            if (it?.id != null) {
+                Toast.makeText(this@CitaActivity,"OK"+it?.id, Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(this@CitaActivity,"Error", Toast.LENGTH_LONG).show()
+            }
         }
     }
-}
 
-private fun callServiceGetPersons() {
-    val personService: CitaService = RestEngine.buildService().create(CitaService::class.java)
-    var result: Call<List<CitaDataCollectionItem>> = personService.listaCita()
+    private fun callServiceGetPersons() {
+        val personService: CitaService = RestEngine.buildService().create(CitaService::class.java)
+        var result: Call<List<CitaDataCollectionItem>> = personService.listaCita()
 
-    result.enqueue(object : Callback<List<CitaDataCollectionItem>> {
-        override fun onFailure(call: Call<List<CitaDataCollectionItem>>, t: Throwable) {
-            Toast.makeText(this@CitaActivity,"Error", Toast.LENGTH_LONG).show()
-        }
-
-        override fun onResponse(
-                call: Call<List<CitaDataCollectionItem>>,
-                response: Response<List<CitaDataCollectionItem>>
-        ) {
-            Toast.makeText(this@CitaActivity,"OK"+response.body()!!.get(0).descripcion, Toast.LENGTH_LONG).show()
-        }
-    })
-}
-
-fun addPerson(CitaData: CitaDataCollectionItem, onResult: (CitaDataCollectionItem?) -> Unit){
-    val retrofit = RestEngine.buildService().create(CitaService::class.java)
-    var result: Call<CitaDataCollectionItem> = retrofit.addCita(CitaData)
-
-    result.enqueue(object : Callback<CitaDataCollectionItem> {
-        override fun onFailure(call: Call<CitaDataCollectionItem>, t: Throwable) {
-            onResult(null)
-        }
-
-        override fun onResponse(call: Call<CitaDataCollectionItem>,
-                                response: Response<CitaDataCollectionItem>
-        ) {
-            if (response.isSuccessful) {
-                val addedPerson = response.body()!!
-                onResult(addedPerson)
+        result.enqueue(object : Callback<List<CitaDataCollectionItem>> {
+            override fun onFailure(call: Call<List<CitaDataCollectionItem>>, t: Throwable) {
+                Toast.makeText(this@CitaActivity,"Error", Toast.LENGTH_LONG).show()
             }
-            else if (response.code() == 401){
-                Toast.makeText(this@CitaActivity,"Sesion expirada", Toast.LENGTH_LONG).show()
-            }
-            else{
-                Toast.makeText(this@CitaActivity,"Fallo al traer el item", Toast.LENGTH_LONG).show()
-            }
-        }
 
+            override fun onResponse(
+                    call: Call<List<CitaDataCollectionItem>>,
+                    response: Response<List<CitaDataCollectionItem>>
+            ) {
+                Toast.makeText(this@CitaActivity,"OK"+response.body()!!.get(0).descripcion, Toast.LENGTH_LONG).show()
+            }
+        })
     }
-    )
-}
+
+    fun addPerson(CitaData: CitaDataCollectionItem, onResult: (CitaDataCollectionItem?) -> Unit){
+        val retrofit = RestEngine.buildService().create(CitaService::class.java)
+        var result: Call<CitaDataCollectionItem> = retrofit.addCita(CitaData)
+
+        result.enqueue(object : Callback<CitaDataCollectionItem> {
+            override fun onFailure(call: Call<CitaDataCollectionItem>, t: Throwable) {
+                onResult(null)
+            }
+
+            override fun onResponse(call: Call<CitaDataCollectionItem>,
+                                    response: Response<CitaDataCollectionItem>
+            ) {
+                if (response.isSuccessful) {
+                    val addedPerson = response.body()!!
+                    onResult(addedPerson)
+                }
+                else if (response.code() == 401){
+                    Toast.makeText(this@CitaActivity,"Sesion expirada", Toast.LENGTH_LONG).show()
+                }
+                else{
+                    Toast.makeText(this@CitaActivity,"Fallo al traer el item", Toast.LENGTH_LONG).show()
+                }
+            }
+
+        }
+        )
+    }
 
 }

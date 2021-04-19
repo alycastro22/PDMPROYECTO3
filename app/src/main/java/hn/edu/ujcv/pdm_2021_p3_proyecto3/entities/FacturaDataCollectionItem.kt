@@ -9,5 +9,5 @@ data class FacturaDataCollectionItem(
         val idempleado : Long,
         val idcaso : Long,
         val idpago : Long,
-        val idservicios : Long,
+        val idservicios : Long
 )

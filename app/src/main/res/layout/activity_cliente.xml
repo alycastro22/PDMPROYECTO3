@@ -13,8 +13,8 @@
         android:layout_marginBottom="580dp"
         android:fontFamily="@font/copse"
         android:hint="@string/txvCliente"
-        android:textColorHint="@color/white"
         android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,8 +33,8 @@
         android:gravity="center"
         android:hint="@string/txtId12"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txtLupaCliente"
@@ -51,24 +51,8 @@
         android:gravity="center"
         android:hint="@string/txtNombre10"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
         android:textColorHint="@color/white"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/txtFechaNacimiento2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginBottom="300dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/txtFechaNacimiento1"
-        android:inputType="textPersonName"
-       android:textColorHint="@color/white"
-        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -83,8 +67,8 @@
         android:gravity="center"
         android:hint="@string/txtCorreo3"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -98,8 +82,8 @@
         android:gravity="center"
         android:hint="@string/txtTelefono2"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -165,11 +149,28 @@
         android:layout_marginTop="237dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="27dp"
+        android:contentDescription="@string/Todo"
         app:layout_constraintBottom_toTopOf="@+id/txtAgregarCliente"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtId12"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lupa"
-        android:contentDescription="@string/Todo" />
+        app:srcCompat="@drawable/lupa" />
+
+    <EditText
+        android:id="@+id/txtFechaNacimiento2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="98dp"
+        android:ems="10"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="@string/txtFechaNacimiento"
+        android:autofillHints=""
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

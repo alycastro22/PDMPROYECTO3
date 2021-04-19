@@ -29,9 +29,7 @@ class TipoPagoActivity : AppCompatActivity() {
         val botonBuscar = findViewById<ImageView>(R.id.txtLupaTP)
         botonBuscar.setOnClickListener { v -> callServiceGetPerson() }
 
-
     }
-
 
     fun Regresar(){
         val cambio = Intent (this,MenuActivity::class.java)
@@ -81,7 +79,7 @@ class TipoPagoActivity : AppCompatActivity() {
         var descripcion = txtDescripcion3.text.toString()
 
         val personInfo = TipoPagoDataCollectionItem(  id = id,
-            descripcion = descripcion,
+            descripcion = descripcion
         )
 
         val retrofit = RestEngine.buildService().create(TipoPagoService::class.java)
@@ -142,8 +140,8 @@ class TipoPagoActivity : AppCompatActivity() {
         var id = txtId4.text.toString().toLong()
         var descripcion = txtDescripcion3.text.toString()
 
-        val personInfo = TipoPagoDataCollectionItem(  id = id,
-                descripcion = descripcion,
+        val personInfo = TipoPagoDataCollectionItem(  id = null,
+                descripcion = descripcion
         )
 
 

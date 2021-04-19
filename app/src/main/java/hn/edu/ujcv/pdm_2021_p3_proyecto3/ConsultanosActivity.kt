@@ -78,6 +78,7 @@ class ConsultanosActivity : AppCompatActivity() {
         var idcliente = txtIdCliente2.toString().toLong()
         var idabogado= txtIdAbogado4.text.toString().toLong()
         var fecha = txtFecha2.text.toString()
+        var descripcion = txtDescripcionConsulta.text.toString()
 
         println("id:" + id.toString() +  "cliente:" +idcliente.toString() + "idabogado:" + idabogado.toString() +"fecha:" +fecha.toString())
         //val fecha = "1995-12-06"
@@ -85,6 +86,7 @@ class ConsultanosActivity : AppCompatActivity() {
                 idcliente=idcliente,
                 idabogado=idabogado,
                 fecha=fecha,
+                desscripcion = descripcion
         )
         val retrofit = RestEngine.buildService().create(ConsultanosService::class.java)
         var result: Call<ConsultanosDataCollectionItem> = retrofit.updateConsultanos(personInfo)
@@ -147,14 +149,16 @@ class ConsultanosActivity : AppCompatActivity() {
         var idcliente = txtIdCliente2.toString().toLong()
         var idabogado= txtIdAbogado4.text.toString().toLong()
         var fecha = txtFecha2.text.toString()
+        var descripcion = txtDescripcionConsulta.text.toString()
 
         println("id:" + id.toString() +  "cliente:" +idcliente.toString() + "idabogado:" + idabogado.toString() +"fecha:" +fecha.toString())
 
         //val fecha = "1995-12-06"
         val personInfo = ConsultanosDataCollectionItem(  id = null,
-                idcliente= idcliente,
-                idabogado=idabogado,
-                fecha=fecha
+                idcliente = idcliente,
+                idabogado = idabogado,
+                fecha = fecha,
+                desscripcion = descripcion
         )
 
 

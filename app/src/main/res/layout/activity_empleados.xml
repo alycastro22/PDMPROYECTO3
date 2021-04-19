@@ -7,25 +7,6 @@
     android:background="@drawable/fondo3">
 
     <EditText
-        android:id="@+id/txtFechaNacimiento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="607dp"
-        android:layout_marginEnd="94dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:fontFamily="@font/copse"
-        android:gravity="center"
-        android:hint="@string/txtFechaNacimiento"
-        android:inputType="textPersonName"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
         android:id="@+id/txtIdEmpleado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,8 +56,8 @@
         android:gravity="center"
         android:hint="@string/txtIdentidad1"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -94,8 +75,8 @@
         android:gravity="center"
         android:hint="@string/txtCorreo"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -111,8 +92,8 @@
         android:gravity="center"
         android:hint="@string/txtTelefono3"
         android:inputType="textPersonName"
-       android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
@@ -128,15 +109,15 @@
         android:gravity="center"
         android:hint="@string/txtCargo"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTelefono3" />
 
 
     <EditText
-        android:id="@+id/txtClave"
+        android:id="@+id/txtIdAgencia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
@@ -146,10 +127,10 @@
         android:ems="10"
         android:fontFamily="@font/copse"
         android:gravity="center"
-        android:hint="@string/txtClave"
+        android:hint="@string/txtIdAgencia1"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -233,5 +214,24 @@
         app:layout_constraintStart_toEndOf="@+id/txtIdEmpleado"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/lupa" />
+
+    <EditText
+        android:id="@+id/txtFechaNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="607dp"
+        android:layout_marginEnd="103dp"
+        android:ems="10"
+        android:autofillHints=""
+        android:fontFamily="@font/copse"
+        android:gravity="center"
+        android:hint="@string/txtFechaNacimiento"
+        android:inputType="date"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

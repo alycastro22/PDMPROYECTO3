@@ -72,10 +72,10 @@ class AgenciaActivity : AppCompatActivity() {
     }
     private fun callServicePutPerson() {
             //fecha = txtFechaNaciAbo.text.toString()
-            val nombre=txtNombreCaso.text.toString()
-            val direccion = txtDireccion.text.toString()
-            val id =txtId13.text.toString().toLong()
-            val telefono = txtTelefono1.text.toString().toLong()
+        val id =txtId13.text.toString().toLong()
+        val nombre= txtNombreCaso.text.toString()
+        val direccion = txtDireccion.text.toString()
+        val telefono = txtTelefono1.text.toString().toLong()
 
 
         val personInfo = AgenciaDataCollectionItem(  id = id,
@@ -131,14 +131,14 @@ class AgenciaActivity : AppCompatActivity() {
     }
 
     private fun callServicePostPerson() {
+        val id =txtId13.text.toString()
         val nombre=txtNombreCaso.text.toString()
         val direccion = txtDireccion.text.toString()
-        val id =txtId13.text.toString()
         val telefono = txtTelefono1.text.toString().toLong()
 
         val personInfo = AgenciaDataCollectionItem(  id = null,
                 nombre = nombre,
-                direccion = direccion ,
+                direccion = direccion,
                 telefono = telefono
         )
 
@@ -192,8 +192,7 @@ class AgenciaActivity : AppCompatActivity() {
                     Toast.makeText(
                         this@AgenciaActivity,
                         "Fallo al traer el item",
-                        Toast.LENGTH_LONG
-                    ).show()
+                        Toast.LENGTH_LONG).show()
                 }
             }
 

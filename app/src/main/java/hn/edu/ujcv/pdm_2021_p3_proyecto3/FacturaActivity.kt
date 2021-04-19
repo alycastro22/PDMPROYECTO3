@@ -84,17 +84,17 @@ class FacturaActivity : AppCompatActivity() {
         var idcaso = txtIdCaso1.text.toString().toLong()
         var idpago = txtIdPago.text.toString().toLong()
         var idservicios = txtIdServicio.text.toString().toLong()
-       println("id:" + id.toString().toLong() +"fecha:" + fecha.toString() + "idempleado:" + idempleado.toString() +"idcaso:" +
-                idcaso.toString()+ "idpago"+idpago.toString()+ "idservicios:" + idservicios.toString() )
+           println("id:" + id.toString().toLong() +"fecha:" + fecha.toString() + "idempleado:" + idempleado.toString() +"idcaso:" +
+                    idcaso.toString()+ "idpago"+idpago.toString()+ "idservicios:" + idservicios.toString() )
 
         val personInfo = FacturaDataCollectionItem(  id = id,
                 fecha = fecha,
                 idempleado=idempleado,
                 idcaso= idcaso,
                 idpago= idpago,
-                idservicios=idservicios,
+                idservicios=idservicios
 
-                )
+        )
 
         val retrofit = RestEngine.buildService().create(FacturaService::class.java)
         var result: Call<FacturaDataCollectionItem> = retrofit.updateFactura(personInfo)
@@ -123,7 +123,7 @@ class FacturaActivity : AppCompatActivity() {
     }
 
     private fun callServiceGetPerson() {
-        var  id = txtId8.text.toString().toLong()
+        val  id = txtId8.text.toString().toLong()
         val FacturaService: FacturaService = RestEngine.buildService().create(FacturaService::class.java)
         var result: Call<FacturaDataCollectionItem> = FacturaService.getFacturaById(id)
 
@@ -136,14 +136,13 @@ class FacturaActivity : AppCompatActivity() {
                     call: Call<FacturaDataCollectionItem>,
                     response: Response<FacturaDataCollectionItem>
 
-
             ) {
                 txtFechaFactura.setText("")
                 Toast.makeText(this@FacturaActivity,"OK"+response.body()!!.fecha, Toast.LENGTH_LONG).show()
             }
         })
     }
-    private fun obtenertexto(){
+    /*private fun obtenertexto(){
         var id = txtId8.text.toString().toLong()
         var fecha = txtFechaFactura.text.toString()
         var idempleado= txtEmpleado1.text.toString().toLong()
@@ -152,7 +151,7 @@ class FacturaActivity : AppCompatActivity() {
         var idservicios = txtIdServicio.text.toString().toLong()
         println("id:" + id.toString().toLong() +"fecha:" + fecha.toString() + "idempleado:" + idempleado.toString() +"idcaso:" +
                 idcaso.toString()+ "idpago"+idpago.toString()+ "idservicios:" + idservicios.toString() )
-    }
+    }*/
 
     private fun callServicePostPerson() {
         var id = txtId8.text.toString().toLong()
@@ -163,19 +162,13 @@ class FacturaActivity : AppCompatActivity() {
         var idservicios = txtIdServicio.text.toString().toLong()
 
 
-        //val fecha = "1995-12-06"
         val personInfo = FacturaDataCollectionItem(  id = null,
-
                 fecha = fecha,
                 idempleado=idempleado,
                 idcaso= idcaso,
                 idpago= idpago.toLong(),
-                idservicios=idservicios,
-
-
-
+                idservicios=idservicios
         )
-
 
         addPerson(personInfo) {
             if (it?.id != null) {
