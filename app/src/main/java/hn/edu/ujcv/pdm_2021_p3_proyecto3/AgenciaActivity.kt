@@ -80,7 +80,7 @@ class AgenciaActivity : AppCompatActivity() {
 
         val personInfo = AgenciaDataCollectionItem(  id = id,
             nombre = nombre,
-            direccion = direccion ,
+            direccion = direccion,
             telefono = telefono
 
         )

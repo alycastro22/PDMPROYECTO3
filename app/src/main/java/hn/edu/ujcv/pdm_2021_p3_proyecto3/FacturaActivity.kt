@@ -84,22 +84,20 @@ class FacturaActivity : AppCompatActivity() {
 
     private fun callServicePutPerson() {
         var id = txtId8.text.toString().toLong()
-        var fecha = "1995-01-15"
+        var fecha = txtFechaFactura.text.toString()
         var idempleado= txtEmpleado1.toString().toLong()
         var idcaso = txtIdCaso1.text.toString().toLong()
-        var idpago = txtIdPago.text.toString()
+        var idpago = txtIdPago.text.toString().toLong()
         var idservicios = txtIdServicio.text.toString().toLong()
        println("id:" + id.toString().toLong() +"fecha:" + fecha.toString() + "idempleado:" + idempleado.toString() +"idcaso:" +
                 idcaso.toString()+ "idpago"+idpago.toString()+ "idservicios:" + idservicios.toString() )
-        //val fecha = "1995-12-06"
-        val personInfo = FacturaDataCollectionItem(  id = id.toString().toLong(),
 
+        val personInfo = FacturaDataCollectionItem(  id = id,
                 fecha = fecha,
                 idempleado=idempleado,
                 idcaso= idcaso,
-                idpago= idpago.toLong(),
+                idpago= idpago,
                 idservicios=idservicios,
-
 
                 )
 

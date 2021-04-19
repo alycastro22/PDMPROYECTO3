@@ -71,18 +71,18 @@ class CasosActivity : AppCompatActivity() {
 
     private fun callServicePutPerson() {
         val Id = txtId6.text.toString().toLong()
-        val fecha = txtFechaNaciAbo.text.toString()
-        val IdC1 = txtId6.text.toString().toLong()
-        val IdAb1 = txtIdentidad.text.toString().toLong()
-        val IdTipocaso = txtId6.text.toString().toLong()
+        val fechainicio = txtFechaInicio.text.toString()
+        val IdC1 = txtIdCliente1.text.toString().toLong()
+        val IdAb1 = txtIdAbogado.text.toString().toLong()
+        val IdTipocaso = txtIdTipoCaso1.text.toString().toLong()
+        val fechafinal = txtIdFechaFinalizacion.text.toString()
 
-        val fechaf = "1995-12-06"
-        val personInfo =  CasosDataCollectionItem(  id = 2,
-                idClientes = 1,
-                idAbogados = 1,
-                inicio = "2021-2-1",
-                finalizacion = "2021-2-1",
-                idTipoCaso = 1,
+        val personInfo =  CasosDataCollectionItem(  id = Id,
+                idClientes = IdC1,
+                idAbogados = IdAb1,
+                inicio = fechainicio,
+                finalizacion = fechafinal,
+                idTipoCaso = IdTipocaso ,
 
         )
 
@@ -132,19 +132,19 @@ class CasosActivity : AppCompatActivity() {
     }
 
     private fun callServicePostPerson() {
-        //Id = txtId.text.toString().toLong()
-        /*fecha = txtFechaNaciAbo.text.toString()
-        nombre=txtNombre.text.toString()
-        dni = txtIdentidad.text.toString().toLong()
-        correo=txtCorreo1.text.toString()
-        telefono = txtTelefono.text.toString().toLong()*/
-        val fecha = "1995-12-06"
-        val personInfo = CasosDataCollectionItem(  id = 2,
-                idClientes = 1,
-                idAbogados = 1,
-                inicio = "2021-2-1",
-                finalizacion = "2021-2-1",
-                idTipoCaso = 1,
+        val Id = txtId6.text.toString().toLong()
+        val fechainicio = txtFechaInicio.text.toString()
+        val IdC1 = txtIdCliente1.text.toString().toLong()
+        val IdAb1 = txtIdAbogado.text.toString().toLong()
+        val IdTipocaso = txtIdTipoCaso1.text.toString().toLong()
+        val fechafinal = txtIdFechaFinalizacion.text.toString()
+
+        val personInfo =  CasosDataCollectionItem(  id = Id,
+                idClientes = IdC1,
+                idAbogados = IdAb1,
+                inicio = fechainicio,
+                finalizacion = fechafinal,
+                idTipoCaso = IdTipocaso ,
         )
 
         addPerson(personInfo) {

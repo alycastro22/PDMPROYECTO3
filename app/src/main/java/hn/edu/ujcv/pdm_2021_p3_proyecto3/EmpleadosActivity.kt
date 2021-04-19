@@ -80,20 +80,17 @@ class EmpleadosActivity : AppCompatActivity() {
         val nombre=txtNombre.text.toString()
         val dni = txtIdentidad1.text.toString()
         val correo = txtCorreo.text.toString()
-        val telefono = txtTelefono3.text.toString()
+        val telefono = txtTelefono3.text.toString().toLong()
         val cargo = txtCargo.text.toString()
         val clave = txtClave.text.toString()
-       // var fechaNacimiento = txtFechaNacimiento.text.toString()
-        println("Id:" + Id.toString() +  "fecha:" + fecha + "nombre:" + nombre +"dni:" +
-                dni + "correo"+ correo + "telefono:" + telefono)
-        //val fecha = "1995-12-06"
+
         val personInfo = EmpleadoDataCollectionItem(
                 id = Id.toString().toLong(),
                 dni = dni,
                 nombre = nombre,
                 fechaNacimiento = fecha,
                 correo= correo,
-                telefono = telefono.toLong(),
+                telefono = telefono,
                 cargo = cargo,
                 idAgencia = 1,
                 clave = clave,
@@ -160,11 +157,11 @@ class EmpleadosActivity : AppCompatActivity() {
 
     private fun callServicePostPerson() {
         val Id = txtIdEmpleado.text.toString().toLong()
-        val fecha = "1995-01-15"
+        val fecha = txtFechaNacimiento.text.toString()
         val nombre=txtNombre.text.toString()
         val dni = txtIdentidad1.text.toString()
         val correo = txtCorreo.text.toString()
-        val telefono = txtTelefono3.text.toString()
+        val telefono = txtTelefono3.text.toString().toLong()
         val cargo = txtCargo.text.toString()
         val clave = txtClave.text.toString()
 
@@ -176,7 +173,7 @@ class EmpleadosActivity : AppCompatActivity() {
                 nombre = nombre,
                 fechaNacimiento = fecha,
                 correo= correo,
-                telefono = telefono.toLong(),
+                telefono = telefono,
                 cargo = cargo,
                 idAgencia = 1,
                 clave = clave,

@@ -81,8 +81,7 @@ class TipoCasoActivity : AppCompatActivity() {
         println("id:" + id.toString().toLong() +"nombre:" + nombre.toString() + "descripcion" + descripcion.toString() +"precio:" +
                 precio.toString().toDouble() )
 
-        //val fecha = "1995-12-06"
-        val personInfo = TipoCasoDataCollectionItem(  id = id.toString().toLong(),
+        val personInfo = TipoCasoDataCollectionItem(  id = id,
                 nombre = nombre,
                 descripcion=descripcion,
                 precio= precio,
@@ -135,7 +134,7 @@ class TipoCasoActivity : AppCompatActivity() {
             }
         })
     }
-    private fun obtenertexto(){
+    /*private fun obtenertexto(){
         var id = txtId9.text.toString().toLong()
         var nombre=txtNombre5.text.toString()
         var descripcion = txtDescripcion4.text.toString()
@@ -143,7 +142,7 @@ class TipoCasoActivity : AppCompatActivity() {
 
         println("id:" + id.toString().toLong() +"nombre:" + nombre.toString() + "descripcion" + descripcion.toString() +"precio:" +
                 precio.toString().toDouble() )
-    }
+    }*/
 
     private fun callServicePostPerson() {
         var id = txtId9.text.toString().toLong()
@@ -153,12 +152,11 @@ class TipoCasoActivity : AppCompatActivity() {
 
 
         //val fecha = "1995-12-06"
-        val personInfo = TipoCasoDataCollectionItem(  id = null,
+        val personInfo = TipoCasoDataCollectionItem(  id = id,
                 nombre = nombre,
                 descripcion=descripcion,
                 precio= precio,
-
-                )
+        )
 
         addPerson(personInfo) {
             if (it?.id != null) {

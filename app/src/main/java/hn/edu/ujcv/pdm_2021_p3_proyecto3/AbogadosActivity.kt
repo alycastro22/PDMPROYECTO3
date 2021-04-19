@@ -101,12 +101,12 @@ class AbogadosActivity : AppCompatActivity() {
         println("Id:" + Id.toString() +  "fecha:" + fecha.toString() + "nombre:" + nombre.toString() +"dni:" +
                 dni.toString()+ "correo"+ correo + "telefono:" + telefono.toString() )
         //val fecha = "1995-12-06"
-        val personInfo = AbogadoDataCollectionItem(  id = Id.toString().toLong(),
+        val personInfo = AbogadoDataCollectionItem(  id = Id,
             dni = dni.toString(),
             nombre = nombre,
             fechaNacimiento = fecha,
             correo= correo,
-            telefono = telefono.toString().toLong()
+            telefono = telefono
 
 
         )
@@ -158,19 +158,10 @@ class AbogadosActivity : AppCompatActivity() {
             }
         })
     }
-    private fun obtenertexto(){
-        var Id = txtId.text.toString().toLong()
-        var fecha = txtFechaNaciAbo.text.toString()
-        var nombre= txtNombre1.text.toString()
-        var dni = txtIdentidad.text.toString().toDouble()
-        var correo=txtCorreo1.text.toString()
-        var telefono = txtTelefono.text.toString().toLong()
-        println("Id:" + Id.toString() +  "fecha:" + fecha.toString() + "nombre:" + nombre.toString() +"dni:" +
-                dni.toString()+ "correo"+ correo + "telefono:" + telefono.toString() )
-    }
+
 
     private fun callServicePostPerson() {
-        var Id = txtId.text.toString()
+        var Id = txtId.text.toString().toLong()
         var fecha = txtFechaNaciAbo.text.toString()
         var nombre=txtNombre1.text.toString()
         var dni = txtIdentidad.text.toString()
@@ -179,9 +170,9 @@ class AbogadosActivity : AppCompatActivity() {
 
 
         //val fecha = "1995-12-06"
-        val personInfo =AbogadoDataCollectionItem(  id = null,
-            dni = dni.toString(),
-            nombre = nombre.toString(),
+        val personInfo =AbogadoDataCollectionItem(  id = Id,
+            dni = dni,
+            nombre = nombre,
             fechaNacimiento = fecha,
             correo= correo,
             telefono = telefono.toString().toLong()

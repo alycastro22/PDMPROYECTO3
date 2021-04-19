@@ -76,22 +76,19 @@ private fun callServiceDeletePerson() {
 }
 
 private fun callServicePutPerson() {
-    //  var Id = txtId12.text.toString().toLong()
-    //  var fecha = "1995-01-15"
-    /*  var nombre=txtNombre10.text.toString()
-      var dni = txtIdentidad.text.toString()
-      var correo=txtCorreo1.text.toString()
-      var telefono = txtTelefono.text.toString().toLong()
-      println("Id:" + Id.toString() +  "fecha:" + fecha.toString() + "nombre:" + nombre.toString() +"dni:" +
-              dni.toString()+ "correo"+ correo + "telefono:" + telefono.toString() )*/
-    //val fecha = "1995-12-06"
+    var Id = txtIdPago1.text.toString().toLong()
+    var idtipoPago =txtIdTipoPago1.text.toString().toLong()
+    var cantidadPago = txtCantidadPago.text.toString().toDouble()
+    var impuesto = txtImpuestos.text.toString().toDouble()
+    var subtotal = txtSubtotal.text.toString().toDouble()
+    var totalPagar = txtTotal.text.toString().toDouble()
 
-    val personInfo = PagoDataCollectionItem(  id = 2,
-        id_TipoPago = 1234,
-        cantidad_pago= .0,
-        impuesto = .0,
-        subtotal = .0,
-        totalpagar = .0
+    val personInfo = PagoDataCollectionItem(  id = Id,
+        id_TipoPago = idtipoPago,
+        cantidad_pago= cantidadPago,
+        impuesto = impuesto,
+        subtotal = subtotal,
+        totalpagar = totalPagar
     )
 
     val retrofit = RestEngine.buildService().create(PagoService::class.java)
@@ -141,7 +138,7 @@ private fun callServiceGetPerson() {
         }
     })
 }
-private fun obtenertexto(){
+/*private fun obtenertexto(){
     var Id = txtIdPago1.text.toString().toLong()
     var Id_TipoPago = txtIdTipoPago1.text.toString()
     var CantidadPago= txtCantidadPago.text.toString()
@@ -151,24 +148,22 @@ private fun obtenertexto(){
 
     println("Id:" + Id.toString() +  "Id TipoPago:" + Id_TipoPago.toString() + "CantidadPago" + CantidadPago.toString() +
             "Impuesto"+ Impuesto+ "Subtotal" + Subtotal.toString()+"TotalPagar" + TotalPagar.toString() )
-}
+}*/
 
 private fun callServicePostPerson() {
-    /* var Id = txtId.text.toString()
-     var fecha = txtFechaNaciAbo.text.toString()
-     var nombre=txtNombre1.text.toString()
-     var dni = txtIdentidad.text.toString()
-     var correo=txtCorreo1.text.toString()
-     var telefono = txtTelefono.text.toString().toInt()*/
+    var Id = txtIdPago1.text.toString().toLong()
+    var idtipoPago =txtIdTipoPago1.text.toString().toLong()
+    var cantidadPago = txtCantidadPago.text.toString().toDouble()
+    var impuesto = txtImpuestos.text.toString().toDouble()
+    var subtotal = txtSubtotal.text.toString().toDouble()
+    var totalPagar = txtTotal.text.toString().toDouble()
 
-
-    //val fecha = "1995-12-06"
-    val personInfo = PagoDataCollectionItem(  id = null,
-        id_TipoPago = 1234,
-        cantidad_pago= .0,
-        impuesto = .0,
-        subtotal = .0,
-        totalpagar = .0
+    val personInfo = PagoDataCollectionItem(  id = Id,
+            id_TipoPago = idtipoPago,
+            cantidad_pago= cantidadPago,
+            impuesto = impuesto,
+            subtotal = subtotal,
+            totalpagar = totalPagar
     )
 
 

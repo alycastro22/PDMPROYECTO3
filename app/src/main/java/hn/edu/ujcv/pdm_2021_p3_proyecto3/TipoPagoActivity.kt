@@ -75,20 +75,11 @@ class TipoPagoActivity : AppCompatActivity() {
     }
 
     private fun callServicePutPerson() {
-        //  var Id = txtId12.text.toString().toLong()
-        //  var fecha = "1995-01-15"
-        /*  var nombre=txtNombre10.text.toString()
-          var dni = txtIdentidad.text.toString()
-          var correo=txtCorreo1.text.toString()
-          var telefono = txtTelefono.text.toString().toLong()
-          println("Id:" + Id.toString() +  "fecha:" + fecha.toString() + "nombre:" + nombre.toString() +"dni:" +
-                  dni.toString()+ "correo"+ correo + "telefono:" + telefono.toString() )*/
-        //val fecha = "1995-12-06"
+        var id = txtId4.text.toString().toLong()
+        var descripcion = txtDescripcion3.text.toString()
 
-        val personInfo = TipoPagoDataCollectionItem(  id = 2,
-            descripcion = toString(),
-
-
+        val personInfo = TipoPagoDataCollectionItem(  id = id,
+            descripcion = descripcion,
         )
 
         val retrofit = RestEngine.buildService().create(TipoPagoService::class.java)
@@ -138,27 +129,19 @@ class TipoPagoActivity : AppCompatActivity() {
             }
         })
     }
-    private fun obtenertexto(){
+   /* private fun obtenertexto(){
         var Id = txtId4.text.toString().toLong()
         var Descripcion = txtDescripcion3.text.toString()
 
         println("Id:" + Id.toString() +  "Descripcion:" +Descripcion.toString() )
-    }
+    }*/
 
     private fun callServicePostPerson() {
-        /* var Id = txtId.text.toString()
-         var fecha = txtFechaNaciAbo.text.toString()
-         var nombre=txtNombre1.text.toString()
-         var dni = txtIdentidad.text.toString()
-         var correo=txtCorreo1.text.toString()
-         var telefono = txtTelefono.text.toString().toInt()*/
+        var id = txtId4.text.toString().toLong()
+        var descripcion = txtDescripcion3.text.toString()
 
-
-        //val fecha = "1995-12-06"
-        val personInfo = TipoPagoDataCollectionItem(  id = null,
-            descripcion = toString(),
-
-
+        val personInfo = TipoPagoDataCollectionItem(  id = id,
+                descripcion = descripcion,
         )
 
 

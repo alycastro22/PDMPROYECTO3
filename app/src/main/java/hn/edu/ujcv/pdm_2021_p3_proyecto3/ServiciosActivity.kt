@@ -72,13 +72,13 @@ class ServiciosActivity : AppCompatActivity() {
         val Id = txtId7.text.toString().toLong()
         val tiposervicio = txtTipoServicio.text.toString()
         val asunto = txtIdAsunto.text.toString()
-        val precio = txtPrecio2.text.toString()
+        val precio = txtPrecio2.text.toString().toDouble()
 
         val personInfo = ServiciosDataCollectionItem(
-                id = Id.toString().toLong(),
+                id = Id,
                 tipoServicio = tiposervicio,
                 asunto = asunto,
-                precio = precio.toDouble()
+                precio = precio
 
         )
 
@@ -128,26 +128,26 @@ class ServiciosActivity : AppCompatActivity() {
             }
         })
     }
-    private fun obtenertexto(){
+    /*private fun obtenertexto(){
         val Id = txtId7.text.toString().toLong()
         val tiposervicio = txtTipoServicio.text.toString()
         val asunto = txtIdAsunto.text.toString()
         val precio = txtPrecio2.text.toString()
-    }
+    }*/
 
     private fun callServicePostPerson() {
         val Id = txtId7.text.toString().toLong()
         val tiposervicio = txtTipoServicio.text.toString()
         val asunto = txtIdAsunto.text.toString()
-        val precio = txtPrecio2.text.toString()
+        val precio = txtPrecio2.text.toString().toDouble()
 
 
         //val fecha = "1995-12-06"
         val personInfo = ServiciosDataCollectionItem(
-                id = Id.toString().toLong(),
+                id = Id,
                 tipoServicio = tiposervicio,
                 asunto = asunto,
-                precio = precio.toDouble()
+                precio = precio
 
         )
 
