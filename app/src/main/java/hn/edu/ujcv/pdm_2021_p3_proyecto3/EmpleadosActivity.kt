@@ -19,8 +19,7 @@ class EmpleadosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_empleados)
-        imageView6.setOnClickListener { Regresar()
-        }
+        imageView6.setOnClickListener { Regresar() }
         val botonGetId = findViewById<ImageView>(R.id.txtBuscarEmpleado)
         botonGetId.setOnClickListener {v -> callServiceGetPerson()}
         val botonPostear = findViewById<TextView>(R.id.txtAgregarEmpleado)
@@ -29,6 +28,7 @@ class EmpleadosActivity : AppCompatActivity() {
         botonPut.setOnClickListener { v-> callServicePutPerson()}
         val botonDelete = findViewById<TextView>(R.id.txtEliminarEmpleado)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
+        txtLimpiarEmpleado.setOnClickListener { limpiar() }
 
     }
     fun Regresar(){
@@ -230,5 +230,15 @@ class EmpleadosActivity : AppCompatActivity() {
 
         }
         )
+    }
+    private fun limpiar(){
+        txtIdEmpleado.text.clear()
+        txtFechaNacimiento.text.clear()
+        txtNombre.text.clear()
+        txtIdentidad1.text.clear()
+        txtCorreo.text.clear()
+        txtTelefono3.text.clear()
+        txtCargo.text.clear()
+        txtIdAgencia.text.clear()
     }
 }

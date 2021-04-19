@@ -34,8 +34,8 @@
         android:gravity="center"
         android:hint="@string/txtIdCliente1"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtId6" />
@@ -51,8 +51,8 @@
         android:gravity="center"
         android:hint="@string/txtIdAbogado"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtIdCliente1" />
@@ -68,8 +68,8 @@
         android:gravity="center"
         android:hint="@string/txtFechaInicio"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtIdAbogado" />
@@ -103,9 +103,9 @@
         android:gravity="center"
         android:hint="@string/txtIdTipoCaso1"
         android:inputType="textPersonName"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/txtEliminarCaso"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -191,5 +191,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/lupa" />
+
+    <TextView
+        android:id="@+id/txtLimpiarCaso"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="345dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginBottom="186dp"
+        android:background="@drawable/limpio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

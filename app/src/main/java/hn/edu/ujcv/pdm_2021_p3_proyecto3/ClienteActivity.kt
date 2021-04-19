@@ -29,7 +29,7 @@ class ClienteActivity : AppCompatActivity() {
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
         val botonBuscar = findViewById<ImageView>(R.id.txtLupaCliente)
         botonBuscar.setOnClickListener{v -> callServiceGetPerson() }
-
+        txtLimpiarCliente.setOnClickListener { limpiar() }
 
     }
     fun Regresar(){
@@ -213,6 +213,14 @@ class ClienteActivity : AppCompatActivity() {
 
         }
         )
+    }
+    private fun limpiar(){
+        txtId12.text.clear()
+        txtFechaNacimiento2.text.clear()
+        txtNombre10.text.clear()
+        txtCorreo3.text.clear()
+        txtTelefono2.text.clear()
+
     }
 
 }

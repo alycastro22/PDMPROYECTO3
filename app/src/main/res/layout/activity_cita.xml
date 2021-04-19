@@ -88,8 +88,8 @@
         android:gravity="center"
         android:hint="@string/txtIdCaso3"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPrecio3" />
@@ -173,5 +173,17 @@
         app:layout_constraintStart_toEndOf="@+id/txtIdCita1"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/lupa" />
+
+    <TextView
+        android:id="@+id/txtLimpiarCita"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="337dp"
+        android:layout_marginTop="568dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/limpio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

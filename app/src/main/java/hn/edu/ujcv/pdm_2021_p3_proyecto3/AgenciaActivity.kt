@@ -19,7 +19,6 @@ class AgenciaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agencia)
         imageView3.setOnClickListener { Regresar()}
-
         val botonPostear = findViewById<TextView>(R.id.txtAgregarAgencia)
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
         val botonPut = findViewById<TextView>(R.id.txtGuardarAgencia)
@@ -28,7 +27,7 @@ class AgenciaActivity : AppCompatActivity() {
         botonDelete.setOnClickListener { v-> callServiceDeleteAgencia()}
         val botonbuscar = findViewById<ImageView>(R.id.txtBuscarAgencia)
         botonbuscar.setOnClickListener { v-> callServiceGetAgencia()}
-
+        txtLimpiarAgencia.setOnClickListener { limpiar() }
 
     }
     fun Regresar(){
@@ -198,6 +197,12 @@ class AgenciaActivity : AppCompatActivity() {
 
         }
         )
+    }
+    private fun limpiar(){
+        txtId13.text.clear()
+        txtNombreCaso.text.clear()
+        txtDireccion.text.clear()
+        txtTelefono1.text.clear()
     }
 
 }

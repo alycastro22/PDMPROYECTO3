@@ -41,6 +41,7 @@ class AbogadosActivity : AppCompatActivity() {
         val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
         imageView2.setOnClickListener { Regresar() }
+        txtLimpiarAbog.setOnClickListener { limpiar() }
        }
 
 
@@ -232,6 +233,14 @@ class AbogadosActivity : AppCompatActivity() {
 
         }
         )
+    }
+    private fun limpiar (){
+        txtId.text.clear()
+        txtFechaNaciAbo.text.clear()
+        txtNombre1.text.clear()
+        txtIdentidad.text.clear()
+        txtCorreo1.text.clear()
+        txtTelefono.text.clear()
     }
 
 

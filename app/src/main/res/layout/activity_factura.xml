@@ -19,8 +19,8 @@
         android:gravity="center"
         android:hint="@string/txtId8"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/txtBuscarFactura"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,8 +37,8 @@
         android:gravity="center"
         android:hint="@string/txtFechaFactura"
         android:inputType="date"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtId8" />
 
@@ -55,8 +55,8 @@
         android:gravity="center"
         android:hint="@string/txtIdEmpleado1"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txtEliminarFactura"
         app:layout_constraintHorizontal_bias="0.0"
@@ -74,8 +74,8 @@
         android:gravity="center"
         android:hint="@string/txtIdCaso1"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEmpleado1" />
@@ -91,8 +91,8 @@
         android:hint="@string/txtIdPago"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtIdCaso1" />
@@ -173,8 +173,8 @@
         android:gravity="center"
         android:hint="@string/txtIdServicio"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -192,5 +192,17 @@
         app:layout_constraintStart_toEndOf="@+id/txtId8"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/lupa" />
+
+    <TextView
+        android:id="@+id/txtLimpiarFactura"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="337dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/limpio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

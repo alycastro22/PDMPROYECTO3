@@ -210,4 +210,17 @@
         app:layout_constraintVertical_bias="0.896"
         app:srcCompat="@drawable/lupa" />
 
+    <ImageView
+        android:id="@+id/txtLimpiarAbog"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="349dp"
+        android:layout_marginTop="514dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="@string/Todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/limpio" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

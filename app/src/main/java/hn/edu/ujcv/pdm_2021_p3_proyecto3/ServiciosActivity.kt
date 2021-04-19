@@ -28,6 +28,7 @@ class ServiciosActivity : AppCompatActivity() {
         botonPut.setOnClickListener { v-> callServicePutPerson()}
         val botonDelete = findViewById<TextView>(R.id.txtEliminarServicio)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
+        txtLimpiarServicio.setOnClickListener { limpiar() }
 
     }
     fun Regresar(){
@@ -205,5 +206,11 @@ class ServiciosActivity : AppCompatActivity() {
 
         }
         )
+    }
+    private fun limpiar(){
+        txtId7.text.clear()
+        txtTipoServicio.text.clear()
+        txtIdAsunto.text.clear()
+        txtPrecio2.text.clear()
     }
 }

@@ -27,8 +27,8 @@ class FacturaActivity : AppCompatActivity() {
             botonPut.setOnClickListener { v-> callServicePutPerson()}
             val botonDelete = findViewById<TextView>(R.id.txtEliminarFactura)
             botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
-            imageView9.setOnClickListener { Regresar()
-            }
+            imageView9.setOnClickListener { Regresar()}
+            txtLimpiarFactura.setOnClickListener { limpiar() }
         }
 
 
@@ -225,5 +225,13 @@ class FacturaActivity : AppCompatActivity() {
         )
     }
 
+    private fun limpiar(){
+        txtId8.text.clear()
+        txtFechaFactura.text.clear()
+        txtEmpleado1.text.clear()
+        txtIdCaso1.text.clear()
+        txtIdPago.text.clear()
+        txtIdServicio.text.clear()
+    }
 
 }

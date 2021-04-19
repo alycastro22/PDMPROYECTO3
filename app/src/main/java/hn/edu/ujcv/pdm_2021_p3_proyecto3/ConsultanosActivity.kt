@@ -27,7 +27,7 @@ class ConsultanosActivity : AppCompatActivity() {
             botonPut.setOnClickListener { v-> callServicePutPerson()}
             val botonDelete = findViewById<TextView>(R.id.txtEliminarConsulta)
             botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
-
+            txtLimpiarConsulta.setOnClickListener { limpiar() }
         }
 
     }
@@ -75,7 +75,7 @@ class ConsultanosActivity : AppCompatActivity() {
 
     private fun callServicePutPerson() {
         var id = txtId5.text.toString().toLong()
-        var idcliente = txtIdCliente2.toString().toLong()
+        var idcliente = txtIdCliente2.text.toString().toLong()
         var idabogado= txtIdAbogado4.text.toString().toLong()
         var fecha = txtFecha2.text.toString()
         var descripcion = txtDescripcionConsulta.text.toString()
@@ -146,7 +146,7 @@ class ConsultanosActivity : AppCompatActivity() {
 
     private fun callServicePostPerson() {
         //var id = txtId5.text.toString().toLong()
-        var idcliente = txtIdCliente2.toString().toLong()
+        var idcliente = txtIdCliente2.text.toString().toLong()
         var idabogado= txtIdAbogado4.text.toString().toLong()
         var fecha = txtFecha2.text.toString()
         var descripcion = txtDescripcionConsulta.text.toString()
@@ -217,4 +217,10 @@ class ConsultanosActivity : AppCompatActivity() {
         )
     }
 
+    private fun limpiar(){
+        txtId5.text.clear()
+        txtIdCliente2.text.clear()
+        txtIdAbogado4.text.clear()
+        txtFecha2.text.clear()
+    }
 }

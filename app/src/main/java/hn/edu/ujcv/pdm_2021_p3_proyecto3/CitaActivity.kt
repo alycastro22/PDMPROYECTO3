@@ -30,6 +30,7 @@ class CitaActivity : AppCompatActivity() {
             botonPut.setOnClickListener { v-> callServicePutPerson()}
             val botonDelete = findViewById<TextView>(R.id.txtEliminarCita)
             botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
+            txtLimpiarCita.setOnClickListener { limpiar() }
 
         }
 
@@ -222,4 +223,11 @@ class CitaActivity : AppCompatActivity() {
         )
     }
 
+    private fun limpiar(){
+        txtIdCita1.text.clear()
+        txtFecha3.text.clear()
+        txtDescripcion5.text.clear()
+        txtPrecio3.text.clear()
+        txtIdCaso3.text.clear()
+    }
 }

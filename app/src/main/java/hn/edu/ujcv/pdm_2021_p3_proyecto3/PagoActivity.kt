@@ -28,6 +28,7 @@ class PagoActivity : AppCompatActivity() {
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
         val botonBuscar = findViewById<ImageView>(R.id.txtBuscarPag)
         botonBuscar.setOnClickListener{v -> callServiceGetPerson()}
+        txtLimpiarPago.setOnClickListener { limpiar() }
 
     }
 
@@ -222,8 +223,14 @@ class PagoActivity : AppCompatActivity() {
         }
         )
     }
-
-
+    private fun limpiar(){
+        txtIdPago1.text.clear()
+        txtIdTipoPago1.text.clear()
+        txtCantidadPago.text.clear()
+        txtImpuestos.text.clear()
+        txtSubtotal.text.clear()
+         txtTotal.text.clear()
+    }
 
 
 }

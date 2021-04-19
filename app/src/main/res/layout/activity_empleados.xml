@@ -203,8 +203,8 @@
 
     <ImageView
         android:id="@+id/txtBuscarEmpleado"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="144dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="30dp"
@@ -222,14 +222,26 @@
         android:layout_marginStart="99dp"
         android:layout_marginTop="607dp"
         android:layout_marginEnd="103dp"
-        android:ems="10"
         android:autofillHints=""
+        android:ems="10"
         android:fontFamily="@font/copse"
         android:gravity="center"
         android:hint="@string/txtFechaNacimiento"
         android:inputType="date"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLimpiarEmpleado"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="337dp"
+        android:layout_marginTop="511dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/limpio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
