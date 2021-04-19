@@ -19,8 +19,8 @@
         android:gravity="center"
         android:hint="@string/txtId4"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txtBuscar"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,8 +38,8 @@
         android:gravity="center"
         android:hint="@string/txtDescripcion3"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txtGuardar"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +72,7 @@
     <TextView
         android:id="@+id/txtAgregar"
         android:layout_width="50dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="426dp"
         android:background="@drawable/agregar"
@@ -102,13 +102,15 @@
 
     <TextView
         android:id="@+id/txtEliminar"
-        android:layout_width="0dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="473dp"
+        android:layout_marginEnd="33dp"
         android:background="@drawable/eliminar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/txtBuscar"
-        app:layout_constraintStart_toStartOf="@+id/txtBuscar" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/txtLupa1"
