@@ -6,16 +6,16 @@ import retrofit2.Call
 import retrofit2.http.*
 
 interface EmpleadoService {
-    @GET("empleado")
+    @GET("empleados")
     fun listaemplado(): Call<List<EmpleadoDataCollectionItem>>
-    @GET("empleado/id/{id}")
+    @GET("empleados/id/{id}")
     fun getEmpleadoById(@Path("id") id:Long): Call<EmpleadoDataCollectionItem>
     @Headers("Content-Type:application/json")
-    @POST("empleado/addEmpleado")
+    @POST("empleados/addEmpleado")
     fun addEmpleado(@Body personData: EmpleadoDataCollectionItem): Call<EmpleadoDataCollectionItem>
     @Headers("Content-Type:application/json")
-    @PUT("empleado")
+    @PUT("empleados")
     fun updateEmpleado(@Body personData: EmpleadoDataCollectionItem): Call<EmpleadoDataCollectionItem>
-    @DELETE("empleado/delete/{id}")
+    @DELETE("empleados/delete/{id}")
     fun deleteEmpleado (@Path("id") id:Long): Call<ResponseBody>
 }

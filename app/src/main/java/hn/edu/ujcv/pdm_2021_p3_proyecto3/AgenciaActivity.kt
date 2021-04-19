@@ -131,7 +131,7 @@ class AgenciaActivity : AppCompatActivity() {
     }
 
     private fun callServicePostPerson() {
-        val id =txtId13.text.toString()
+        //val id =txtId13.text.toString()
         val nombre=txtNombreCaso.text.toString()
         val direccion = txtDireccion.text.toString()
         val telefono = txtTelefono1.text.toString().toLong()

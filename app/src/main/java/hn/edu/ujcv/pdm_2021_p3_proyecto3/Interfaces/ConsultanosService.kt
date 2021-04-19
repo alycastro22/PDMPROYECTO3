@@ -6,16 +6,16 @@ import retrofit2.Call
 import retrofit2.http.*
 
 interface ConsultanosService {
-    @GET("consultanos")
+    @GET("consultas")
     fun listaConsultanos(): Call<List<ConsultanosDataCollectionItem>>
-    @GET("consultanos/id/{id}")
+    @GET("consultas/id/{id}")
     fun getConsultanosById(@Path("id") id:Long): Call<ConsultanosDataCollectionItem>
     @Headers("Content-Type:application/json")
-    @POST("cita/addCita")
+    @POST("consultas/addConsulta")
     fun addConsultanos(@Body personData: ConsultanosDataCollectionItem): Call<ConsultanosDataCollectionItem>
     @Headers("Content-Type:application/json")
-    @PUT("cita")
+    @PUT("consultas")
     fun updateConsultanos(@Body personData: ConsultanosDataCollectionItem): Call<ConsultanosDataCollectionItem>
-    @DELETE("consultanos/delete/{id}")
+    @DELETE("consultas/delete/{id}")
     fun deleteConsultanos(@Path("id") id:Long): Call<ResponseBody>
 }

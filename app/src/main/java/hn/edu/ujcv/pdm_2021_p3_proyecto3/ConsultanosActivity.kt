@@ -145,13 +145,13 @@ class ConsultanosActivity : AppCompatActivity() {
     }
 
     private fun callServicePostPerson() {
-        var id = txtId5.text.toString().toLong()
+        //var id = txtId5.text.toString().toLong()
         var idcliente = txtIdCliente2.toString().toLong()
         var idabogado= txtIdAbogado4.text.toString().toLong()
         var fecha = txtFecha2.text.toString()
         var descripcion = txtDescripcionConsulta.text.toString()
 
-        println("id:" + id.toString() +  "cliente:" +idcliente.toString() + "idabogado:" + idabogado.toString() +"fecha:" +fecha.toString())
+        println( "cliente:" +idcliente.toString() + "idabogado:" + idabogado.toString() +"fecha:" +fecha.toString())
 
         //val fecha = "1995-12-06"
         val personInfo = ConsultanosDataCollectionItem(  id = null,

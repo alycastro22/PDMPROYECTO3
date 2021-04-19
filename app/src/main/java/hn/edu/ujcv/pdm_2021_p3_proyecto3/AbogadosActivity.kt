@@ -157,7 +157,7 @@ class AbogadosActivity : AppCompatActivity() {
     private fun callServicePostPerson() {
         if (txtFechaNaciAbo.text.isNotEmpty() && txtNombre1.text.isNotEmpty() && txtIdentidad.text.isNotEmpty() && txtCorreo1.text.isNotEmpty()
                 && txtTelefono.text.isNotEmpty()){
-            var Id = txtId.text.toString().toLong()
+            //var Id = txtId.text.toString().toLong()
             var fecha = txtFechaNaciAbo.text.toString()
             var nombre=txtNombre1.text.toString()
             var dni = txtIdentidad.text.toString()

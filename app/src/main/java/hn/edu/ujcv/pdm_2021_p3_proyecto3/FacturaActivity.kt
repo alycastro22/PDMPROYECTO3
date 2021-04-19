@@ -154,7 +154,7 @@ class FacturaActivity : AppCompatActivity() {
     }*/
 
     private fun callServicePostPerson() {
-        var id = txtId8.text.toString().toLong()
+       // var id = txtId8.text.toString().toLong()
         var fecha = txtFechaFactura.text.toString()
         var idempleado= txtEmpleado1.text.toString().toLong()
         var idcaso=txtIdCaso1.toString().toLong()

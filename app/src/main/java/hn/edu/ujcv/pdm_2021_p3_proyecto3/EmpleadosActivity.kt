@@ -134,7 +134,7 @@ class EmpleadosActivity : AppCompatActivity() {
                     response: Response<EmpleadoDataCollectionItem>
 
             ) {
-                txtNombre.setText("")
+
                 Toast.makeText(this@EmpleadosActivity,"OK"+response.body()!!.nombre, Toast.LENGTH_LONG).show()
             }
         })
@@ -153,7 +153,7 @@ class EmpleadosActivity : AppCompatActivity() {
     }*/
 
     private fun callServicePostPerson() {
-        val Id = txtIdEmpleado.text.toString().toLong()
+        //val Id = txtIdEmpleado.text.toString().toLong()
         val fecha = txtFechaNacimiento.text.toString()
         val nombre=txtNombre.text.toString()
         val dni = txtIdentidad1.text.toString()
@@ -171,7 +171,7 @@ class EmpleadosActivity : AppCompatActivity() {
                 correo= correo,
                 telefono = telefono,
                 cargo = cargo,
-                idAgencia = idAgencia,
+                idAgencia = idAgencia.toLong(),
                 fechaNacimiento = fecha
 
         )

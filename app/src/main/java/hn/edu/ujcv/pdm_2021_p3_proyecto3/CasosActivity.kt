@@ -134,14 +134,14 @@ class CasosActivity : AppCompatActivity() {
     }
 
     private fun callServicePostPerson() {
-        val Id = txtId6.text.toString().toLong()
+        //val Id = txtId6.text.toString().toLong()
         val fechainicio = txtFechaInicio.text.toString()
         val IdC1 = txtIdCliente1.text.toString().toLong()
         val IdAb1 = txtIdAbogado.text.toString().toLong()
         val IdTipocaso = txtIdTipoCaso1.text.toString().toLong()
         val fechafinal = txtIdFechaFinalizacion.text.toString()
 
-        val personInfo =  CasosDataCollectionItem(  id = Id,
+        val personInfo =  CasosDataCollectionItem(  id = null,
                 idClientes = IdC1,
                 idAbogados = IdAb1,
                 inicio = fechainicio,

@@ -137,7 +137,7 @@ class TipoPagoActivity : AppCompatActivity() {
     }*/
 
     private fun callServicePostPerson() {
-        var id = txtId4.text.toString().toLong()
+        //var id = txtId4.text.toString().toLong()
         var descripcion = txtDescripcion3.text.toString()
 
         val personInfo = TipoPagoDataCollectionItem(  id = null,

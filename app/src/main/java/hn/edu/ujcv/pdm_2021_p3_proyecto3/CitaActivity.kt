@@ -153,7 +153,7 @@ class CitaActivity : AppCompatActivity() {
 }*/
 
     private fun callServicePostPerson() {
-        var id = txtIdCita1.text.toString().toLong()
+        //var id = txtIdCita1.text.toString().toLong()
         var fecha = txtFecha3.toString()
         var descripcion = txtDescripcion5.text.toString()
         var precio = txtPrecio3.text.toString().toDouble()

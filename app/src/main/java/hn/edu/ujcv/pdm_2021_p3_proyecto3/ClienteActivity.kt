@@ -25,7 +25,7 @@ class ClienteActivity : AppCompatActivity() {
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
         val botonPut = findViewById<TextView>(R.id.txtGuardarCliente)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
-        val botonDelete = findViewById<TextView>(R.id.txtEliminarAgencia)
+        val botonDelete = findViewById<TextView>(R.id.txtEliminarCliente)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
         val botonBuscar = findViewById<ImageView>(R.id.txtLupaCliente)
         botonBuscar.setOnClickListener{v -> callServiceGetPerson() }
@@ -143,12 +143,12 @@ class ClienteActivity : AppCompatActivity() {
 
 
     private fun callServicePostPerson() {
-        var id = txtId12.text.toString().toLong()
+        //var id = txtId12.text.toString().toLong()
         var fecha = txtFechaNacimiento2.text.toString()
         var nombre = txtNombre10.text.toString()
         var correo = txtCorreo3.text.toString()
         var telefono = txtTelefono2.text.toString().toLong()
-        println("Id:" + id.toString() +  "fecha:" + fecha + "nombre:" + nombre + "correo"+ correo + "telefono:" + telefono.toString() )
+        println(   "fecha:" + fecha + "nombre:" + nombre + "correo"+ correo + "telefono:" + telefono.toString() )
         //val fecha = "1995-12-06"
 
         val personInfo = ClienteDataCollectionItem(  id = null,

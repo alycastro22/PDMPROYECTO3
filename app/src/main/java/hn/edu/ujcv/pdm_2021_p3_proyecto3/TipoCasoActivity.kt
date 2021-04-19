@@ -146,14 +146,14 @@ class TipoCasoActivity : AppCompatActivity() {
     }*/
 
     private fun callServicePostPerson() {
-        var id = txtId9.text.toString().toLong()
+        //var id = txtId9.text.toString().toLong()
         var nombre=txtNombre5.text.toString()
         var descripcion = txtDescripcion4.text.toString()
         var precio =txtPrecio1.text.toString().toDouble()
 
 
         //val fecha = "1995-12-06"
-        val personInfo = TipoCasoDataCollectionItem(  id = id,
+        val personInfo = TipoCasoDataCollectionItem(  id = null,
                 nombre = nombre,
                 descripcion=descripcion,
                 precio= precio

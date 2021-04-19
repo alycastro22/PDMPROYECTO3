@@ -136,7 +136,7 @@ class ServiciosActivity : AppCompatActivity() {
     }*/
 
     private fun callServicePostPerson() {
-        val Id = txtId7.text.toString().toLong()
+        //val Id = txtId7.text.toString().toLong()
         val tiposervicio = txtTipoServicio.text.toString()
         val asunto = txtIdAsunto.text.toString()
         val precio = txtPrecio2.text.toString().toDouble()
@@ -144,7 +144,7 @@ class ServiciosActivity : AppCompatActivity() {
 
         //val fecha = "1995-12-06"
         val personInfo = ServiciosDataCollectionItem(
-                id = Id,
+                id = null,
                 tipoServicio = tiposervicio,
                 asunto = asunto,
                 precio = precio
