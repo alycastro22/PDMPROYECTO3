@@ -17,7 +17,6 @@
         android:gravity="center"
         android:hint="@string/txtId6"
         android:inputType="textPersonName"
-        android:text="@string/txtId6"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
