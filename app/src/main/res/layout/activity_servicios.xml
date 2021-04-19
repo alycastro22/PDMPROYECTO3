@@ -30,11 +30,11 @@
         android:gravity="center"
         android:hint="@string/txtId7"
         android:inputType="textPersonName"
-        android:text="@string/txtId7"
+        android:textColorHint="@color/white"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtBuscarAbog"
+        app:layout_constraintEnd_toStartOf="@+id/txtBuscarServicio"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -51,11 +51,11 @@
         android:gravity="center"
         android:hint="@string/txtTipoServicio"
         android:inputType="textPersonName"
-        android:text="@string/txtTipoServicio"
+        android:textColorHint="@color/white"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtActualizarAbog"
+        app:layout_constraintEnd_toStartOf="@+id/txtActualizarServicio"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -75,7 +75,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtGuardarAbog"
+        app:layout_constraintEnd_toStartOf="@+id/txtGuardarServicio"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -95,20 +95,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtAgregar"
+        android:id="@+id/txtAgregarServicio"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="242dp"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/agregar"
-        app:layout_constraintBottom_toTopOf="@+id/txtActualizarAbog"
+        app:layout_constraintBottom_toTopOf="@+id/txtActualizarServicio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.868" />
 
     <TextView
-        android:id="@+id/txtActualizarAbog"
+        android:id="@+id/txtActualizarServicio"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginEnd="21dp"
@@ -116,20 +116,20 @@
         android:background="@drawable/actualizar1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBuscarAbog" />
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscarServicio" />
 
     <TextView
-        android:id="@+id/txtGuardarAbog"
+        android:id="@+id/txtGuardarServicio"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/guardar"
-        app:layout_constraintBottom_toTopOf="@+id/txtEliminarAbog"
+        app:layout_constraintBottom_toTopOf="@+id/txtEliminarServicio"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txtEliminarAbog"
+        android:id="@+id/txtEliminarServicio"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="21dp"
@@ -155,14 +155,14 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/txtBuscarAbog"
+        android:id="@+id/txtBuscarServicio"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="237dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="107dp"
         android:contentDescription="@string/Todo"
-        app:layout_constraintBottom_toTopOf="@+id/txtActualizarAbog"
+        app:layout_constraintBottom_toTopOf="@+id/txtActualizarServicio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/lupa" />

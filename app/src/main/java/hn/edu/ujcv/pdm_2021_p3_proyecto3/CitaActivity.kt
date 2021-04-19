@@ -22,13 +22,13 @@ class CitaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_cita)
 
         imageView5.setOnClickListener { Regresar()
-            val botonGetId = findViewById<ImageView>(R.id.txtBuscarAbog)
+            val botonGetId = findViewById<ImageView>(R.id.txtBuscarCita)
             botonGetId.setOnClickListener {v -> callServiceGetPerson()}
-            val botonPostear = findViewById<ImageView>(R.id.txtAgregarAbog)
+            val botonPostear = findViewById<TextView>(R.id.txtAgregarCita)
             botonPostear.setOnClickListener { v-> callServicePostPerson()}
-            val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
+            val botonPut = findViewById<TextView>(R.id.txtGuardarCita)
             botonPut.setOnClickListener { v-> callServicePutPerson()}
-            val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
+            val botonDelete = findViewById<TextView>(R.id.txtEliminarCita)
             botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
 
         }
@@ -88,7 +88,7 @@ private fun callServicePutPerson() {
     println("Id:" + idcita.toString() +  "fecha:" + fecha.toString() + "descripcion:" + descripcion.toString() +"precio:" +precio.toDouble()+"caso:" +  idcaso.toString()
          )
     //val fecha = "1995-12-06"
-    val personInfo = CitaDataCollectionItem(  idcita = idcita.toString().toLong(),
+    val personInfo = CitaDataCollectionItem(  id = idcita.toString().toLong(),
 
             fecha=fecha,
             descripcion = descripcion,
@@ -162,15 +162,15 @@ private fun callServicePostPerson() {
     var idcaso=txtIdCaso3.text.toString()
 
     //val fecha = "1995-12-06"
-    val personInfo = CitaDataCollectionItem(  idcita = null,
+    val personInfo = CitaDataCollectionItem(  id = null,
             fecha=fecha,
             descripcion = descripcion,
             precio= precio,
             idcaso = idcaso.toLong())
 
     addPerson(personInfo) {
-        if (it?.idcita != null) {
-            Toast.makeText(this@CitaActivity,"OK"+it?.idcita, Toast.LENGTH_LONG).show()
+        if (it?.id != null) {
+            Toast.makeText(this@CitaActivity,"OK"+it?.id, Toast.LENGTH_LONG).show()
         } else {
             Toast.makeText(this@CitaActivity,"Error", Toast.LENGTH_LONG).show()
         }

@@ -21,11 +21,11 @@ class FacturaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_factura)
         imageView9.setOnClickListener { Regresar()
 
-            val botonPostear = findViewById<ImageView>(R.id.txtAgregarAbog)
+            val botonPostear = findViewById<TextView>(R.id.txtAgregarFactura)
             botonPostear.setOnClickListener { v-> callServicePostPerson()}
-            val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
+            val botonPut = findViewById<TextView>(R.id.txtGuardarFactura)
             botonPut.setOnClickListener { v-> callServicePutPerson()}
-            val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
+            val botonDelete = findViewById<TextView>(R.id.txtEliminarFactura)
             botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
             imageView9.setOnClickListener { Regresar()
             }

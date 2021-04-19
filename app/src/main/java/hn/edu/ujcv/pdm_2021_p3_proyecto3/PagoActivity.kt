@@ -20,11 +20,11 @@ class PagoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_pago)
         imageView10.setOnClickListener { Regresar()
         }
-        val botonPostear = findViewById<ImageView>(R.id.txtAgregarAbog)
+        val botonPostear = findViewById<TextView>(R.id.txtAgregarPag)
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
-        val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
+        val botonPut = findViewById<TextView>(R.id.txtGuardarPag)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
-        val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
+        val botonDelete = findViewById<TextView>(R.id.txtEliminarPag)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
 
 
@@ -158,7 +158,7 @@ private fun callServicePostPerson() {
     var subtotal = txtSubtotal.text.toString().toDouble()
     var totalPagar = txtTotal.text.toString().toDouble()
 
-    val personInfo = PagoDataCollectionItem(  id = null,
+    val personInfo = PagoDataCollectionItem(  id = Id,
             id_TipoPago = idtipoPago,
             cantidad_pago= cantidadPago,
             impuesto = impuesto,

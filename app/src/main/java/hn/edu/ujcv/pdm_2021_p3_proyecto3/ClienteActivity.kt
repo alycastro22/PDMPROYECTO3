@@ -21,13 +21,13 @@ class ClienteActivity : AppCompatActivity() {
         imageView14.setOnClickListener { Regresar()
         }
 
-        val botonPostear = findViewById<TextView>(R.id.txtAgregarC)
+        val botonPostear = findViewById<TextView>(R.id.txtAgregarCliente)
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
-        val botonPut = findViewById<TextView>(R.id.txtGuardarC)
+        val botonPut = findViewById<TextView>(R.id.txtGuardarCliente)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
-        val botonDelete = findViewById<TextView>(R.id.txtEliminarC)
+        val botonDelete = findViewById<TextView>(R.id.txtEliminarAgencia)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
-        val botonBuscar = findViewById<ImageView>(R.id.txtLupa)
+        val botonBuscar = findViewById<ImageView>(R.id.txtLupaCliente)
         botonBuscar.setOnClickListener{v -> callServiceGetPerson() }
 
 

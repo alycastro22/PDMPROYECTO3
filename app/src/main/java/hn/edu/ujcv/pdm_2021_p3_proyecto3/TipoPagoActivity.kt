@@ -20,13 +20,13 @@ class TipoPagoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_tipopago)
         imageView8.setOnClickListener { Regresar()
         }
-        val botonPostear = findViewById<TextView>(R.id.txtAgregar)
+        val botonPostear = findViewById<TextView>(R.id.txtAgregarTP)
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
-        val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
+        val botonPut = findViewById<TextView>(R.id.txtGuardarTP)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
-        val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
+        val botonDelete = findViewById<TextView>(R.id.txtEliminarTP)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
-        val botonBuscar = findViewById<ImageView>(R.id.txtLupa1)
+        val botonBuscar = findViewById<ImageView>(R.id.txtLupaTP)
         botonBuscar.setOnClickListener { v -> callServiceGetPerson() }
 
 
@@ -142,7 +142,7 @@ class TipoPagoActivity : AppCompatActivity() {
         var id = txtId4.text.toString().toLong()
         var descripcion = txtDescripcion3.text.toString()
 
-        val personInfo = TipoPagoDataCollectionItem(  id = null,
+        val personInfo = TipoPagoDataCollectionItem(  id = id,
                 descripcion = descripcion,
         )
 

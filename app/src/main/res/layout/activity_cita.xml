@@ -22,7 +22,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtBuscarAbog"
+        app:layout_constraintEnd_toStartOf="@+id/txtBuscarCita"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,7 +57,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtActualizarAbog" />
+        app:layout_constraintTop_toTopOf="@+id/txtActualizarCita" />
 
     <EditText
         android:id="@+id/txtPrecio3"
@@ -107,7 +107,7 @@
         app:srcCompat="@drawable/retroceder" />
 
     <TextView
-        android:id="@+id/txtAgregar"
+        android:id="@+id/txtAgregarCita"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginEnd="24dp"
@@ -115,10 +115,10 @@
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBuscarAbog" />
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscarCita" />
 
     <TextView
-        android:id="@+id/txtActualizarAbog"
+        android:id="@+id/txtActualizarCita"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
@@ -128,7 +128,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txtGuardarAbog"
+        android:id="@+id/txtGuardarCita"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
@@ -138,7 +138,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txtEliminarAbog"
+        android:id="@+id/txtEliminarCita"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
@@ -161,14 +161,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/txtBuscarAbog"
+        android:id="@+id/txtBuscarCita"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="36dp"
         android:contentDescription="@string/Todo"
-        app:layout_constraintBottom_toTopOf="@+id/txtAgregar"
+        app:layout_constraintBottom_toTopOf="@+id/txtAgregarCita"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtIdCita1"
         app:layout_constraintTop_toTopOf="parent"

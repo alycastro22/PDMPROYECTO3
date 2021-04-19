@@ -42,7 +42,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/txtNombre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtBuscarAbog"
+        app:layout_constraintEnd_toStartOf="@+id/txtBuscarEmpleado"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -58,7 +58,7 @@
         android:inputType="textPersonName"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/txtAgregar"
+        app:layout_constraintBottom_toBottomOf="@+id/txtAgregarEmpleado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -167,7 +167,7 @@
         app:srcCompat="@drawable/retroceder" />
 
     <TextView
-        android:id="@+id/txtAgregar"
+        android:id="@+id/txtAgregarEmpleado"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginEnd="24dp"
@@ -175,20 +175,20 @@
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBuscarAbog" />
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscarEmpleado" />
 
     <TextView
-        android:id="@+id/txtActualizarAbog"
+        android:id="@+id/txtActualizarEmpleado"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/actualizar1"
-        app:layout_constraintBottom_toTopOf="@+id/txtGuardarAbog"
+        app:layout_constraintBottom_toTopOf="@+id/txtGuardarEmpleado"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txtGuardarAbog"
+        android:id="@+id/txtGuardarEmpleado"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
@@ -198,7 +198,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txtEliminarAbog"
+        android:id="@+id/txtEliminarEmpleado"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
@@ -221,14 +221,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/txtBuscarAbog"
+        android:id="@+id/txtBuscarEmpleado"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="144dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="30dp"
         android:contentDescription="@string/Todo"
-        app:layout_constraintBottom_toTopOf="@+id/txtAgregar"
+        app:layout_constraintBottom_toTopOf="@+id/txtAgregarEmpleado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtIdEmpleado"
         app:layout_constraintTop_toTopOf="parent"

@@ -19,13 +19,13 @@ class ConsultanosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_consultanos)
         imageView11.setOnClickListener { Regresar()
-            val botonGetId = findViewById<ImageView>(R.id.txtBuscarAbog)
+            val botonGetId = findViewById<ImageView>(R.id.txtBuscarConsulta)
             botonGetId.setOnClickListener {v -> callServiceGetPerson()}
-            val botonPostear = findViewById<ImageView>(R.id.txtAgregarAbog)
+            val botonPostear = findViewById<TextView>(R.id.txtAgregarConsulta)
             botonPostear.setOnClickListener { v-> callServicePostPerson()}
-            val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
+            val botonPut = findViewById<TextView>(R.id.txtGuardarConsulta)
             botonPut.setOnClickListener { v-> callServicePutPerson()}
-            val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
+            val botonDelete = findViewById<TextView>(R.id.txtEliminarConsulta)
             botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
 
         }

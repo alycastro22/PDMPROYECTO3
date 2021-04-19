@@ -23,7 +23,7 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtBuscarAbog"
+        app:layout_constraintEnd_toStartOf="@+id/txtBuscarPag"
         app:layout_constraintHorizontal_bias="0.706"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvPago"
@@ -68,7 +68,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtGuardarAbog"
+        app:layout_constraintEnd_toStartOf="@+id/txtGuardarPag"
         app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -90,7 +90,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtEliminarAbog"
+        app:layout_constraintEnd_toStartOf="@+id/txtEliminarPag"
         app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -159,15 +159,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtAgregar"
+        android:id="@+id/txtAgregarPag"
         android:layout_width="50dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="162dp"
         android:background="@drawable/agregar"
-        app:layout_constraintBottom_toTopOf="@+id/txtEliminarAbog"
+        app:layout_constraintBottom_toTopOf="@+id/txtEliminarPag"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBuscarAbog" />
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscarPag" />
 
     <TextView
         android:id="@+id/txtActualizarAbog"
@@ -177,10 +177,10 @@
         android:layout_marginEnd="28dp"
         android:background="@drawable/actualizar1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAgregarPag" />
 
     <TextView
-        android:id="@+id/txtGuardarAbog"
+        android:id="@+id/txtGuardarPag"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -190,7 +190,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtActualizarAbog" />
 
     <TextView
-        android:id="@+id/txtEliminarAbog"
+        android:id="@+id/txtEliminarPag"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginEnd="28dp"
@@ -198,17 +198,17 @@
         android:background="@drawable/eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAgregarPag" />
 
     <ImageView
-        android:id="@+id/txtBuscarAbog"
+        android:id="@+id/txtBuscarPag"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="197dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="32dp"
         android:contentDescription="@string/Todo"
-        app:layout_constraintBottom_toTopOf="@+id/txtAgregar"
+        app:layout_constraintBottom_toTopOf="@+id/txtAgregarPag"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtIdPago1"
         app:layout_constraintTop_toTopOf="parent"

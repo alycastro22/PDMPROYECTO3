@@ -20,13 +20,13 @@ class ServiciosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_servicios)
         imageView12.setOnClickListener { Regresar()}
-        val botonGetId = findViewById<ImageView>(R.id.txtBuscarAbog)
+        val botonGetId = findViewById<ImageView>(R.id.txtBuscarServicio)
         botonGetId.setOnClickListener {v -> callServiceGetPerson()}
-        val botonPostear = findViewById<TextView>(R.id.txtAgregar)
+        val botonPostear = findViewById<TextView>(R.id.txtAgregarServicio)
         botonPostear.setOnClickListener { v-> callServicePostPerson()}
-        val botonPut = findViewById<TextView>(R.id.txtGuardarAbog)
+        val botonPut = findViewById<TextView>(R.id.txtGuardarServicio)
         botonPut.setOnClickListener { v-> callServicePutPerson()}
-        val botonDelete = findViewById<TextView>(R.id.txtEliminarAbog)
+        val botonDelete = findViewById<TextView>(R.id.txtEliminarServicio)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
 
     }
@@ -72,7 +72,8 @@ class ServiciosActivity : AppCompatActivity() {
         val Id = txtId7.text.toString().toLong()
         val tiposervicio = txtTipoServicio.text.toString()
         val asunto = txtIdAsunto.text.toString()
-        val precio = txtPrecio2.text.toString()
+        val precio = txtPrecio2.text.toString().toDouble()
+
         val personInfo = ServiciosDataCollectionItem(
                 id = Id,
                 tipoServicio = tiposervicio,
@@ -135,15 +136,15 @@ class ServiciosActivity : AppCompatActivity() {
     }*/
 
     private fun callServicePostPerson() {
-        //val Id = txtId7.text.toString().toLong()
+        val Id = txtId7.text.toString().toLong()
         val tiposervicio = txtTipoServicio.text.toString()
         val asunto = txtIdAsunto.text.toString()
-        val precio = txtPrecio2.text.toString()
+        val precio = txtPrecio2.text.toString().toDouble()
 
 
         //val fecha = "1995-12-06"
         val personInfo = ServiciosDataCollectionItem(
-                id = null,
+                id = Id,
                 tipoServicio = tiposervicio,
                 asunto = asunto,
                 precio = precio

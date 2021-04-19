@@ -21,7 +21,7 @@
         android:inputType="textPersonName"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/txtBuscarAbog"
+        app:layout_constraintEnd_toStartOf="@+id/txtBuscarFactura"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,7 +58,7 @@
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtEliminarAbog"
+        app:layout_constraintEnd_toStartOf="@+id/txtEliminarFactura"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtFechaFactura" />
@@ -122,27 +122,27 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/txtActualizarAbog"
+        android:id="@+id/txtActualizarFactura"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/actualizar1"
-        app:layout_constraintBottom_toTopOf="@+id/txtGuardarAbog"
+        app:layout_constraintBottom_toTopOf="@+id/txtGuardarFactura"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txtGuardarAbog"
+        android:id="@+id/txtGuardarFactura"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/guardar"
-        app:layout_constraintBottom_toTopOf="@+id/txtEliminarAbog"
+        app:layout_constraintBottom_toTopOf="@+id/txtEliminarFactura"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txtEliminarAbog"
+        android:id="@+id/txtEliminarFactura"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
@@ -152,7 +152,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txtAgregar"
+        android:id="@+id/txtAgregarFactura"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginEnd="24dp"
@@ -160,7 +160,7 @@
         android:background="@drawable/agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBuscarAbog" />
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscarFactura" />
 
     <EditText
         android:id="@+id/txtIdServicio"
@@ -180,14 +180,14 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/txtBuscarAbog"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:id="@+id/txtBuscarFactura"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="176dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="22dp"
         android:contentDescription="@string/Todo"
-        app:layout_constraintBottom_toTopOf="@+id/txtAgregar"
+        app:layout_constraintBottom_toTopOf="@+id/txtAgregarFactura"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtId8"
         app:layout_constraintTop_toTopOf="parent"
