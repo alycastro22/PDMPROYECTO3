@@ -1,24 +1,19 @@
 package hn.edu.ujcv.pdm_2021_p3_proyecto3
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.AbogadoService
 import kotlinx.android.synthetic.main.activity_abogados.*
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.entities.AbogadoDataCollectionItem
-import kotlinx.android.synthetic.main.activity_cita.*
-import kotlinx.android.synthetic.main.activity_empleados.*
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.text.SimpleDateFormat
-import java.time.LocalDate
 import java.util.*
 
 
@@ -87,6 +82,7 @@ class AbogadosActivity : AppCompatActivity() {
                 }
             })
         } else {
+            Toast.makeText(this@AbogadosActivity,"Ingrese el Id", Toast.LENGTH_SHORT).show()
         }
 
     }
@@ -107,7 +103,6 @@ class AbogadosActivity : AppCompatActivity() {
             fechaNacimiento = fecha,
             correo= correo,
             telefono = telefono
-
 
         )
 
@@ -161,31 +156,37 @@ class AbogadosActivity : AppCompatActivity() {
 
 
     private fun callServicePostPerson() {
-        var Id = txtId.text.toString().toLong()
-        var fecha = txtFechaNaciAbo.text.toString()
-        var nombre=txtNombre1.text.toString()
-        var dni = txtIdentidad.text.toString()
-        var correo=txtCorreo1.text.toString()
-        var telefono = txtTelefono.text.toString().toInt()
+        if (txtFechaNaciAbo.text.isNotEmpty() && txtNombre1.text.isNotEmpty() && txtIdentidad.text.isNotEmpty() && txtCorreo1.text.isNotEmpty()
+                && txtTelefono.text.isNotEmpty()){
+            var Id = txtId.text.toString().toLong()
+            var fecha = txtFechaNaciAbo.text.toString()
+            var nombre=txtNombre1.text.toString()
+            var dni = txtIdentidad.text.toString()
+            var correo=txtCorreo1.text.toString()
+            var telefono = txtTelefono.text.toString().toInt()
 
 
-        //val fecha = "1995-12-06"
-        val personInfo =AbogadoDataCollectionItem(  id = Id,
-            dni = dni,
-            nombre = nombre,
-            fechaNacimiento = fecha,
-            correo= correo,
-            telefono = telefono.toString().toLong()
-        )
+            //val fecha = "1995-12-06"
+            val personInfo =AbogadoDataCollectionItem(  id = null,
+                    dni = dni,
+                    nombre = nombre,
+                    fechaNacimiento = fecha,
+                    correo= correo,
+                    telefono = telefono.toString().toLong()
+            )
 
 
-        addPerson(personInfo) {
-            if (it?.id != null) {
-                Toast.makeText(this@AbogadosActivity,"OK"+it?.id, Toast.LENGTH_LONG).show()
-            } else {
-                Toast.makeText(this@AbogadosActivity,"Error", Toast.LENGTH_LONG).show()
+            addPerson(personInfo) {
+                if (it?.id != null) {
+                    Toast.makeText(this@AbogadosActivity,"OK"+it?.id, Toast.LENGTH_LONG).show()
+                } else {
+                    Toast.makeText(this@AbogadosActivity,"Error", Toast.LENGTH_LONG).show()
+                }
             }
+        }else{
+
         }
+
     }
 
     private fun callServiceGetPersons() {

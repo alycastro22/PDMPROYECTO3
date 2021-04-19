@@ -6,12 +6,8 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.CitaService
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.ConsultanosService
-import hn.edu.ujcv.pdm_2021_p3_proyecto3.entities.CitaDataCollectionItem
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.entities.ConsultanosDataCollectionItem
-import kotlinx.android.synthetic.main.activity_abogados.*
-import kotlinx.android.synthetic.main.activity_cita.*
 import kotlinx.android.synthetic.main.activity_consultanos.*
 import okhttp3.ResponseBody
 import retrofit2.Call

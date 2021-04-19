@@ -6,18 +6,13 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.AbogadoService
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.FacturaService
-import hn.edu.ujcv.pdm_2021_p3_proyecto3.entities.AbogadoDataCollectionItem
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.entities.FacturaDataCollectionItem
-import kotlinx.android.synthetic.main.activity_abogados.*
-import kotlinx.android.synthetic.main.activity_empleados.*
 import kotlinx.android.synthetic.main.activity_factura.*
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.text.SimpleDateFormat
 import java.util.*
 
 class FacturaActivity : AppCompatActivity() {
@@ -154,7 +149,7 @@ class FacturaActivity : AppCompatActivity() {
         var idempleado= txtEmpleado1.text.toString().toLong()
         var idcaso=txtIdCaso1.toString().toLong()
         var idpago = txtIdPago.text.toString()
-        var idservicios = txtTelefono.text.toString().toLong()
+        var idservicios = txtIdServicio.text.toString().toLong()
         println("id:" + id.toString().toLong() +"fecha:" + fecha.toString() + "idempleado:" + idempleado.toString() +"idcaso:" +
                 idcaso.toString()+ "idpago"+idpago.toString()+ "idservicios:" + idservicios.toString() )
     }
@@ -165,7 +160,7 @@ class FacturaActivity : AppCompatActivity() {
         var idempleado= txtEmpleado1.text.toString().toLong()
         var idcaso=txtIdCaso1.toString().toLong()
         var idpago = txtIdPago.text.toString()
-        var idservicios = txtTelefono.text.toString().toLong()
+        var idservicios = txtIdServicio.text.toString().toLong()
 
 
         //val fecha = "1995-12-06"

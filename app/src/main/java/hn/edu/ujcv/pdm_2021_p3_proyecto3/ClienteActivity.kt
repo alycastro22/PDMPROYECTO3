@@ -27,6 +27,8 @@ class ClienteActivity : AppCompatActivity() {
         botonPut.setOnClickListener { v-> callServicePutPerson()}
         val botonDelete = findViewById<TextView>(R.id.txtEliminar)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
+        val botonBuscar = findViewById<ImageView>(R.id.txtLupa)
+        botonBuscar.setOnClickListener{v -> callServiceGetPerson() }
 
 
     }

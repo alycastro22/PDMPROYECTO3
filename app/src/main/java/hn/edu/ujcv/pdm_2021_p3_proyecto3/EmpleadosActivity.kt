@@ -6,11 +6,9 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.AbogadoService
+
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.EmpleadoService
-import hn.edu.ujcv.pdm_2021_p3_proyecto3.entities.AbogadoDataCollectionItem
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.entities.EmpleadoDataCollectionItem
-import kotlinx.android.synthetic.main.activity_abogados.*
 import kotlinx.android.synthetic.main.activity_empleados.*
 import okhttp3.ResponseBody
 import retrofit2.Call
@@ -39,8 +37,8 @@ class EmpleadosActivity : AppCompatActivity() {
 
     }
     private fun callServiceDeletePerson() {
-        val Id = txtId.text.toString().toLong()
-        if (txtId.text.isNotEmpty()) {
+        val Id = txtIdEmpleado.text.toString().toLong()
+        if (txtIdEmpleado.text.isNotEmpty()) {
 
             val empleadosService: EmpleadoService =
                     RestEngine.buildService().create(EmpleadoService::class.
@@ -123,7 +121,7 @@ class EmpleadosActivity : AppCompatActivity() {
     }
 
     private fun callServiceGetPerson() {
-        var  Id = txtId.text.toString().toLong()
+        var  Id = txtIdEmpleado.text.toString().toLong()
         val empleadoService: EmpleadoService = RestEngine.buildService().create(EmpleadoService::class.java)
         var result: Call<EmpleadoDataCollectionItem> = empleadoService.getEmpleadoById(Id)
 

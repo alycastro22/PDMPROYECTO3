@@ -26,6 +26,8 @@ class TipoPagoActivity : AppCompatActivity() {
         botonPut.setOnClickListener { v-> callServicePutPerson()}
         val botonDelete = findViewById<TextView>(R.id.txtEliminar)
         botonDelete.setOnClickListener { v-> callServiceDeletePerson()}
+        val botonBuscar = findViewById<ImageView>(R.id.txtLupa1)
+        botonBuscar.setOnClickListener { v -> callServiceGetPerson() }
 
 
     }

@@ -3,13 +3,10 @@ package hn.edu.ujcv.pdm_2021_p3_proyecto3
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.AdminService
-import hn.edu.ujcv.pdm_2021_p3_proyecto3.Interfaces.TipoPagoService
 import hn.edu.ujcv.pdm_2021_p3_proyecto3.entities.AdminDataCollectionItem
-import hn.edu.ujcv.pdm_2021_p3_proyecto3.entities.TipoPagoDataCollectionItem
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_tipopago.*
 import retrofit2.Call
